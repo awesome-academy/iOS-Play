@@ -11,34 +11,28 @@ import UIKit
 class MainTabBarViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        UITabBar.appearance().tintColor = .darkGray
-        tabBar.barTintColor = UIColor.white
-        tabBar.clipsToBounds = true
-        
-        setUpViewController()
-        
+            
+        configureViews()
     }
     
-    func setUpViewController() {
+    func configureViews() {
+        tabBar.do {
+            $0.barTintColor = UIColor.white
+            $0.clipsToBounds = true
+        }
+        
         viewControllers = [
-            generateNavigationController(vc: AppViewController(), title: "Apps", image: "app", imagetap: "apptapped"),
-            generateNavigationController(vc: MusicViewController(), title: "Musics", image: "music", imagetap: "musictapped"),
-            generateNavigationController(vc: MovieViewController(), title: "Movies", image: "movie", imagetap: "movietapped"),
-            generateNavigationController(vc: BookViewController(), title: "Books", image: "book", imagetap: "booktapped"),
-            generateNavigationController(vc: TVShowViewController(), title: "TV Shows", image: "tvShow", imagetap: "tvShowtapped")
+            configChildNavigationController(vc: AppViewController(), item: TabbarItem.apps.item),
+            configChildNavigationController(vc: MusicViewController(), item: TabbarItem.musics.item),
+            configChildNavigationController(vc: MovieViewController(), item: TabbarItem.movies.item),
+            configChildNavigationController(vc: BookViewController(), item: TabbarItem.books.item),
+            configChildNavigationController(vc: TVShowViewController(), item: TabbarItem.tvShows.item)
         ]
     }
-    
-    func generateNavigationController(vc: UIViewController,title: String, image: String, imagetap: String ) -> UINavigationController {
-        
-        let navController = BaseNaviController(rootViewController: vc)
-        navController.navigationBar.backgroundColor = .red
-        navController.tabBarItem.title = title
-        navController.tabBarItem.image = UIImage(named: image)
-        navController.tabBarItem.selectedImage = UIImage(named: imagetap)?.withRenderingMode(.alwaysOriginal)
-        navController.tabBarItem.setTitleTextAttributes([NSAttributedString.Key.foregroundColor : UIColor.darkGray], for: .disabled)
-        
+
+    func configChildNavigationController(vc: UIViewController, item: UITabBarItem) -> UINavigationController {
+        let navController = BaseNavigationController(rootViewController: vc)
+        vc.tabBarItem = item
         return navController
     }
 }

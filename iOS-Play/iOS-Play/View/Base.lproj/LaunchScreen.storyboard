@@ -16,29 +16,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="googlePlay" translatesAutoresizingMaskIntoConstraints="NO" id="38M-No-p4X">
-                                <rect key="frame" x="20" y="481.5" width="374" height="220"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="38M-No-p4X" secondAttribute="height" multiplier="1.7:1" id="LHD-fz-Lh6"/>
-                                </constraints>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iOS" translatesAutoresizingMaskIntoConstraints="NO" id="CiH-T5-wTo">
-                                <rect key="frame" x="150" y="414.5" width="114" height="67"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="CiH-T5-wTo" secondAttribute="height" multiplier="1.7:1" id="k8w-3i-sCe"/>
-                                </constraints>
-                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="8L7-aD-5ML">
+                                <rect key="frame" x="20" y="323.5" width="374" height="249"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iOS" translatesAutoresizingMaskIntoConstraints="NO" id="Xbo-mw-kwb">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="62"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Xbo-mw-kwb" secondAttribute="height" multiplier="6:1" id="mQk-nn-is1"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="googlePlay" translatesAutoresizingMaskIntoConstraints="NO" id="7vO-lW-Zqy">
+                                        <rect key="frame" x="0.0" y="62" width="374" height="187"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="7vO-lW-Zqy" secondAttribute="height" multiplier="2:1" id="WJo-Pn-xNt"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="CiH-T5-wTo" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="150" id="94V-GP-dRd"/>
-                            <constraint firstItem="38M-No-p4X" firstAttribute="top" secondItem="CiH-T5-wTo" secondAttribute="bottom" id="AoM-cU-LqO"/>
-                            <constraint firstAttribute="trailing" secondItem="38M-No-p4X" secondAttribute="trailing" constant="20" id="JNs-IS-GGL"/>
-                            <constraint firstItem="CiH-T5-wTo" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="Uot-09-75L"/>
-                            <constraint firstItem="CiH-T5-wTo" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="gmN-bF-5qn"/>
-                            <constraint firstAttribute="trailing" secondItem="CiH-T5-wTo" secondAttribute="trailing" constant="150" id="hMB-CI-aGW"/>
-                            <constraint firstItem="38M-No-p4X" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="20" id="vHg-DW-F4g"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8L7-aD-5ML" secondAttribute="trailing" constant="20" id="HH9-Ap-Vqw"/>
+                            <constraint firstItem="8L7-aD-5ML" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="PK1-jK-hyW"/>
+                            <constraint firstItem="8L7-aD-5ML" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="U7v-4L-MhE"/>
+                            <constraint firstItem="8L7-aD-5ML" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="a1M-fs-L4K"/>
                         </constraints>
                     </view>
                 </viewController>

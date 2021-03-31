@@ -12,6 +12,10 @@ class MusicViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        configViews()
+    }
+    func configViews() {
         view.backgroundColor = .purple
     }
 }

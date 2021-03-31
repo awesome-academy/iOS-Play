@@ -7,15 +7,16 @@
 
 import Foundation
 import UIKit
+import Then
 
-class BaseNaviController: UINavigationController {
+class BaseNavigationController: UINavigationController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let navBar = self.navigationBar
-        navBar.isTranslucent = false
-        navBar.backgroundColor = .white
-
+        
+        self.navigationBar.do {
+            $0.isTranslucent = false
+            $0.backgroundColor = .white
+        }
     }
-    
 }
