@@ -3,11 +3,10 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		209689F579468303EAF9FAFA /* Pods_iOS_Play.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 840B76F7238F01A889711868 /* Pods_iOS_Play.framework */; };
 		E3E70F0B26144C9200271013 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E70F0A26144C9200271013 /* AppDelegate.swift */; };
 		E3E70F0D26144C9200271013 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E70F0C26144C9200271013 /* SceneDelegate.swift */; };
 		E3E70F1226144C9200271013 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3E70F1026144C9200271013 /* Main.storyboard */; };
@@ -21,12 +20,10 @@
 		E3E70F3A26144F6900271013 /* TVShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E70F3926144F6900271013 /* TVShowViewController.swift */; };
 		E3E70F43261457BE00271013 /* BaseNaviController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E70F42261457BE00271013 /* BaseNaviController.swift */; };
 		E3E70F4E26146A2B00271013 /* TabBarItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E70F4D26146A2B00271013 /* TabBarItems.swift */; };
+		E3E70F55261473FE00271013 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = E3E70F54261473FE00271013 /* Then */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		840B76F7238F01A889711868 /* Pods_iOS_Play.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_Play.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B5300062C047B06AB966E5A1 /* Pods-iOS-Play.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Play.debug.xcconfig"; path = "Target Support Files/Pods-iOS-Play/Pods-iOS-Play.debug.xcconfig"; sourceTree = "<group>"; };
-		E0A6A732BA9885E7080EBAE4 /* Pods-iOS-Play.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Play.release.xcconfig"; path = "Target Support Files/Pods-iOS-Play/Pods-iOS-Play.release.xcconfig"; sourceTree = "<group>"; };
 		E3E70F0726144C9200271013 /* iOS-Play.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Play.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3E70F0A26144C9200271013 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E3E70F0C26144C9200271013 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,37 +46,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				209689F579468303EAF9FAFA /* Pods_iOS_Play.framework in Frameworks */,
+				E3E70F55261473FE00271013 /* Then in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0D61E6B7DD56D91F858ABC87 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				840B76F7238F01A889711868 /* Pods_iOS_Play.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		780F4F9C90961A61B4E708B5 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				B5300062C047B06AB966E5A1 /* Pods-iOS-Play.debug.xcconfig */,
-				E0A6A732BA9885E7080EBAE4 /* Pods-iOS-Play.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		E3E70EFE26144C9200271013 = {
 			isa = PBXGroup;
 			children = (
 				E3E70F0926144C9200271013 /* iOS-Play */,
 				E3E70F0826144C9200271013 /* Products */,
-				780F4F9C90961A61B4E708B5 /* Pods */,
-				0D61E6B7DD56D91F858ABC87 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -199,17 +177,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E3E70F1B26144C9400271013 /* Build configuration list for PBXNativeTarget "iOS-Play" */;
 			buildPhases = (
-				D08116C5ECA78185C663749A /* [CP] Check Pods Manifest.lock */,
 				E3E70F0326144C9200271013 /* Sources */,
 				E3E70F0426144C9200271013 /* Frameworks */,
 				E3E70F0526144C9200271013 /* Resources */,
-				854338A53DB635093F781E04 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "iOS-Play";
+			packageProductDependencies = (
+				E3E70F54261473FE00271013 /* Then */,
+			);
 			productName = "iOS-Play";
 			productReference = E3E70F0726144C9200271013 /* iOS-Play.app */;
 			productType = "com.apple.product-type.application";
@@ -237,6 +216,9 @@
 				Base,
 			);
 			mainGroup = E3E70EFE26144C9200271013;
+			packageReferences = (
+				E3E70F53261473FE00271013 /* XCRemoteSwiftPackageReference "Then" */,
+			);
 			productRefGroup = E3E70F0826144C9200271013 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -258,48 +240,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		854338A53DB635093F781E04 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-iOS-Play/Pods-iOS-Play-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-iOS-Play/Pods-iOS-Play-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOS-Play/Pods-iOS-Play-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D08116C5ECA78185C663749A /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-iOS-Play-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E3E70F0326144C9200271013 /* Sources */ = {
@@ -459,7 +399,6 @@
 		};
 		E3E70F1C26144C9400271013 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B5300062C047B06AB966E5A1 /* Pods-iOS-Play.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -478,7 +417,6 @@
 		};
 		E3E70F1D26144C9400271013 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E0A6A732BA9885E7080EBAE4 /* Pods-iOS-Play.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -517,6 +455,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E3E70F53261473FE00271013 /* XCRemoteSwiftPackageReference "Then" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devxoul/Then";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.7.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E3E70F54261473FE00271013 /* Then */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E3E70F53261473FE00271013 /* XCRemoteSwiftPackageReference "Then" */;
+			productName = Then;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E3E70EFF26144C9200271013 /* Project object */;
 }

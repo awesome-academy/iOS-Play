@@ -14,7 +14,7 @@ class BaseNavigationController: UINavigationController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.navigationBar.do {
+        navigationBar.do {
             $0.isTranslucent = false
             $0.backgroundColor = .white
         }
