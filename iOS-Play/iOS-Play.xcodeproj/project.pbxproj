@@ -1,0 +1,452 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E3E70F0B26144C9200271013 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E70F0A26144C9200271013 /* AppDelegate.swift */; };
+		E3E70F0D26144C9200271013 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E70F0C26144C9200271013 /* SceneDelegate.swift */; };
+		E3E70F0F26144C9200271013 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E70F0E26144C9200271013 /* ViewController.swift */; };
+		E3E70F1226144C9200271013 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3E70F1026144C9200271013 /* Main.storyboard */; };
+		E3E70F1426144C9400271013 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3E70F1326144C9400271013 /* Assets.xcassets */; };
+		E3E70F1726144C9400271013 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3E70F1526144C9400271013 /* LaunchScreen.storyboard */; };
+		E3E70F2326144DAB00271013 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E70F2226144DAB00271013 /* MainTabBarViewController.swift */; };
+		E3E70F2C26144EE800271013 /* AppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E70F2B26144EE800271013 /* AppViewController.swift */; };
+		E3E70F2F26144F4100271013 /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E70F2E26144F4100271013 /* MusicViewController.swift */; };
+		E3E70F3326144F5400271013 /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E70F3226144F5400271013 /* MovieViewController.swift */; };
+		E3E70F3726144F6000271013 /* BookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E70F3626144F6000271013 /* BookViewController.swift */; };
+		E3E70F3A26144F6900271013 /* TVShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E70F3926144F6900271013 /* TVShowViewController.swift */; };
+		E3E70F43261457BE00271013 /* BaseNaviController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E70F42261457BE00271013 /* BaseNaviController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E3E70F0726144C9200271013 /* iOS-Play.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Play.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3E70F0A26144C9200271013 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E3E70F0C26144C9200271013 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E3E70F0E26144C9200271013 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E3E70F1126144C9200271013 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E3E70F1326144C9400271013 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E3E70F1626144C9400271013 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E3E70F1826144C9400271013 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3E70F2226144DAB00271013 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
+		E3E70F2B26144EE800271013 /* AppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewController.swift; sourceTree = "<group>"; };
+		E3E70F2E26144F4100271013 /* MusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicViewController.swift; sourceTree = "<group>"; };
+		E3E70F3226144F5400271013 /* MovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
+		E3E70F3626144F6000271013 /* BookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViewController.swift; sourceTree = "<group>"; };
+		E3E70F3926144F6900271013 /* TVShowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVShowViewController.swift; sourceTree = "<group>"; };
+		E3E70F42261457BE00271013 /* BaseNaviController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNaviController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E3E70F0426144C9200271013 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E3E70EFE26144C9200271013 = {
+			isa = PBXGroup;
+			children = (
+				E3E70F0926144C9200271013 /* iOS-Play */,
+				E3E70F0826144C9200271013 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E3E70F0826144C9200271013 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E3E70F0726144C9200271013 /* iOS-Play.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E3E70F0926144C9200271013 /* iOS-Play */ = {
+			isa = PBXGroup;
+			children = (
+				E3E70F0A26144C9200271013 /* AppDelegate.swift */,
+				E3E70F0C26144C9200271013 /* SceneDelegate.swift */,
+				E3E70F0E26144C9200271013 /* ViewController.swift */,
+				E3E70F2026144D4500271013 /* View */,
+				E3E70F1F26144D3800271013 /* Model */,
+				E3E70F2126144D5300271013 /* Controller */,
+				E3E70F1326144C9400271013 /* Assets.xcassets */,
+				E3E70F1826144C9400271013 /* Info.plist */,
+			);
+			path = "iOS-Play";
+			sourceTree = "<group>";
+		};
+		E3E70F1F26144D3800271013 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E3E70F2026144D4500271013 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E3E70F1026144C9200271013 /* Main.storyboard */,
+				E3E70F1526144C9400271013 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E3E70F2126144D5300271013 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E3E70F41261457A900271013 /* BaseNaviController */,
+				E3E70F2526144E4200271013 /* Tabar Controller */,
+				E3E70F2626144E5000271013 /* AppViewController */,
+				E3E70F2726144E6C00271013 /* MusicViewController */,
+				E3E70F2826144E7A00271013 /* MovieViewController */,
+				E3E70F2926144E8900271013 /* BookViewController */,
+				E3E70F2A26144E9C00271013 /* TVShowViewController */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E3E70F2526144E4200271013 /* Tabar Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E3E70F2226144DAB00271013 /* MainTabBarViewController.swift */,
+			);
+			path = "Tabar Controller";
+			sourceTree = "<group>";
+		};
+		E3E70F2626144E5000271013 /* AppViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E3E70F2B26144EE800271013 /* AppViewController.swift */,
+			);
+			path = AppViewController;
+			sourceTree = "<group>";
+		};
+		E3E70F2726144E6C00271013 /* MusicViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E3E70F2E26144F4100271013 /* MusicViewController.swift */,
+			);
+			path = MusicViewController;
+			sourceTree = "<group>";
+		};
+		E3E70F2826144E7A00271013 /* MovieViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E3E70F3226144F5400271013 /* MovieViewController.swift */,
+			);
+			path = MovieViewController;
+			sourceTree = "<group>";
+		};
+		E3E70F2926144E8900271013 /* BookViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E3E70F3626144F6000271013 /* BookViewController.swift */,
+			);
+			path = BookViewController;
+			sourceTree = "<group>";
+		};
+		E3E70F2A26144E9C00271013 /* TVShowViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E3E70F3926144F6900271013 /* TVShowViewController.swift */,
+			);
+			path = TVShowViewController;
+			sourceTree = "<group>";
+		};
+		E3E70F41261457A900271013 /* BaseNaviController */ = {
+			isa = PBXGroup;
+			children = (
+				E3E70F42261457BE00271013 /* BaseNaviController.swift */,
+			);
+			path = BaseNaviController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E3E70F0626144C9200271013 /* iOS-Play */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E3E70F1B26144C9400271013 /* Build configuration list for PBXNativeTarget "iOS-Play" */;
+			buildPhases = (
+				E3E70F0326144C9200271013 /* Sources */,
+				E3E70F0426144C9200271013 /* Frameworks */,
+				E3E70F0526144C9200271013 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iOS-Play";
+			productName = "iOS-Play";
+			productReference = E3E70F0726144C9200271013 /* iOS-Play.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E3E70EFF26144C9200271013 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					E3E70F0626144C9200271013 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = E3E70F0226144C9200271013 /* Build configuration list for PBXProject "iOS-Play" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E3E70EFE26144C9200271013;
+			productRefGroup = E3E70F0826144C9200271013 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E3E70F0626144C9200271013 /* iOS-Play */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E3E70F0526144C9200271013 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3E70F1726144C9400271013 /* LaunchScreen.storyboard in Resources */,
+				E3E70F1426144C9400271013 /* Assets.xcassets in Resources */,
+				E3E70F1226144C9200271013 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E3E70F0326144C9200271013 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3E70F2F26144F4100271013 /* MusicViewController.swift in Sources */,
+				E3E70F3326144F5400271013 /* MovieViewController.swift in Sources */,
+				E3E70F2C26144EE800271013 /* AppViewController.swift in Sources */,
+				E3E70F0F26144C9200271013 /* ViewController.swift in Sources */,
+				E3E70F43261457BE00271013 /* BaseNaviController.swift in Sources */,
+				E3E70F2326144DAB00271013 /* MainTabBarViewController.swift in Sources */,
+				E3E70F3726144F6000271013 /* BookViewController.swift in Sources */,
+				E3E70F0B26144C9200271013 /* AppDelegate.swift in Sources */,
+				E3E70F0D26144C9200271013 /* SceneDelegate.swift in Sources */,
+				E3E70F3A26144F6900271013 /* TVShowViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E3E70F1026144C9200271013 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E3E70F1126144C9200271013 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E3E70F1526144C9400271013 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E3E70F1626144C9400271013 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E3E70F1926144C9400271013 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E3E70F1A26144C9400271013 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E3E70F1C26144C9400271013 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "iOS-Play/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Login.iOS-Play";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E3E70F1D26144C9400271013 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "iOS-Play/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Login.iOS-Play";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E3E70F0226144C9200271013 /* Build configuration list for PBXProject "iOS-Play" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3E70F1926144C9400271013 /* Debug */,
+				E3E70F1A26144C9400271013 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E3E70F1B26144C9400271013 /* Build configuration list for PBXNativeTarget "iOS-Play" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3E70F1C26144C9400271013 /* Debug */,
+				E3E70F1D26144C9400271013 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E3E70EFF26144C9200271013 /* Project object */;
+}
