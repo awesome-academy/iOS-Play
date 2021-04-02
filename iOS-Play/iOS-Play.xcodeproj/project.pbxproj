@@ -38,6 +38,7 @@
 		E379630D2615AE2800CBF147 /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		E379630E2615AE2800CBF147 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		E37963132615AE5F00CBF147 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E3B794EF2616CC7500CE04B6 /* iOS-Play.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "iOS-Play.entitlements"; sourceTree = "<group>"; };
 		E3E70F0726144C9200271013 /* iOS-Play.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Play.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3E70F0A26144C9200271013 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E3E70F0C26144C9200271013 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -132,6 +133,7 @@
 		E3E70F0926144C9200271013 /* iOS-Play */ = {
 			isa = PBXGroup;
 			children = (
+				E3B794EF2616CC7500CE04B6 /* iOS-Play.entitlements */,
 				E332273D2615663200DA11BE /* Help */,
 				E3E70F0A26144C9200271013 /* AppDelegate.swift */,
 				E3E70F0C26144C9200271013 /* SceneDelegate.swift */,
@@ -523,6 +525,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "iOS-Play/iOS-Play.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "iOS-Play/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -542,6 +545,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "iOS-Play/iOS-Play.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "iOS-Play/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
