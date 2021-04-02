@@ -9,9 +9,14 @@
 /* Begin PBXBuildFile section */
 		D34DB91D7CA4B380288D7CF2 /* Pods_iOS_Play.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95FB2CAB69FF583436CAA23A /* Pods_iOS_Play.framework */; };
 		E33227502615824800DA11BE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E332274F2615824800DA11BE /* LoginViewController.swift */; };
+		E36E6832261704710040F922 /* FeedTypeEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36E6830261704710040F922 /* FeedTypeEnum.swift */; };
+		E36E6833261704710040F922 /* SegmentCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36E6831261704710040F922 /* SegmentCollectionCell.swift */; };
+		E36E6837261704890040F922 /* TopAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36E6835261704890040F922 /* TopAppViewController.swift */; };
+		E36E6838261704890040F922 /* NewGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36E6836261704890040F922 /* NewGameViewController.swift */; };
 		E379630F2615AE2800CBF147 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E379630D2615AE2800CBF147 /* Strings.swift */; };
 		E37963102615AE2800CBF147 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = E379630E2615AE2800CBF147 /* Assets.swift */; };
 		E37963142615AE5F00CBF147 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E37963122615AE5F00CBF147 /* Localizable.strings */; };
+		E38ABAEE2618136800B118AD /* Reusable in Frameworks */ = {isa = PBXBuildFile; productRef = E38ABAED2618136800B118AD /* Reusable */; };
 		E3E70F0B26144C9200271013 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E70F0A26144C9200271013 /* AppDelegate.swift */; };
 		E3E70F0D26144C9200271013 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E70F0C26144C9200271013 /* SceneDelegate.swift */; };
 		E3E70F1226144C9200271013 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3E70F1026144C9200271013 /* Main.storyboard */; };
@@ -33,6 +38,10 @@
 		8B6E124329B5C756D42E4291 /* Pods-iOS-Play.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Play.release.xcconfig"; path = "Target Support Files/Pods-iOS-Play/Pods-iOS-Play.release.xcconfig"; sourceTree = "<group>"; };
 		95FB2CAB69FF583436CAA23A /* Pods_iOS_Play.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_Play.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E332274F2615824800DA11BE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E36E6830261704710040F922 /* FeedTypeEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTypeEnum.swift; sourceTree = "<group>"; };
+		E36E6831261704710040F922 /* SegmentCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentCollectionCell.swift; sourceTree = "<group>"; };
+		E36E6835261704890040F922 /* TopAppViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopAppViewController.swift; sourceTree = "<group>"; };
+		E36E6836261704890040F922 /* NewGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewGameViewController.swift; sourceTree = "<group>"; };
 		E37963062615AC7700CBF147 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		E379630B2615AD3400CBF147 /* swiftgen.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
 		E379630D2615AE2800CBF147 /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
@@ -62,6 +71,7 @@
 			files = (
 				E3E70F55261473FE00271013 /* Then in Frameworks */,
 				D34DB91D7CA4B380288D7CF2 /* Pods_iOS_Play.framework in Frameworks */,
+				E38ABAEE2618136800B118AD /* Reusable in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,6 +192,8 @@
 			children = (
 				E3E70F2226144DAB00271013 /* MainTabBarViewController.swift */,
 				E3E70F4D26146A2B00271013 /* TabBarItems.swift */,
+				E36E6830261704710040F922 /* FeedTypeEnum.swift */,
+				E36E6831261704710040F922 /* SegmentCollectionCell.swift */,
 			);
 			path = "Tabar Controller";
 			sourceTree = "<group>";
@@ -190,6 +202,8 @@
 			isa = PBXGroup;
 			children = (
 				E3E70F2B26144EE800271013 /* AppViewController.swift */,
+				E36E6836261704890040F922 /* NewGameViewController.swift */,
+				E36E6835261704890040F922 /* TopAppViewController.swift */,
 			);
 			path = AppViewController;
 			sourceTree = "<group>";
@@ -254,6 +268,7 @@
 			name = "iOS-Play";
 			packageProductDependencies = (
 				E3E70F54261473FE00271013 /* Then */,
+				E38ABAED2618136800B118AD /* Reusable */,
 			);
 			productName = "iOS-Play";
 			productReference = E3E70F0726144C9200271013 /* iOS-Play.app */;
@@ -284,6 +299,7 @@
 			mainGroup = E3E70EFE26144C9200271013;
 			packageReferences = (
 				E3E70F53261473FE00271013 /* XCRemoteSwiftPackageReference "Then" */,
+				E38ABAEC2618136800B118AD /* XCRemoteSwiftPackageReference "Reusable" */,
 			);
 			productRefGroup = E3E70F0826144C9200271013 /* Products */;
 			projectDirPath = "";
@@ -355,12 +371,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E36E6832261704710040F922 /* FeedTypeEnum.swift in Sources */,
 				E33227502615824800DA11BE /* LoginViewController.swift in Sources */,
 				E3E70F2F26144F4100271013 /* MusicViewController.swift in Sources */,
 				E3E70F3326144F5400271013 /* MovieViewController.swift in Sources */,
 				E3E70F4E26146A2B00271013 /* TabBarItems.swift in Sources */,
 				E3E70F2C26144EE800271013 /* AppViewController.swift in Sources */,
 				E3E70F43261457BE00271013 /* BaseNavigationController.swift in Sources */,
+				E36E6833261704710040F922 /* SegmentCollectionCell.swift in Sources */,
+				E36E6838261704890040F922 /* NewGameViewController.swift in Sources */,
+				E36E6837261704890040F922 /* TopAppViewController.swift in Sources */,
 				E3E70F2326144DAB00271013 /* MainTabBarViewController.swift in Sources */,
 				E379630F2615AE2800CBF147 /* Strings.swift in Sources */,
 				E37963102615AE2800CBF147 /* Assets.swift in Sources */,
@@ -579,6 +599,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		E38ABAEC2618136800B118AD /* XCRemoteSwiftPackageReference "Reusable" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AliSoftware/Reusable";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.1.1;
+			};
+		};
 		E3E70F53261473FE00271013 /* XCRemoteSwiftPackageReference "Then" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/devxoul/Then";
@@ -590,6 +618,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		E38ABAED2618136800B118AD /* Reusable */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E38ABAEC2618136800B118AD /* XCRemoteSwiftPackageReference "Reusable" */;
+			productName = Reusable;
+		};
 		E3E70F54261473FE00271013 /* Then */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = E3E70F53261473FE00271013 /* XCRemoteSwiftPackageReference "Then" */;
