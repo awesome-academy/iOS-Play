@@ -15,6 +15,7 @@ class TVShowViewController: UIViewController {
         
         configViews()
     }
+    
     func configViews() {
         view.backgroundColor = .green
     }

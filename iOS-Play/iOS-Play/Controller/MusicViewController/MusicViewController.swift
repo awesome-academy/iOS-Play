@@ -15,6 +15,7 @@ class MusicViewController: UIViewController {
         
         configViews()
     }
+    
     func configViews() {
         view.backgroundColor = .purple
     }

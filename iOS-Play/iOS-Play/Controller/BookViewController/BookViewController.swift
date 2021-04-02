@@ -15,6 +15,7 @@ class BookViewController: UIViewController {
         
         configViews()
     }
+    
     func configViews() {
         view.backgroundColor = .cyan
     }
