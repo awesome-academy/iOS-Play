@@ -20,15 +20,15 @@ enum TabbarItem {
     var item: UITabBarItem {
         switch self {
         case .apps:
-            return UITabBarItem(title: "Apps", image: UIImage(named: "app"), selectedImage: UIImage(named: "apptapped")?.withRenderingMode(.alwaysOriginal))
+            return UITabBarItem(title: "Apps", image: Asset.app.image, selectedImage: Asset.apptapped.image.withRenderingMode(.alwaysOriginal))
         case .musics:
-            return UITabBarItem(title: "Musics", image: UIImage(named: "music"), selectedImage: UIImage(named: "musictapped")?.withRenderingMode(.alwaysOriginal))
+            return UITabBarItem(title: "Musics", image: Asset.music.image, selectedImage: Asset.musictapped.image.withRenderingMode(.alwaysOriginal))
         case .movies:
-            return UITabBarItem(title: "Movies", image: UIImage(named: "movie"), selectedImage: UIImage(named: "movietapped")?.withRenderingMode(.alwaysOriginal))
+            return UITabBarItem(title: "Movies", image: Asset.movie.image, selectedImage: Asset.movietapped.image.withRenderingMode(.alwaysOriginal))
         case .books:
-            return UITabBarItem(title: "Books", image: UIImage(named: "book"), selectedImage: UIImage(named: "booktapped")?.withRenderingMode(.alwaysOriginal))
+            return UITabBarItem(title: "Books", image: Asset.book.image, selectedImage: Asset.booktapped.image.withRenderingMode(.alwaysOriginal))
         case .tvShows:
-            return UITabBarItem(title: "TV Shows", image: UIImage(named: "tvShow"), selectedImage: UIImage(named: "tvShowtapped")?.withRenderingMode(.alwaysOriginal))
+            return UITabBarItem(title: "TV Shows", image: Asset.tvShow.image, selectedImage: Asset.tvShowtapped.image.withRenderingMode(.alwaysOriginal))
         }
     }
 }

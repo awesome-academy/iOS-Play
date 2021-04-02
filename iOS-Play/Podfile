@@ -1,0 +1,10 @@
+
+use_frameworks!
+
+target 'iOS-Play' do
+    
+    pod 'SwiftGen', '~> 6.4'
+    pod 'SnapKit', '~> 5.0.0'
+
+
+end

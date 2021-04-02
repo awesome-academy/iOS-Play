@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D34DB91D7CA4B380288D7CF2 /* Pods_iOS_Play.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95FB2CAB69FF583436CAA23A /* Pods_iOS_Play.framework */; };
+		E33227502615824800DA11BE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E332274F2615824800DA11BE /* LoginViewController.swift */; };
+		E379630F2615AE2800CBF147 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E379630D2615AE2800CBF147 /* Strings.swift */; };
+		E37963102615AE2800CBF147 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = E379630E2615AE2800CBF147 /* Assets.swift */; };
+		E37963142615AE5F00CBF147 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E37963122615AE5F00CBF147 /* Localizable.strings */; };
 		E3E70F0B26144C9200271013 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E70F0A26144C9200271013 /* AppDelegate.swift */; };
 		E3E70F0D26144C9200271013 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E70F0C26144C9200271013 /* SceneDelegate.swift */; };
 		E3E70F1226144C9200271013 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3E70F1026144C9200271013 /* Main.storyboard */; };
@@ -18,12 +23,21 @@
 		E3E70F3326144F5400271013 /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E70F3226144F5400271013 /* MovieViewController.swift */; };
 		E3E70F3726144F6000271013 /* BookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E70F3626144F6000271013 /* BookViewController.swift */; };
 		E3E70F3A26144F6900271013 /* TVShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E70F3926144F6900271013 /* TVShowViewController.swift */; };
-		E3E70F43261457BE00271013 /* BaseNaviController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E70F42261457BE00271013 /* BaseNaviController.swift */; };
+		E3E70F43261457BE00271013 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E70F42261457BE00271013 /* BaseNavigationController.swift */; };
 		E3E70F4E26146A2B00271013 /* TabBarItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E70F4D26146A2B00271013 /* TabBarItems.swift */; };
 		E3E70F55261473FE00271013 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = E3E70F54261473FE00271013 /* Then */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		60EEE4E73FE46C278F760426 /* Pods-iOS-Play.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Play.debug.xcconfig"; path = "Target Support Files/Pods-iOS-Play/Pods-iOS-Play.debug.xcconfig"; sourceTree = "<group>"; };
+		8B6E124329B5C756D42E4291 /* Pods-iOS-Play.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Play.release.xcconfig"; path = "Target Support Files/Pods-iOS-Play/Pods-iOS-Play.release.xcconfig"; sourceTree = "<group>"; };
+		95FB2CAB69FF583436CAA23A /* Pods_iOS_Play.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_Play.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E332274F2615824800DA11BE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E37963062615AC7700CBF147 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		E379630B2615AD3400CBF147 /* swiftgen.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
+		E379630D2615AE2800CBF147 /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		E379630E2615AE2800CBF147 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		E37963132615AE5F00CBF147 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		E3E70F0726144C9200271013 /* iOS-Play.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Play.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3E70F0A26144C9200271013 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E3E70F0C26144C9200271013 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,7 +51,7 @@
 		E3E70F3226144F5400271013 /* MovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
 		E3E70F3626144F6000271013 /* BookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViewController.swift; sourceTree = "<group>"; };
 		E3E70F3926144F6900271013 /* TVShowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVShowViewController.swift; sourceTree = "<group>"; };
-		E3E70F42261457BE00271013 /* BaseNaviController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNaviController.swift; sourceTree = "<group>"; };
+		E3E70F42261457BE00271013 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		E3E70F4D26146A2B00271013 /* TabBarItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItems.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -47,17 +61,63 @@
 			buildActionMask = 2147483647;
 			files = (
 				E3E70F55261473FE00271013 /* Then in Frameworks */,
+				D34DB91D7CA4B380288D7CF2 /* Pods_iOS_Play.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		445C5381B7AA2A799ACA52F0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				60EEE4E73FE46C278F760426 /* Pods-iOS-Play.debug.xcconfig */,
+				8B6E124329B5C756D42E4291 /* Pods-iOS-Play.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		989677EDC5324EA305A608BA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				95FB2CAB69FF583436CAA23A /* Pods_iOS_Play.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E332273D2615663200DA11BE /* Help */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Help;
+			sourceTree = "<group>";
+		};
+		E33227422615805A00DA11BE /* LoginViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E332274F2615824800DA11BE /* LoginViewController.swift */,
+			);
+			path = LoginViewController;
+			sourceTree = "<group>";
+		};
+		E379630C2615ADDC00CBF147 /* SwiftGen */ = {
+			isa = PBXGroup;
+			children = (
+				E379630E2615AE2800CBF147 /* Assets.swift */,
+				E379630D2615AE2800CBF147 /* Strings.swift */,
+			);
+			path = SwiftGen;
+			sourceTree = "<group>";
+		};
 		E3E70EFE26144C9200271013 = {
 			isa = PBXGroup;
 			children = (
+				E37963062615AC7700CBF147 /* Podfile */,
+				E379630B2615AD3400CBF147 /* swiftgen.yml */,
 				E3E70F0926144C9200271013 /* iOS-Play */,
 				E3E70F0826144C9200271013 /* Products */,
+				445C5381B7AA2A799ACA52F0 /* Pods */,
+				989677EDC5324EA305A608BA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,11 +132,13 @@
 		E3E70F0926144C9200271013 /* iOS-Play */ = {
 			isa = PBXGroup;
 			children = (
+				E332273D2615663200DA11BE /* Help */,
 				E3E70F0A26144C9200271013 /* AppDelegate.swift */,
 				E3E70F0C26144C9200271013 /* SceneDelegate.swift */,
 				E3E70F2026144D4500271013 /* View */,
 				E3E70F1F26144D3800271013 /* Model */,
 				E3E70F2126144D5300271013 /* Controller */,
+				E379630C2615ADDC00CBF147 /* SwiftGen */,
 				E3E70F1326144C9400271013 /* Assets.xcassets */,
 				E3E70F1826144C9400271013 /* Info.plist */,
 			);
@@ -95,6 +157,7 @@
 			children = (
 				E3E70F1026144C9200271013 /* Main.storyboard */,
 				E3E70F1526144C9400271013 /* LaunchScreen.storyboard */,
+				E37963122615AE5F00CBF147 /* Localizable.strings */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -102,6 +165,7 @@
 		E3E70F2126144D5300271013 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				E33227422615805A00DA11BE /* LoginViewController */,
 				E3E70F41261457A900271013 /* BaseNavigationController */,
 				E3E70F2526144E4200271013 /* Tabar Controller */,
 				E3E70F2626144E5000271013 /* AppViewController */,
@@ -165,7 +229,7 @@
 		E3E70F41261457A900271013 /* BaseNavigationController */ = {
 			isa = PBXGroup;
 			children = (
-				E3E70F42261457BE00271013 /* BaseNaviController.swift */,
+				E3E70F42261457BE00271013 /* BaseNavigationController.swift */,
 			);
 			path = BaseNavigationController;
 			sourceTree = "<group>";
@@ -177,9 +241,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E3E70F1B26144C9400271013 /* Build configuration list for PBXNativeTarget "iOS-Play" */;
 			buildPhases = (
+				F59195AD65680113906DE23A /* [CP] Check Pods Manifest.lock */,
 				E3E70F0326144C9200271013 /* Sources */,
 				E3E70F0426144C9200271013 /* Frameworks */,
 				E3E70F0526144C9200271013 /* Resources */,
+				42D86DCF97D6144E73575196 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -234,6 +300,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E3E70F1726144C9400271013 /* LaunchScreen.storyboard in Resources */,
+				E37963142615AE5F00CBF147 /* Localizable.strings in Resources */,
 				E3E70F1426144C9400271013 /* Assets.xcassets in Resources */,
 				E3E70F1226144C9200271013 /* Main.storyboard in Resources */,
 			);
@@ -241,17 +308,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		42D86DCF97D6144E73575196 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOS-Play/Pods-iOS-Play-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOS-Play/Pods-iOS-Play-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOS-Play/Pods-iOS-Play-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F59195AD65680113906DE23A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOS-Play-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E3E70F0326144C9200271013 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E33227502615824800DA11BE /* LoginViewController.swift in Sources */,
 				E3E70F2F26144F4100271013 /* MusicViewController.swift in Sources */,
 				E3E70F3326144F5400271013 /* MovieViewController.swift in Sources */,
 				E3E70F4E26146A2B00271013 /* TabBarItems.swift in Sources */,
 				E3E70F2C26144EE800271013 /* AppViewController.swift in Sources */,
-				E3E70F43261457BE00271013 /* BaseNaviController.swift in Sources */,
+				E3E70F43261457BE00271013 /* BaseNavigationController.swift in Sources */,
 				E3E70F2326144DAB00271013 /* MainTabBarViewController.swift in Sources */,
+				E379630F2615AE2800CBF147 /* Strings.swift in Sources */,
+				E37963102615AE2800CBF147 /* Assets.swift in Sources */,
 				E3E70F3726144F6000271013 /* BookViewController.swift in Sources */,
 				E3E70F0B26144C9200271013 /* AppDelegate.swift in Sources */,
 				E3E70F0D26144C9200271013 /* SceneDelegate.swift in Sources */,
@@ -262,6 +374,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		E37963122615AE5F00CBF147 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E37963132615AE5F00CBF147 /* Base */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		E3E70F1026144C9200271013 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -399,6 +519,7 @@
 		};
 		E3E70F1C26144C9400271013 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60EEE4E73FE46C278F760426 /* Pods-iOS-Play.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -417,6 +538,7 @@
 		};
 		E3E70F1D26144C9400271013 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B6E124329B5C756D42E4291 /* Pods-iOS-Play.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

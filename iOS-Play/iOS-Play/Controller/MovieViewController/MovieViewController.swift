@@ -15,6 +15,7 @@ class MovieViewController: UIViewController {
         
         configViews()
     }
+    
     func configViews() {
         view.backgroundColor = .yellow
     }
