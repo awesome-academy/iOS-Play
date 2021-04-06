@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		D34DB91D7CA4B380288D7CF2 /* Pods_iOS_Play.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95FB2CAB69FF583436CAA23A /* Pods_iOS_Play.framework */; };
 		E33227502615824800DA11BE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E332274F2615824800DA11BE /* LoginViewController.swift */; };
+		E353057F261B13B40077AB04 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = E353057E261B13B40077AB04 /* Fonts.swift */; };
 		E36E6832261704710040F922 /* FeedTypeEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36E6830261704710040F922 /* FeedTypeEnum.swift */; };
 		E36E6833261704710040F922 /* SegmentCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36E6831261704710040F922 /* SegmentCollectionCell.swift */; };
 		E36E6837261704890040F922 /* TopAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36E6835261704890040F922 /* TopAppViewController.swift */; };
@@ -38,6 +39,11 @@
 		8B6E124329B5C756D42E4291 /* Pods-iOS-Play.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Play.release.xcconfig"; path = "Target Support Files/Pods-iOS-Play/Pods-iOS-Play.release.xcconfig"; sourceTree = "<group>"; };
 		95FB2CAB69FF583436CAA23A /* Pods_iOS_Play.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_Play.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E332274F2615824800DA11BE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E353057E261B13B40077AB04 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		E3530582261B13EE0077AB04 /* Arvo-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Arvo-BoldItalic.ttf"; sourceTree = "<group>"; };
+		E3530583261B13EE0077AB04 /* Arvo-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Arvo-Regular.ttf"; sourceTree = "<group>"; };
+		E3530584261B13EE0077AB04 /* Arvo-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Arvo-Bold.ttf"; sourceTree = "<group>"; };
+		E3530585261B13EE0077AB04 /* Arvo-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Arvo-Italic.ttf"; sourceTree = "<group>"; };
 		E36E6830261704710040F922 /* FeedTypeEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTypeEnum.swift; sourceTree = "<group>"; };
 		E36E6831261704710040F922 /* SegmentCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentCollectionCell.swift; sourceTree = "<group>"; };
 		E36E6835261704890040F922 /* TopAppViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopAppViewController.swift; sourceTree = "<group>"; };
@@ -110,11 +116,24 @@
 			path = LoginViewController;
 			sourceTree = "<group>";
 		};
+		E353057D261B13940077AB04 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				E3530584261B13EE0077AB04 /* Arvo-Bold.ttf */,
+				E3530582261B13EE0077AB04 /* Arvo-BoldItalic.ttf */,
+				E3530585261B13EE0077AB04 /* Arvo-Italic.ttf */,
+				E3530583261B13EE0077AB04 /* Arvo-Regular.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
 		E379630C2615ADDC00CBF147 /* SwiftGen */ = {
 			isa = PBXGroup;
 			children = (
+				E353057D261B13940077AB04 /* Font */,
 				E379630E2615AE2800CBF147 /* Assets.swift */,
 				E379630D2615AE2800CBF147 /* Strings.swift */,
+				E353057E261B13B40077AB04 /* Fonts.swift */,
 			);
 			path = SwiftGen;
 			sourceTree = "<group>";
@@ -387,6 +406,7 @@
 				E3E70F3726144F6000271013 /* BookViewController.swift in Sources */,
 				E3E70F0B26144C9200271013 /* AppDelegate.swift in Sources */,
 				E3E70F0D26144C9200271013 /* SceneDelegate.swift in Sources */,
+				E353057F261B13B40077AB04 /* Fonts.swift in Sources */,
 				E3E70F3A26144F6900271013 /* TVShowViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

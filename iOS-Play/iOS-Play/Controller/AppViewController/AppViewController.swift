@@ -15,14 +15,14 @@ class AppViewController: UIViewController {
     
     private let segmentItems = FeedType.apps.item
     
-    private var itemPicked : [Bool] = {
+    private var itemPicked: [Bool] = {
         var item = [Bool](repeating: false, count: FeedType.apps.item.count)
         item[0] = true
         return item
     }()
     
     
-    private let segmentCollection : UICollectionView = {
+    private let segmentCollection: UICollectionView = {
         let layout = UICollectionViewFlowLayout().then {
             $0.scrollDirection = .horizontal
             $0.itemSize = CGSize(width: 100, height: 40)
