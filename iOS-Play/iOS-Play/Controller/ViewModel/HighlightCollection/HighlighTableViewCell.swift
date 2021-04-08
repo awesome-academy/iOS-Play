@@ -18,7 +18,7 @@ final class HighlighTableViewCell: UITableViewCell {
         let layout = UICollectionViewFlowLayout().then {
             $0.scrollDirection = .horizontal
             $0.itemSize = CGSize(width: 310,
-                                 height: 310)
+                                 height: 280)
             $0.sectionInset = UIEdgeInsets(top: 0,
                                            left: 10,
                                            bottom: 0,

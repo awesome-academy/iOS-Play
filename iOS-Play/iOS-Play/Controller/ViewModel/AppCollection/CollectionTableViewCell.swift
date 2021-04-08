@@ -16,12 +16,14 @@ final class CollectionTableViewCell: UITableViewCell {
     
     public weak var delegate: CollectionTableViewCellDelegate?
     
-    private var models = [CollectionTableCellModel]()
+    private var models = [FeedResults]()
+    
+    private var apiManager = APIManager.shared
     
     private let collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout().then {
             $0.scrollDirection = .horizontal
-            $0.itemSize = CGSize(width: 120, height: 200)
+            $0.itemSize = CGSize(width: 120, height: 230)
             $0.sectionInset = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
             $0.minimumLineSpacing = 0
             $0.minimumInteritemSpacing = 1
@@ -60,7 +62,7 @@ final class CollectionTableViewCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    public func configureData(with models: [CollectionTableCellModel]) {
+    public func configureData(with models: [FeedResults]) {
         self.models = models
         collectionView.reloadData()
     }
@@ -81,12 +83,21 @@ extension CollectionTableViewCell: UICollectionViewDataSource, UICollectionViewD
         let model = models[indexPath.row]
         
         let cell = collectionView.dequeueReusableCell(for: indexPath) as CollectionViewCell
-        cell.configure(with: model)
+        
+        apiManager.getImage(results: model) { (data, error) -> (Void) in
+            var image = Asset.braw.image
+            if let data = data {
+                image = UIImage(data: data) ?? Asset.backWhite.image
+            }
+
+            DispatchQueue.main.async {
+                cell.configure(with: model, image: image)
+            }
+        }
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let model = models[indexPath.row]
         collectionView.deselectItem(at: indexPath, animated: true)
         delegate?.didSelectCell()
     }

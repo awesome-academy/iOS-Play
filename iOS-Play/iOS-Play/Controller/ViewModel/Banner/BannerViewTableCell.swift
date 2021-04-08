@@ -23,21 +23,21 @@ final class BannerViewTableCell: UITableViewCell {
         $0.contentMode = .scaleAspectFill
     }
     
-    private let nameAppLable = UILabel().then {
+    private let nameLabel = UILabel().then {
         $0.numberOfLines = 0
         $0.contentMode = .topLeft
         $0.font = FontFamily.Arvo.bold.font(size: 20)
         $0.textColor = .darkGray
     }
     
-    private let nameAuthorLable = UILabel().then {
+    private let nameAuthorLabel = UILabel().then {
         $0.numberOfLines = 0
         $0.contentMode = .topLeft
         $0.font = FontFamily.Arvo.regular.font(size: 16)
         $0.textColor = .darkGray
     }
     
-    private let releaseLable = UILabel().then {
+    private let releaseLabel = UILabel().then {
         $0.numberOfLines = 0
         $0.contentMode = .topLeft
         $0.font = FontFamily.Arvo.regular.font(size: 16)
@@ -52,9 +52,9 @@ final class BannerViewTableCell: UITableViewCell {
     func configViews() {
         contentView.addSubview(bannerView)
         contentView.addSubview(bannerImage)
-        contentView.addSubview(nameAppLable)
-        contentView.addSubview(nameAuthorLable)
-        contentView.addSubview(releaseLable)
+        contentView.addSubview(nameLabel)
+        contentView.addSubview(nameAuthorLabel)
+        contentView.addSubview(releaseLabel)
     }
     
     override func layoutSubviews() {
@@ -70,18 +70,18 @@ final class BannerViewTableCell: UITableViewCell {
             make.height.equalTo(bannerView.snp.height).dividedBy(1.5)
         }
         
-        nameAppLable.snp.makeConstraints { (make) in
+        nameLabel.snp.makeConstraints { (make) in
             make.top.equalTo(bannerImage.snp.bottom).offset(5)
             make.left.right.equalTo(bannerView).offset(20)
         }
         
-        nameAuthorLable.snp.makeConstraints { (make) in
-            make.top.equalTo(nameAppLable.snp.bottom).offset(10)
+        nameAuthorLabel.snp.makeConstraints { (make) in
+            make.top.equalTo(nameLabel.snp.bottom).offset(10)
             make.left.right.equalTo(bannerView).offset(20)
         }
         
-        releaseLable.snp.makeConstraints { (make) in
-            make.top.equalTo(nameAuthorLable.snp.bottom)
+        releaseLabel.snp.makeConstraints { (make) in
+            make.top.equalTo(nameAuthorLabel.snp.bottom)
             make.left.right.equalTo(bannerView).offset(20)
         }
     }
@@ -92,9 +92,9 @@ final class BannerViewTableCell: UITableViewCell {
     
     func configure(with model: BannerTableCellModel) {
         bannerImage.image = model.bannerImage
-        nameAppLable.text = model.appName
-        nameAuthorLable.text = model.authorName
-        releaseLable.text = model.release
+        nameLabel.text = model.appName
+        nameAuthorLabel.text = model.authorName
+        releaseLabel.text = model.release
     }
     
 }
