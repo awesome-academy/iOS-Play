@@ -25,6 +25,7 @@ internal enum Asset {
   internal static let app = ImageAsset(name: "app")
   internal static let apptapped = ImageAsset(name: "apptapped")
   internal static let back = ImageAsset(name: "back")
+  internal static let backWhite = ImageAsset(name: "backWhite")
   internal static let book = ImageAsset(name: "book")
   internal static let booktapped = ImageAsset(name: "booktapped")
   internal static let googlePlay = ImageAsset(name: "googlePlay")

@@ -10,10 +10,14 @@ import UIKit
 
 enum CellModel {
     case genreTitle (model: GenreModel)
-    case collectionView(model: [CollectionTableCellModel])
+    case collectionView(model: [FeedResults])
     case highlightView(model: [HighlightTableCellModel])
     case bannerView(model: BannerTableCellModel)
     case listView(model: [ListTableCellModel])
+}
+
+struct ImageResults {
+    let image : UIImage
 }
 
 struct GenreModel {

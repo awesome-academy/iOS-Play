@@ -21,13 +21,17 @@ final class NewGameViewController: UIViewController {
         $0.separatorColor = .clear
     }
     
-    private let dataTest = DataMock.shared
+    private let dataMock = DataMock.shared
     
     private var models = [CellModel]()
     
+    private let apiManager = APIManager.shared
+    
+    private var results : [FeedResults] = []
+    
     private let heightOfGenre: CGFloat = 30
-    private let heightOfCollection: CGFloat = 200
-    private let heightOfHighlight: CGFloat = 350
+    private let heightOfCollection: CGFloat = 230
+    private let heightOfHighlight: CGFloat = 280
     private let heightOfBanner: CGFloat = 310
     private let heightOfList: CGFloat = 50
     
@@ -35,8 +39,7 @@ final class NewGameViewController: UIViewController {
         super.viewDidLoad()
         
         configViews()
-        //configCellModell()
-        models = dataTest.getDataTest()
+        restApi()
     }
     
     func configViews() {
@@ -56,8 +59,48 @@ final class NewGameViewController: UIViewController {
         }
     }
     
-    func configCellModell() {
-        models = dataTest.getDataTest()
+    func restApi() {
+        apiManager.getNewGame(urlString: AppUrl.newGame.url) {[weak self] (results, error) -> (Void) in
+            guard let results = results else {
+                return
+            }
+            
+            self?.results = results
+            self?.models = []
+            
+            DispatchQueue.main.async {
+                
+                var firstData = [FeedResults]()
+                var secondData = [FeedResults]()
+                
+                for i in 0...results.count - 1 {
+                    if i < results.count / 2 {
+                        firstData.append(results[i])
+                    } else {
+                        secondData.append(results[i])
+                    }
+                }
+            
+                self?.models.append(.genreTitle(model: GenreModel(smallLabel: "", GenreLabel: "New Game")))
+                
+                self?.models.append(.collectionView(model: firstData))
+                self?.models.append(.collectionView(model: secondData))
+                
+                self?.models.append(.genreTitle(model: GenreModel(smallLabel: "Adventisment", GenreLabel: "Recommended to you")))
+                let bannerView  = self?.dataMock.getBanner()
+                self?.models += bannerView ?? []
+                
+                self?.models.append(.genreTitle(model: GenreModel(smallLabel: "Let's try", GenreLabel: "IMDb Top")))
+                let highlightView = self?.dataMock.getHighlight()
+                self?.models += highlightView ?? []
+                
+                self?.models.append(.genreTitle(model: GenreModel(smallLabel: "", GenreLabel: "Thể Loại")))
+                let listView = self?.dataMock.getList()
+                self?.models += listView ?? []
+                
+                self?.tableView.reloadData()
+            }
+        }
     }
 }
 

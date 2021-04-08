@@ -22,21 +22,21 @@ final class HighlightCollectionViewCell: UICollectionViewCell {
         $0.contentMode = .scaleAspectFill
     }
     
-    private let appNameLable = UILabel().then {
+    private let appNameLabel = UILabel().then {
         $0.numberOfLines = 0
         $0.contentMode = .topLeft
         $0.font = FontFamily.Arvo.bold.font(size: 14)
         $0.textColor = .darkGray
     }
     
-    private let nameAuthorLable = UILabel().then {
+    private let nameAuthorLabel = UILabel().then {
         $0.numberOfLines = 0
         $0.contentMode = .topLeft
         $0.font = FontFamily.Arvo.regular.font(size: 14)
         $0.textColor = .darkGray
     }
     
-    private let releaseLable = UILabel().then {
+    private let releaseLabel = UILabel().then {
         $0.numberOfLines = 0
         $0.contentMode = .topLeft
         $0.font = FontFamily.Arvo.regular.font(size: 14)
@@ -51,9 +51,9 @@ final class HighlightCollectionViewCell: UICollectionViewCell {
     func configViews() {
         contentView.addSubview(highlightImage)
         contentView.addSubview(appImage)
-        contentView.addSubview(appNameLable)
-        contentView.addSubview(nameAuthorLable)
-        contentView.addSubview(releaseLable)
+        contentView.addSubview(appNameLabel)
+        contentView.addSubview(nameAuthorLabel)
+        contentView.addSubview(releaseLabel)
     }
     
     required init?(coder: NSCoder) {
@@ -75,20 +75,20 @@ final class HighlightCollectionViewCell: UICollectionViewCell {
             make.left.equalToSuperview().inset(10)
         }
         
-        appNameLable.snp.makeConstraints { (make) in
+        appNameLabel.snp.makeConstraints { (make) in
             make.top.equalTo(highlightImage.snp.bottom).offset(10)
             make.left.equalTo(appImage.snp.right).offset(20)
             make.right.equalToSuperview()
         }
         
-        nameAuthorLable.snp.makeConstraints { (make) in
-            make.top.equalTo(appNameLable.snp.bottom).offset(10)
+        nameAuthorLabel.snp.makeConstraints { (make) in
+            make.top.equalTo(appNameLabel.snp.bottom).offset(10)
             make.left.equalTo(appImage.snp.right).offset(20)
             make.right.equalToSuperview()
         }
         
-        releaseLable.snp.makeConstraints { (make) in
-            make.top.equalTo(nameAuthorLable.snp.bottom)
+        releaseLabel.snp.makeConstraints { (make) in
+            make.top.equalTo(nameAuthorLabel.snp.bottom)
             make.left.equalTo(appImage.snp.right).offset(20)
             make.right.equalToSuperview()
         }
@@ -97,8 +97,8 @@ final class HighlightCollectionViewCell: UICollectionViewCell {
     func configure (with model: HighlightTableCellModel) {
         highlightImage.image = model.highlightImage
         appImage.image = model.image
-        appNameLable.text = model.appName
-        nameAuthorLable.text = model.authorName
-        releaseLable.text = model.release
+        appNameLabel.text = model.appName
+        nameAuthorLabel.text = model.authorName
+        releaseLabel.text = model.release
     }
 }

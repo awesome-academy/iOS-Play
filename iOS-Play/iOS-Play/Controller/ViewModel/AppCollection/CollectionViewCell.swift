@@ -16,21 +16,21 @@ final class CollectionViewCell: UICollectionViewCell {
         $0.contentMode = .scaleAspectFill
     }
     
-    private let nameAppLable = UILabel().then {
+    private let nameLabel = UILabel().then {
         $0.numberOfLines = 0
         $0.contentMode = .topLeft
         $0.font = FontFamily.Arvo.bold.font(size: 14)
         $0.textColor = .darkGray
     }
     
-    private let nameAuthorLable = UILabel().then {
+    private let artistNameLabel = UILabel().then {
         $0.numberOfLines = 0
         $0.contentMode = .topLeft
         $0.font = FontFamily.Arvo.regular.font(size: 14)
         $0.textColor = .darkGray
     }
     
-    private let releaseLable = UILabel().then {
+    private let releaseDateLabel = UILabel().then {
         $0.numberOfLines = 0
         $0.contentMode = .topLeft
         $0.font = FontFamily.Arvo.regular.font(size: 14)
@@ -43,9 +43,9 @@ final class CollectionViewCell: UICollectionViewCell {
         
         contentView.do {
             $0.addSubview(appImage)
-            $0.addSubview(nameAppLable)
-            $0.addSubview(nameAuthorLable)
-            $0.addSubview(releaseLable)
+            $0.addSubview(nameLabel)
+            $0.addSubview(artistNameLabel)
+            $0.addSubview(releaseDateLabel)
         }
         
         appImage.snp.makeConstraints { (make) in
@@ -53,18 +53,18 @@ final class CollectionViewCell: UICollectionViewCell {
             make.width.height.equalTo(100)
         }
         
-        nameAppLable.snp.makeConstraints { (make) in
+        nameLabel.snp.makeConstraints { (make) in
             make.top.equalTo(appImage.snp.bottom).offset(5)
             make.left.right.equalToSuperview().inset(10)
         }
         
-        nameAuthorLable.snp.makeConstraints { (make) in
-            make.top.equalTo(nameAppLable.snp.bottom).offset(5)
+        artistNameLabel.snp.makeConstraints { (make) in
+            make.top.equalTo(nameLabel.snp.bottom).offset(5)
             make.left.right.equalToSuperview().inset(10)
         }
         
-        releaseLable.snp.makeConstraints { (make) in
-            make.top.equalTo(nameAuthorLable.snp.bottom)
+        releaseDateLabel.snp.makeConstraints { (make) in
+            make.top.equalTo(artistNameLabel.snp.bottom)
             make.left.right.equalToSuperview().inset(10)
         }
         
@@ -74,10 +74,10 @@ final class CollectionViewCell: UICollectionViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func configure(with model: CollectionTableCellModel) {
-        appImage.image = model.image
-        nameAppLable.text = model.appName
-        nameAuthorLable.text = model.authorName
-        releaseLable.text = model.release
+    func configure(with model: FeedResults, image : UIImage) {
+        appImage.image = image
+        nameLabel.text = model.name
+        artistNameLabel.text = model.artistName
+        releaseDateLabel.text = model.releaseDate
     }
 }
