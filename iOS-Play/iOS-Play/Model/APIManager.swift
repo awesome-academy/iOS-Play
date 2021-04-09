@@ -19,7 +19,7 @@ fileprivate struct APIResponse: Codable {
     let feed: Feeds
 }
 
-class APIManager {
+final class APIManager {
     
     static var shared = APIManager()
     
@@ -31,6 +31,11 @@ class APIManager {
     
     func getImage(results: FeedResults, completion: @escaping (Data?, Error?) -> (Void)) {
         guard let url = URL(string: results.artworkUrl100) else { return }
+        download(imageURL: url, completion: completion)
+    }
+    
+    func getArtwork(urlString: String, completion: @escaping (Data?, Error?) -> (Void)) {
+        guard let url = URL(string: urlString) else { return }
         download(imageURL: url, completion: completion)
     }
     

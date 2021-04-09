@@ -12,25 +12,25 @@ fileprivate struct APIResponse: Codable {
     let feed: Feeds
 }
 
-struct Feeds : Codable {
-    let title : String
-    let updated : String
-    let results : [FeedResults]
+struct Feeds: Codable {
+    let title: String
+    let updated: String
+    let results: [FeedResults]
 }
 
-struct FeedResults : Codable {
-    let artistName : String
-    let id : String
-    let releaseDate : String
-    let name : String
-    let copyright : String
-    let artistUrl : String
+struct FeedResults: Codable {
+    let artistName: String
+    let id: String
+    let releaseDate: String
+    let name: String
+    let copyright: String
+    let artistUrl: String
     let artworkUrl100: String
-    let genres : [Genre]
+    let genres: [Genre]
 }
 
-struct Genre : Codable {
-    let genreId : String
-    let name : String
-    let url : String
+struct Genre: Codable {
+    let genreId: String
+    let name: String
+    let url: String
 }

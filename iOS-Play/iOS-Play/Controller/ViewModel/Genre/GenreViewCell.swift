@@ -7,9 +7,9 @@
 
 import Foundation
 import UIKit
+import Reusable
 
-
-final class GenreViewCell: UITableViewCell {
+final class GenreViewCell: UITableViewCell, Reusable {
     
     private let genreLabel = UILabel().then {
         $0.font = FontFamily.Arvo.regular.font(size: 18)

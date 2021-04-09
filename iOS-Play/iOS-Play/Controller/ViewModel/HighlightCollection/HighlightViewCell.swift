@@ -7,8 +7,9 @@
 
 import Foundation
 import UIKit
+import Reusable
 
-final class HighlightCollectionViewCell: UICollectionViewCell {
+final class HighlightCollectionViewCell: UICollectionViewCell, Reusable {
 
     let highlightImage = UIImageView().then {
         $0.clipsToBounds = true
@@ -97,8 +98,8 @@ final class HighlightCollectionViewCell: UICollectionViewCell {
     func configure (with model: HighlightTableCellModel) {
         highlightImage.image = model.highlightImage
         appImage.image = model.image
-        appNameLabel.text = model.appName
-        nameAuthorLabel.text = model.authorName
-        releaseLabel.text = model.release
+        appNameLabel.text = model.name
+        nameAuthorLabel.text = model.artistName
+        releaseLabel.text = model.releaseDate
     }
 }

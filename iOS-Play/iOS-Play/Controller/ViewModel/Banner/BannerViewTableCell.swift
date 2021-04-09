@@ -7,8 +7,9 @@
 
 import Foundation
 import UIKit
+import Reusable
 
-final class BannerViewTableCell: UITableViewCell {
+final class BannerViewTableCell: UITableViewCell, Reusable {
     
     private let bannerView = UIView().then {
         $0.backgroundColor = .clear
@@ -90,11 +91,11 @@ final class BannerViewTableCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func configure(with model: BannerTableCellModel) {
-        bannerImage.image = model.bannerImage
-        nameLabel.text = model.appName
-        nameAuthorLabel.text = model.authorName
-        releaseLabel.text = model.release
+    func configure(with model: HighlightTableCellModel) {
+        bannerImage.image = model.highlightImage
+        nameLabel.text = model.name
+        nameAuthorLabel.text = model.artistName
+        releaseLabel.text = model.releaseDate
     }
     
 }
