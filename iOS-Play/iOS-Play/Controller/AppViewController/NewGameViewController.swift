@@ -11,7 +11,7 @@ import UIKit
 final class NewGameViewController: UIViewController {
     
     private let tableView = UITableView(frame: .zero, style: .plain).then {
-        $0.register(cellType: UITableViewCell.self)
+        //$0.register(cellType: UITableViewCell.self)
         $0.register(cellType: CollectionTableViewCell.self)
         $0.register(cellType: GenreViewCell.self)
         $0.register(cellType: HighlighTableViewCell.self)
@@ -151,17 +151,8 @@ extension NewGameViewController: UITableViewDelegate, UITableViewDataSource {
                 $0.delegate = self
             }
             return cell
-            
-        case .listView(let models):
-            let model = models[indexPath.row]
-            let cell = tableView.dequeueReusableCell(for: indexPath) as UITableViewCell
-            cell.textLabel?.do {
-                $0.text = model.title
-                $0.font = FontFamily.Arvo.regular.font(size: 16)
-                $0.textColor = .gray
-            }
-            cell.accessoryType = .disclosureIndicator
-            return cell
+        default:
+            return UITableViewCell()
         }
     }
     
@@ -178,11 +169,9 @@ extension NewGameViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         switch models[indexPath.section] {
-        case .bannerView:
-            let vc = DetailAppViewController()
-            navigationController?.pushViewController(vc, animated: true)
-        case .listView:
-            let vc = DetailAppViewController()
+        case .bannerView(let model):
+            let vc = AppDetailViewController()
+            vc.highlightModel = model
             navigationController?.pushViewController(vc, animated: true)
         default:
             break
@@ -191,8 +180,14 @@ extension NewGameViewController: UITableViewDelegate, UITableViewDataSource {
 }
 
 extension NewGameViewController: CollectionTableViewCellDelegate {
-    func didSelectCell() {
-        let vc = DetailAppViewController()
+    
+    func didSelectCell(model: FeedResults, image: UIImage) {
+        let vc = AppDetailViewController()
+        vc.do {
+            $0.feedModel = model
+            $0.image = image
+        }
+        
         navigationController?.pushViewController(vc, animated: true)
     }
 }

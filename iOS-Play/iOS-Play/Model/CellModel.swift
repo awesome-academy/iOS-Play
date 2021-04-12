@@ -12,12 +12,12 @@ enum CellModel {
     case genreTitle (model: GenreModel)
     case collectionView(model: [FeedResults])
     case highlightView(model: [HighlightTableCellModel])
-    case bannerView(model: BannerTableCellModel)
+    case bannerView(model: HighlightTableCellModel)
     case listView(model: [ListTableCellModel])
 }
 
 struct ImageResults {
-    let image : UIImage
+    let image: UIImage
 }
 
 struct GenreModel {
@@ -38,20 +38,27 @@ struct CollectionTableCellModel {
 }
 
 struct HighlightTableCellModel {
-    let title: String
+    let artistName : String
+    let id : String
+    let releaseDate : String
+    let name : String
+    let copyright : String
+    let artistUrl : String
+    let artworkUrl100: String
     let image: UIImage
-    let appName: String
-    let authorName: String
-    let release: String
     let highlightImage: UIImage
 }
 
 struct BannerTableCellModel {
-    let title: String
+    let artistName: String
+    let id: String
+    let releaseDate: String
+    let name: String
+    let copyright: String
+    let artistUrl: String
+    let artworkUrl100: String
+    let image : UIImage
     let bannerImage: UIImage
-    let appName: String
-    let authorName: String
-    let release: String
 }
 
 enum HeightofCell {

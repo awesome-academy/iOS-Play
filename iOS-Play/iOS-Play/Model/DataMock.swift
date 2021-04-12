@@ -14,7 +14,8 @@ class DataMock {
     
     func getNewGameGenre() -> [CellModel] {
         var models = [CellModel]()
-        models.append(.genreTitle(model: GenreModel(smallLabel: "", GenreLabel: "New Game")))
+        models.append(.genreTitle(model: GenreModel(smallLabel: "",
+                                                    GenreLabel: "New Game")))
         return models
     }
     
@@ -22,12 +23,15 @@ class DataMock {
     func getBanner() -> [CellModel] {
         var models = [CellModel]()
         
-        models.append(.bannerView(model: BannerTableCellModel(title: "LMAO",
-                                                            bannerImage: Asset.banner5.image,
-                                                            appName: "Brawlhalla",
-                                                            authorName: "SheepofG",
-                                                            release: "01.04.2020")
-        ))
+        models.append(.bannerView(model: HighlightTableCellModel(artistName: "SheepofG",
+                                                              id: "",
+                                                              releaseDate: "04.04.2020",
+                                                              name: "Brawlhalla",
+                                                              copyright: "© SheepofG LLC 2021 / ZZEDZZ7®",
+                                                              artistUrl: "",
+                                                              artworkUrl100: "",
+                                                              image: Asset.braw.image,
+                                                              highlightImage: Asset.banner5.image)))
         
         return models
     }
@@ -36,23 +40,34 @@ class DataMock {
         var models = [CellModel]()
         
         models.append(.highlightView(model: [
-            HighlightTableCellModel(title: "LOL",
+            HighlightTableCellModel(artistName: "Riot",
+                                    id: "",
+                                    releaseDate: "02.01.2020",
+                                    name: "Wild Rift",
+                                    copyright: "© SheepofG LLC 2021 / ZZEDZZ7®",
+                                    artistUrl: "",
+                                    artworkUrl100: "",
                                     image: Asset.loll.image,
-                                    appName: "Wild Rift",
-                                    authorName: "SheepofG",
-                                    release: "05.01.99",
                                     highlightImage: Asset.loLbanner.image),
-            HighlightTableCellModel(title: "LOL",
+            
+            HighlightTableCellModel(artistName: "HonKai Impact",
+                                    id: "",
+                                    releaseDate: "03.03.2020",
+                                    name: "GhenShin Impact",
+                                    copyright: "© SheepofG LLC 2021 / ZZEDZZ7®",
+                                    artistUrl: "",
+                                    artworkUrl100: "",
                                     image: Asset.ghenshin.image,
-                                    appName: "GhenShon Impact",
-                                    authorName: "SheepofG",
-                                    release: "05.01.99",
                                     highlightImage: Asset.banner1.image),
-            HighlightTableCellModel(title: "LOL",
+            
+            HighlightTableCellModel(artistName: "Riot",
+                                    id: "",
+                                    releaseDate: "05.01.2017",
+                                    name: "FiFa Online 4",
+                                    copyright: "© SheepofG LLC 2021 / ZZEDZZ7®",
+                                    artistUrl: "",
+                                    artworkUrl100: "",
                                     image: Asset.fifa.image,
-                                    appName: "Fifa Online 4",
-                                    authorName: "SheepofG",
-                                    release: "05.01.99",
                                     highlightImage: Asset.banner2.image)
         ]))
         
@@ -75,6 +90,66 @@ class DataMock {
             ListTableCellModel(title: "Sòng bạc")
         ]))
         
+        return models
+    }
+    
+    func getOverView() -> [DetailCellModel] {
+        var models = [DetailCellModel]()
+        
+        models.append(.overView(model: OverViewTableCellModel(artistName: "SheepofG",
+                                                              id: "",
+                                                              releaseDate: "05.01.99",
+                                                              name: "Brawlhalla",
+                                                              copyright: "© SheepofG LLC 2021 / ZZEDZZ7®",
+                                                              artistUrl: "",
+                                                              artworkUrl100: "")))
+        
+        return models
+    }
+    
+    func getDescriptionView() -> [DetailCellModel] {
+        var models = [DetailCellModel]()
+        
+        models.append(.descriptionView(model: [
+            DescriptionCollectionCellModel(aboveString: "#1",
+                                           belowString: "IMDb Top"),
+            DescriptionCollectionCellModel(aboveString: "4.7★",
+                                           belowString: "150K reviews"),
+            DescriptionCollectionCellModel(aboveString: "710.15",
+                                           belowString: "MB"),
+            DescriptionCollectionCellModel(aboveString: "12+",
+                                           belowString: "Rated for 12+"),
+            DescriptionCollectionCellModel(aboveString: "1M+",
+                                           belowString: "Download")
+        ]))
+        return models
+    }
+    
+    
+    func getDownloadView() -> [DetailCellModel]{
+        var models = [DetailCellModel]()
+        
+        models.append(.downloadView(model: DownloadTableCellModel(appImage: Asset.banner1.image)))
+        return models
+    }
+    
+    func getCommmentView() -> [DetailCellModel]{
+        var models = [DetailCellModel]()
+        
+        models.append(.commentView(model: [
+            CommentCellModel(userImage: Asset.music0.image,
+                             commentString: "Skyyyyy ơiiiiiiii \nGì ạ Gì ạaaaaa ^n "),
+            CommentCellModel(userImage: Asset.music1.image,
+                             commentString: "Đưa tay đây nào \nMãi bên nhau bạn nhớ"),
+            CommentCellModel(userImage: Asset.music2.image,
+                             commentString: "Bố em hút rất nhiều thuốc \nBố anh hút rất nhiều thuốc"),
+            CommentCellModel(userImage: Asset.music0.image,
+                             commentString: "Skyyyyy ơiiiiiiii \nGì ạ Gì ạaaaaa ^n "),
+            CommentCellModel(userImage: Asset.music1.image,
+                             commentString: "Đưa tay đây nào \nMãi bên nhau bạn nhớ"),
+            CommentCellModel(userImage: Asset.music2.image,
+                             commentString: "Bố em hút rất nhiều thuốc \nBố anh hút rất nhiều thuốc")
+        ]))
         return models
     }
 }

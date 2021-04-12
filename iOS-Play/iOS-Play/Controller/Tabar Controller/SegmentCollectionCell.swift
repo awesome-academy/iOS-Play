@@ -7,8 +7,9 @@
 
 import Foundation
 import UIKit
+import Reusable
 
-final class SegmentCollectionCell: UICollectionViewCell {  
+final class SegmentCollectionCell: UICollectionViewCell, Reusable {  
     
     let bottomView = UIView().then {
         $0.layer.cornerRadius = 3

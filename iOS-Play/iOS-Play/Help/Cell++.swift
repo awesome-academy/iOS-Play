@@ -8,10 +8,3 @@
 import UIKit
 import Reusable
 
-extension UITableViewCell: Reusable {
-
-}
-
-extension UICollectionViewCell : Reusable {
-    
-}

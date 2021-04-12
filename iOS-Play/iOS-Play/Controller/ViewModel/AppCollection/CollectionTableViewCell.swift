@@ -1,18 +1,20 @@
 //
-//  CollectionViewTableCell.swift
+//  TableViewCell.swift
 //  iOS-Play
 //
-//  Created by Quang Nguyen on 4/2/21.
+//  Created by Quang Nguyen on 4/9/21.
 //
 
-import Foundation
 import UIKit
+import Reusable
 
 protocol CollectionTableViewCellDelegate: class {
-    func didSelectCell()
+    func didSelectCell(model: FeedResults, image: UIImage)
 }
 
-final class CollectionTableViewCell: UITableViewCell {
+class CollectionTableViewCell: UITableViewCell, NibReusable {
+
+    @IBOutlet weak var collectionView: UICollectionView!
     
     public weak var delegate: CollectionTableViewCellDelegate?
     
@@ -20,54 +22,41 @@ final class CollectionTableViewCell: UITableViewCell {
     
     private var apiManager = APIManager.shared
     
-    private let collectionView: UICollectionView = {
-        let layout = UICollectionViewFlowLayout().then {
-            $0.scrollDirection = .horizontal
-            $0.itemSize = CGSize(width: 120, height: 230)
-            $0.sectionInset = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
-            $0.minimumLineSpacing = 0
-            $0.minimumInteritemSpacing = 1
-        }
-        
-        let collectionview = UICollectionView(frame: .zero,collectionViewLayout: layout)
-        collectionview.register(cellType: CollectionViewCell.self)
-        collectionview.showsHorizontalScrollIndicator = false
-        collectionview.showsVerticalScrollIndicator = false
-        return collectionview
-    }()
-    
-    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
-        super.init(style: style, reuseIdentifier: reuseIdentifier)
-        
+    override func awakeFromNib() {
+        super.awakeFromNib()
         configViews()
+    }
+
+    override func setSelected(_ selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
+
     }
     
     func configViews() {
-        
         collectionView.do {
             $0.backgroundColor = .white
             $0.delegate = self
             $0.dataSource = self
+            $0.register(cellType: CollectionViewCell.self)
+            $0.showsVerticalScrollIndicator = false
+            $0.showsHorizontalScrollIndicator = false
+            let layout = UICollectionViewFlowLayout().then {
+                $0.scrollDirection = .horizontal
+                $0.itemSize = CGSize(width: 120, height: 230)
+                $0.sectionInset = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
+                $0.minimumLineSpacing = 0
+                $0.minimumInteritemSpacing = 1
+            }
+            $0.collectionViewLayout = layout
         }
-    
-        contentView.addSubview(collectionView)
-    }
-    
-    override func layoutSubviews() {
-        super.layoutSubviews()
-        collectionView.frame = contentView.bounds
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
     }
     
     public func configureData(with models: [FeedResults]) {
         self.models = models
         collectionView.reloadData()
     }
-    
 }
+
 
 extension CollectionTableViewCell: UICollectionViewDataSource, UICollectionViewDelegate {
     
@@ -99,7 +88,7 @@ extension CollectionTableViewCell: UICollectionViewDataSource, UICollectionViewD
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         collectionView.deselectItem(at: indexPath, animated: true)
-        delegate?.didSelectCell()
+        let model = models[indexPath.row]
+        delegate?.didSelectCell(model: model, image: UIImage())
     }
 }
-

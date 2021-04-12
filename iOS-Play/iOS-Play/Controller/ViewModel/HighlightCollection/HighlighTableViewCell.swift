@@ -7,8 +7,9 @@
 
 import Foundation
 import UIKit
+import Reusable
 
-final class HighlighTableViewCell: UITableViewCell {
+final class HighlighTableViewCell: UITableViewCell, Reusable {
     
     public weak var delegate: CollectionTableViewCellDelegate?
     
@@ -89,6 +90,13 @@ extension HighlighTableViewCell : UICollectionViewDataSource, UICollectionViewDe
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let model = models[indexPath.row]
         collectionView.deselectItem(at: indexPath, animated: true)
-        delegate?.didSelectCell()
+        delegate?.didSelectCell(model: FeedResults(artistName: model.artistName,
+                                                   id: "",
+                                                   releaseDate: model.releaseDate,
+                                                   name: model.name,
+                                                   copyright: model.copyright,
+                                                   artistUrl: "",
+                                                   artworkUrl100: "",
+                                                   genres: []), image: model.image)
     }
 }
