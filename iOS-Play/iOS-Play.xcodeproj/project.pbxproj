@@ -11,9 +11,12 @@
 		E33227502615824800DA11BE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E332274F2615824800DA11BE /* LoginViewController.swift */; };
 		E3530575261AFDD10077AB04 /* DataMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3530574261AFDD10077AB04 /* DataMock.swift */; };
 		E3530579261B0A450077AB04 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3530578261B0A450077AB04 /* Fonts.swift */; };
+		E36791122623F1AD0062EAC7 /* TopAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36791102623F1AD0062EAC7 /* TopAppViewController.swift */; };
+		E36791132623F1AD0062EAC7 /* TopAppViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E36791112623F1AD0062EAC7 /* TopAppViewController.xib */; };
+		E36791182623F2170062EAC7 /* RankTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E36791162623F2170062EAC7 /* RankTableViewCell.xib */; };
+		E36791192623F2170062EAC7 /* RankTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36791172623F2170062EAC7 /* RankTableViewCell.swift */; };
 		E36E6832261704710040F922 /* FeedTypeEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36E6830261704710040F922 /* FeedTypeEnum.swift */; };
 		E36E6833261704710040F922 /* SegmentCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36E6831261704710040F922 /* SegmentCollectionCell.swift */; };
-		E36E6837261704890040F922 /* TopAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36E6835261704890040F922 /* TopAppViewController.swift */; };
 		E36E6838261704890040F922 /* NewGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36E6836261704890040F922 /* NewGameViewController.swift */; };
 		E379630F2615AE2800CBF147 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E379630D2615AE2800CBF147 /* Strings.swift */; };
 		E37963102615AE2800CBF147 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = E379630E2615AE2800CBF147 /* Assets.swift */; };
@@ -73,9 +76,12 @@
 		E332274F2615824800DA11BE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E3530574261AFDD10077AB04 /* DataMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataMock.swift; sourceTree = "<group>"; };
 		E3530578261B0A450077AB04 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		E36791102623F1AD0062EAC7 /* TopAppViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopAppViewController.swift; sourceTree = "<group>"; };
+		E36791112623F1AD0062EAC7 /* TopAppViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopAppViewController.xib; sourceTree = "<group>"; };
+		E36791162623F2170062EAC7 /* RankTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RankTableViewCell.xib; sourceTree = "<group>"; };
+		E36791172623F2170062EAC7 /* RankTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RankTableViewCell.swift; sourceTree = "<group>"; };
 		E36E6830261704710040F922 /* FeedTypeEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTypeEnum.swift; sourceTree = "<group>"; };
 		E36E6831261704710040F922 /* SegmentCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentCollectionCell.swift; sourceTree = "<group>"; };
-		E36E6835261704890040F922 /* TopAppViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopAppViewController.swift; sourceTree = "<group>"; };
 		E36E6836261704890040F922 /* NewGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewGameViewController.swift; sourceTree = "<group>"; };
 		E37963062615AC7700CBF147 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		E379630B2615AD3400CBF147 /* swiftgen.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
@@ -189,6 +195,24 @@
 			path = Font;
 			sourceTree = "<group>";
 		};
+		E36791082623F0940062EAC7 /* Top App */ = {
+			isa = PBXGroup;
+			children = (
+				E36791102623F1AD0062EAC7 /* TopAppViewController.swift */,
+				E36791112623F1AD0062EAC7 /* TopAppViewController.xib */,
+			);
+			path = "Top App";
+			sourceTree = "<group>";
+		};
+		E36791152623F1F10062EAC7 /* Ranking */ = {
+			isa = PBXGroup;
+			children = (
+				E36791172623F2170062EAC7 /* RankTableViewCell.swift */,
+				E36791162623F2170062EAC7 /* RankTableViewCell.xib */,
+			);
+			path = Ranking;
+			sourceTree = "<group>";
+		};
 		E379630C2615ADDC00CBF147 /* SwiftGen */ = {
 			isa = PBXGroup;
 			children = (
@@ -207,6 +231,7 @@
 				E37D7CCD261AB63C00E433BB /* AppCollection */,
 				E37D7CCF261AB64D00E433BB /* HighlightCollection */,
 				E37D7CCE261AB64800E433BB /* Banner */,
+				E36791152623F1F10062EAC7 /* Ranking */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -339,7 +364,7 @@
 			children = (
 				E3E70F2B26144EE800271013 /* AppViewController.swift */,
 				E36E6836261704890040F922 /* NewGameViewController.swift */,
-				E36E6835261704890040F922 /* TopAppViewController.swift */,
+				E36791082623F0940062EAC7 /* Top App */,
 			);
 			path = AppViewController;
 			sourceTree = "<group>";
@@ -511,8 +536,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E3FE8B1A262028E500816EB7 /* DescriptionCollectionViewCell.xib in Resources */,
+				E36791182623F2170062EAC7 /* RankTableViewCell.xib in Resources */,
 				E3E70F1726144C9400271013 /* LaunchScreen.storyboard in Resources */,
 				E37963142615AE5F00CBF147 /* Localizable.strings in Resources */,
+				E36791132623F1AD0062EAC7 /* TopAppViewController.xib in Resources */,
 				E3FE8B26262031F300816EB7 /* OverViewTableViewCell.xib in Resources */,
 				E3FE8B32262047A700816EB7 /* AppDetailViewController.xib in Resources */,
 				E3FE8B6526207D5500816EB7 /* CollectionTableViewCell.xib in Resources */,
@@ -603,10 +630,10 @@
 				E37D7CFC261ACC8500E433BB /* CellModel.swift in Sources */,
 				E36E6838261704890040F922 /* NewGameViewController.swift in Sources */,
 				E37D7CF2261ABB7900E433BB /* AppDetailViewController.swift in Sources */,
-				E36E6837261704890040F922 /* TopAppViewController.swift in Sources */,
 				E3E70F2326144DAB00271013 /* MainTabBarViewController.swift in Sources */,
 				E37D7CDD261AB68E00E433BB /* HighlightViewCell.swift in Sources */,
 				E3FE8B5B2620791900816EB7 /* CollectionViewCell.swift in Sources */,
+				E36791122623F1AD0062EAC7 /* TopAppViewController.swift in Sources */,
 				E379630F2615AE2800CBF147 /* Strings.swift in Sources */,
 				E3FE8B1F26202E7900816EB7 /* CommentTableCell.swift in Sources */,
 				E37963102615AE2800CBF147 /* Assets.swift in Sources */,
@@ -615,6 +642,7 @@
 				E3E70F0B26144C9200271013 /* AppDelegate.swift in Sources */,
 				E3E70F0D26144C9200271013 /* SceneDelegate.swift in Sources */,
 				E3EF5684261DB6A8008971C6 /* APIManager.swift in Sources */,
+				E36791192623F2170062EAC7 /* RankTableViewCell.swift in Sources */,
 				E3E70F3A26144F6900271013 /* TVShowViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

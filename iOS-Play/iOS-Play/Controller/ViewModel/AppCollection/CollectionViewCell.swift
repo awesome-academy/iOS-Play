@@ -10,10 +10,10 @@ import Reusable
 
 class CollectionViewCell: UICollectionViewCell, NibReusable {
     
-    @IBOutlet weak var appImage: UIImageView!
-    @IBOutlet weak var appNameLabel: UILabel!
-    @IBOutlet weak var artitsNameLabel: UILabel!
-    @IBOutlet weak var releaseDateLabel: UILabel!
+    @IBOutlet private weak var appImage: UIImageView!
+    @IBOutlet private weak var appNameLabel: UILabel!
+    @IBOutlet private weak var artitsNameLabel: UILabel!
+    @IBOutlet private weak var releaseDateLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
