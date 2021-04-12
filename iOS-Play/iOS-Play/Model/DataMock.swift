@@ -152,4 +152,11 @@ class DataMock {
         ]))
         return models
     }
+    
+    func getFeedResults() -> [FeedResults] {
+      
+        let models = [FeedResults](repeating: FeedResults(artistName: "SheepofG", id: "", releaseDate: "01.03.2021", name: "Wild Rift", copyright: "", artistUrl: "", artworkUrl100: "", genres: []), count: 15)
+        
+        return models
+    }
 }
