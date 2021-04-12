@@ -231,6 +231,7 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="backgroundImage" destination="x7p-Pd-c1B" id="VLw-cV-z3e"/>
                 <outlet property="casualView" destination="Lv4-53-X6X" id="N12-gE-o5c"/>
                 <outlet property="playerView" destination="gC4-Lv-3IB" id="Q93-s2-e2B"/>
             </connections>

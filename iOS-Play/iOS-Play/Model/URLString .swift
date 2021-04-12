@@ -28,7 +28,7 @@ enum AppUrl {
         case .newApp:
             return ""
         case .topFree:
-            return ""
+            return "\(appURL)/top-free/all/\(resultLimit)"
         case .freeIpad:
             return ""
         case .topGrossing:

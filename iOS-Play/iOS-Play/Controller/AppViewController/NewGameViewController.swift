@@ -60,7 +60,7 @@ final class NewGameViewController: UIViewController {
     }
     
     func restApi() {
-        apiManager.getNewGame(urlString: AppUrl.newGame.url) {[weak self] (results, error) -> (Void) in
+        apiManager.getFeedResults(urlString: AppUrl.newGame.url) {[weak self] (results, error) -> (Void) in
             guard let results = results else {
                 return
             }

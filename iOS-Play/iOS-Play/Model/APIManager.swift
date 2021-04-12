@@ -25,7 +25,7 @@ final class APIManager {
     
     private var imagesCache = NSCache<NSString, NSData>()
     
-    func getNewGame(urlString: String, completion: @escaping ([FeedResults]?,Error?) -> (Void)) {
+    func getFeedResults(urlString: String, completion: @escaping ([FeedResults]?,Error?) -> (Void)) {
         post(urlString: urlString, completion: completion)
     }
     
