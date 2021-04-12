@@ -11,16 +11,25 @@ final class TopAppViewController: UIViewController {
     
     @IBOutlet weak private var tableView: UITableView!
 
-    private var models: [FeedResults] = []
+    private var models = [FeedResults]() {
+        didSet {
+            tableView.reloadData()
+        }
+    }
+    
     private let dataMock = DataMock.shared
     
     private let heightOfRank: CGFloat = 120
+    
+    private let apiManager = APIManager.shared
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         configViews()
-        getDataMock()
+        //getDataMock()
+        
+        restApi()
     }
     
     func configViews() {
@@ -34,6 +43,16 @@ final class TopAppViewController: UIViewController {
     
     func getDataMock() {
         models += dataMock.getFeedResults()
+    }
+    
+    func restApi() {
+        apiManager.getFeedResults(urlString: AppUrl.topFree.url) { [weak self] (results, error) -> (Void) in
+            guard let results = results else {
+                return
+            }
+            
+            self?.models = results
+        }
     }
 }
 
@@ -50,13 +69,30 @@ extension TopAppViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(for: indexPath) as RankTableViewCell
         let model = models[indexPath.row]
-        cell.configure(with: model,
-                       rank: "\(indexPath.row + 1)")
+        
+        apiManager.getImage(results: model) { (data, error) -> (Void) in
+            var image = Asset.music0.image
+            if let data = data {
+                image = UIImage(data: data) ?? Asset.music0.image
+            }
+            
+            DispatchQueue.main.async {
+                cell.configure(with: model,
+                               rank: "\(indexPath.row + 1)",
+                               image: image)
+            }
+        }
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        let vc = AppDetailViewController().then {
+            $0.feedModel = models[indexPath.row]
+            $0.backgroundImage = Asset.tiktok.image
+        }
+        
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

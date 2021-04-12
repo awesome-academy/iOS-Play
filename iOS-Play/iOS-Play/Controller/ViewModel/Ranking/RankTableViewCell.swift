@@ -34,7 +34,8 @@ class RankTableViewCell: UITableViewCell, NibReusable {
         artitsNameLabel.text = "SheepofG"
     }
     
-    func configure(with model: FeedResults, rank: String) {
+    func configure(with model: FeedResults, rank: String, image: UIImage) {
+        appImage.image = image
         rankNumberLabel.text = rank
         nameLabel.text = model.name
         artitsNameLabel.text = model.artistName

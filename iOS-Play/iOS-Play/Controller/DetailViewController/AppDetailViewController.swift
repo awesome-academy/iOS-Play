@@ -18,6 +18,7 @@ final class AppDetailViewController: UIViewController {
     private var data: FeedResults?
 
     var image: UIImage = Asset.loll.image
+    var backgroundImage: UIImage = Asset.loLbanner.image
     
     private let dataMock = DataMock.shared
     
@@ -112,6 +113,7 @@ extension AppDetailViewController: UITableViewDelegate, UITableViewDataSource {
             
         case .downloadView:
             let cell = tableView.dequeueReusableCell(for: indexPath) as DownloadTableViewCell
+            cell.configure(with: backgroundImage)
             return cell
             
         case .commentView(let models):
