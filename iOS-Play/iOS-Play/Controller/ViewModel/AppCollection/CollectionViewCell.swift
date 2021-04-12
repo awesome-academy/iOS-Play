@@ -8,7 +8,7 @@
 import UIKit
 import Reusable
 
-class CollectionViewCell: UICollectionViewCell, NibReusable {
+final class CollectionViewCell: UICollectionViewCell, NibReusable {
     
     @IBOutlet private weak var appImage: UIImageView!
     @IBOutlet private weak var appNameLabel: UILabel!
@@ -19,8 +19,8 @@ class CollectionViewCell: UICollectionViewCell, NibReusable {
         super.awakeFromNib()
     }
     
-    func configure(with model: FeedResults, image : UIImage) {
-        appImage.image = image
+    func configure(with model: FeedResults) {
+        appImage.setImage(urlString: model.artworkUrl100)
         appNameLabel.text = model.name
         artitsNameLabel.text = model.artistName
         releaseDateLabel.text = model.releaseDate

@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class DataMock {
+final class DataMock {
     
     static var shared = DataMock()
     
@@ -157,6 +157,51 @@ class DataMock {
       
         let models = [FeedResults](repeating: FeedResults(artistName: "SheepofG", id: "", releaseDate: "01.03.2021", name: "Wild Rift", copyright: "", artistUrl: "", artworkUrl100: "", genres: []), count: 15)
         
+        return models
+    }
+    
+    func getGenre(smallText: String, genre: String) -> [MusicCellMode] {
+        var models = [MusicCellMode]()
+        models.append(.genreTitle(model: GenreModel(smallLabel: smallText, GenreLabel: genre)))
+        return models
+    }
+    
+    func getMusicCollecion() -> [MusicCellMode] {
+        var models = [MusicCellMode]()
+        models.append(.collectionView(model: [
+            FeedResults(artistName: "Sơn Tùng MTP", id: "", releaseDate: "01.01.2021", name: "Chúng ta của hiện tại", copyright: "", artistUrl: "", artworkUrl100: "", genres: []),
+            FeedResults(artistName: "Đen", id: "", releaseDate: "01.01.2021", name: "Triệu lời cảm ơn", copyright: "", artistUrl: "", artworkUrl100: "", genres: []),
+            FeedResults(artistName: "Amee", id: "", releaseDate: "01.01.2021", name: "Tình bạn diệu kỳ", copyright: "", artistUrl: "", artworkUrl100: "", genres: []),
+            FeedResults(artistName: "Sơn Tùng MTP", id: "", releaseDate: "01.01.2021", name: "Chúng ta của hiện tại", copyright: "", artistUrl: "", artworkUrl100: "", genres: []),
+            FeedResults(artistName: "Đen", id: "", releaseDate: "01.01.2021", name: "Triệu lời cảm ơn", copyright: "", artistUrl: "", artworkUrl100: "", genres: []),
+            FeedResults(artistName: "Amee", id: "", releaseDate: "01.01.2021", name: "Tình bạn diệu kỳ", copyright: "", artistUrl: "", artworkUrl100: "", genres: []),
+            FeedResults(artistName: "Sơn Tùng MTP", id: "", releaseDate: "01.01.2021", name: "Chúng ta của hiện tại", copyright: "", artistUrl: "", artworkUrl100: "", genres: []),
+            FeedResults(artistName: "Đen", id: "", releaseDate: "01.01.2021", name: "Triệu lời cảm ơn", copyright: "", artistUrl: "", artworkUrl100: "", genres: []),
+            FeedResults(artistName: "Amee", id: "", releaseDate: "01.01.2021", name: "Tình bạn diệu kỳ", copyright: "", artistUrl: "", artworkUrl100: "", genres: []),
+            FeedResults(artistName: "Sơn Tùng MTP", id: "", releaseDate: "01.01.2021", name: "Chúng ta của hiện tại", copyright: "", artistUrl: "", artworkUrl100: "", genres: []),
+            FeedResults(artistName: "Đen", id: "", releaseDate: "01.01.2021", name: "Triệu lời cảm ơn", copyright: "", artistUrl: "", artworkUrl100: "", genres: []),
+            FeedResults(artistName: "Amee", id: "", releaseDate: "01.01.2021", name: "Tình bạn diệu kỳ", copyright: "", artistUrl: "", artworkUrl100: "", genres: []),
+        ]))
+        
+        return models
+    }
+    
+    func getMusicFeature() -> [MusicCellMode] {
+        var models = [MusicCellMode]()
+        
+        models.append(.featureView(mode: [
+            Features(feature: "Free 3 months"),
+            Features(feature: "7 milion songs"),
+            Features(feature: "See the lyrics"),
+            Features(feature: "Cancel any time")
+        ]))
+        return models
+    }
+    
+    func getMusicBaner() -> [MusicCellMode] {
+        var models = [MusicCellMode]()
+        
+        models.append(.bannerView(model: HighlightTableCellModel(artistName: "GDucky", id: "", releaseDate: "01.01.2021", name: "Breakfast", copyright: "", artistUrl: "", artworkUrl100: "", image: Asset.music3.image, highlightImage: Asset.musicbanner.image)))
         return models
     }
 }

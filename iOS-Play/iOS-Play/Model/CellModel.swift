@@ -8,6 +8,13 @@
 import Foundation
 import UIKit
 
+enum MusicCellMode {
+    case genreTitle(model: GenreModel)
+    case collectionView(model : [FeedResults])
+    case featureView(mode: [Features])
+    case bannerView(model: HighlightTableCellModel)
+}
+
 enum CellModel {
     case genreTitle (model: GenreModel)
     case collectionView(model: [FeedResults])
@@ -66,5 +73,9 @@ enum HeightofCell {
     case collection
     case highlight
     case banner
-
 }
+
+struct Features {
+    let feature: String
+}
+
