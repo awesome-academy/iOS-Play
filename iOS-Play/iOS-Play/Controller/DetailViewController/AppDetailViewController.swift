@@ -60,6 +60,7 @@ final class AppDetailViewController: UIViewController {
     func passData(){
         if let model = highlightModel {
             models.append(.overView(model: OverViewTableCellModel(artistName: model.artistName, id: "", releaseDate: model.releaseDate, name: model.name, copyright: model.copyright, artistUrl: model.artistUrl, artworkUrl100: model.artworkUrl100)))
+            image = model.image
         } else if let model = feedModel {
             models.append(.overView(model: OverViewTableCellModel(artistName: model.artistName, id: "", releaseDate: model.releaseDate, name: model.name, copyright: model.copyright, artistUrl: model.artistUrl, artworkUrl100: model.artworkUrl100)))
         }
@@ -84,7 +85,21 @@ extension AppDetailViewController: UITableViewDelegate, UITableViewDataSource {
         switch models[indexPath.section] {
         case .overView(let model):
             let cell = tableView.dequeueReusableCell(for: indexPath) as OverViewTableViewCell
-            cell.configure(with: model)
+            
+            if model.artworkUrl100.isEmpty {
+                cell.configure(with: model, image : image)
+            } else {
+                apiManager.getArtwork(urlString: model.artworkUrl100) { (data, error) -> (Void) in
+                    var image = UIImage()
+                    if let data = data {
+                        image = UIImage(data: data) ?? Asset.backWhite.image
+                    }
+
+                    DispatchQueue.main.async {
+                        cell.configure(with: model, image: image)
+                    }
+                }
+            }
             
             return cell
             

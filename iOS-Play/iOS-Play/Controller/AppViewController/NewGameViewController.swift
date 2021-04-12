@@ -172,6 +172,7 @@ extension NewGameViewController: UITableViewDelegate, UITableViewDataSource {
         case .bannerView(let model):
             let vc = AppDetailViewController()
             vc.highlightModel = model
+            
             navigationController?.pushViewController(vc, animated: true)
         default:
             break
@@ -181,11 +182,10 @@ extension NewGameViewController: UITableViewDelegate, UITableViewDataSource {
 
 extension NewGameViewController: CollectionTableViewCellDelegate {
     
-    func didSelectCell(model: FeedResults, image: UIImage) {
+    func didSelectCell(model: FeedResults) {
         let vc = AppDetailViewController()
         vc.do {
             $0.feedModel = model
-            $0.image = image
         }
         
         navigationController?.pushViewController(vc, animated: true)

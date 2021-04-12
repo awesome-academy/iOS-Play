@@ -97,6 +97,6 @@ extension HighlighTableViewCell : UICollectionViewDataSource, UICollectionViewDe
                                                    copyright: model.copyright,
                                                    artistUrl: "",
                                                    artworkUrl100: "",
-                                                   genres: []), image: model.image)
+                                                   genres: []))
     }
 }
