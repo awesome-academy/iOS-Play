@@ -9,7 +9,7 @@ import UIKit
 import Reusable
 
 protocol CollectionTableViewCellDelegate: class {
-    func didSelectCell(model: FeedResults, image: UIImage)
+    func didSelectCell(model: FeedResults)
 }
 
 class CollectionTableViewCell: UITableViewCell, NibReusable {
@@ -89,6 +89,6 @@ extension CollectionTableViewCell: UICollectionViewDataSource, UICollectionViewD
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         collectionView.deselectItem(at: indexPath, animated: true)
         let model = models[indexPath.row]
-        delegate?.didSelectCell(model: model, image: UIImage())
+        delegate?.didSelectCell(model: model)
     }
 }
