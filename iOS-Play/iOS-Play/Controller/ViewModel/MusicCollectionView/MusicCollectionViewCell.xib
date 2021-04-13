@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Arvo-Regular.ttf">
+            <string>Arvo</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MusicCollectionViewCell" customModule="iOS_Play" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="156" height="301"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="156" height="301"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HWg-29-ZTG">
+                        <rect key="frame" x="0.0" y="0.0" width="156" height="301"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hi1-sb-RCu">
+                                <rect key="frame" x="20" y="10" width="120" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="ObU-cX-inz"/>
+                                    <constraint firstAttribute="width" constant="120" id="knP-gK-ypE"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fCp-NL-Dni">
+                                <rect key="frame" x="20" y="175" width="126" height="17"/>
+                                <fontDescription key="fontDescription" name="Arvo" family="Arvo" pointSize="14"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7tJ-bh-cuM">
+                                <rect key="frame" x="20" y="202" width="126" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="34" id="ucM-6p-wUe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Arvo" family="Arvo" pointSize="14"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UTv-FW-pDP">
+                                <rect key="frame" x="20" y="219" width="126" height="17"/>
+                                <fontDescription key="fontDescription" name="Arvo" family="Arvo" pointSize="14"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="UTv-FW-pDP" firstAttribute="leading" secondItem="HWg-29-ZTG" secondAttribute="leading" constant="20" id="2DJ-dt-8NW"/>
+                            <constraint firstItem="7tJ-bh-cuM" firstAttribute="top" secondItem="fCp-NL-Dni" secondAttribute="bottom" constant="10" id="4bf-va-YcI"/>
+                            <constraint firstItem="hi1-sb-RCu" firstAttribute="top" secondItem="HWg-29-ZTG" secondAttribute="top" constant="10" id="8mS-d5-DcO"/>
+                            <constraint firstItem="fCp-NL-Dni" firstAttribute="leading" secondItem="HWg-29-ZTG" secondAttribute="leading" constant="20" id="AeU-aC-cFI"/>
+                            <constraint firstItem="UTv-FW-pDP" firstAttribute="top" secondItem="7tJ-bh-cuM" secondAttribute="bottom" id="E2I-dT-HKD"/>
+                            <constraint firstItem="7tJ-bh-cuM" firstAttribute="leading" secondItem="HWg-29-ZTG" secondAttribute="leading" constant="20" id="Ejw-lg-ek1"/>
+                            <constraint firstAttribute="trailing" secondItem="7tJ-bh-cuM" secondAttribute="trailing" constant="10" id="VBz-LF-oZ2"/>
+                            <constraint firstAttribute="trailing" secondItem="fCp-NL-Dni" secondAttribute="trailing" constant="10" id="ltN-Nf-qmG"/>
+                            <constraint firstItem="fCp-NL-Dni" firstAttribute="top" secondItem="hi1-sb-RCu" secondAttribute="bottom" constant="5" id="qwj-S0-oHJ"/>
+                            <constraint firstItem="hi1-sb-RCu" firstAttribute="leading" secondItem="HWg-29-ZTG" secondAttribute="leading" constant="20" id="uZf-gP-yPp"/>
+                            <constraint firstAttribute="trailing" secondItem="UTv-FW-pDP" secondAttribute="trailing" constant="10" id="ud4-l0-8vy"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="HWg-29-ZTG" secondAttribute="bottom" id="HWf-7q-lPQ"/>
+                <constraint firstItem="HWg-29-ZTG" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="R8X-IC-4in"/>
+                <constraint firstItem="HWg-29-ZTG" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ae4-Xn-hcp"/>
+                <constraint firstAttribute="trailing" secondItem="HWg-29-ZTG" secondAttribute="trailing" id="bYh-St-oSx"/>
+            </constraints>
+            <size key="customSize" width="156" height="301"/>
+            <connections>
+                <outlet property="artistNameLabel" destination="7tJ-bh-cuM" id="9nr-If-V1y"/>
+                <outlet property="imageView" destination="hi1-sb-RCu" id="Xtd-SQ-LwU"/>
+                <outlet property="nameLabel" destination="fCp-NL-Dni" id="UUl-aG-kdY"/>
+                <outlet property="releaseDateLabel" destination="UTv-FW-pDP" id="Dgj-eY-4BS"/>
+            </connections>
+            <point key="canvasLocation" x="213.04347826086959" y="183.81696428571428"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -10,7 +10,7 @@ import Reusable
 
 final class DownloadTableViewCell: UITableViewCell, NibReusable {
 
-    @IBOutlet weak var backgroundImage: UIImageView!
+    @IBOutlet weak private var backgroundImage: UIImageView!
     @IBOutlet weak private var casualView: UIView!
     @IBOutlet weak private var playerView: UIView!
     

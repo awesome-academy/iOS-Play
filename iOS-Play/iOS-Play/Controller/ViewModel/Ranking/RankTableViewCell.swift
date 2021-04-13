@@ -8,7 +8,7 @@
 import UIKit
 import Reusable
 
-class RankTableViewCell: UITableViewCell, NibReusable {
+final class RankTableViewCell: UITableViewCell, NibReusable {
 
     @IBOutlet private weak var rankNumberLabel: UILabel!
     @IBOutlet private weak var appImage: UIImageView!

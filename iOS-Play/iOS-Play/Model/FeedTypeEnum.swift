@@ -19,7 +19,7 @@ enum FeedType {
         case .apps:
             return ["New Game","New App","Top Free","Free Ipad","Top Grossing","Grossing Ipad","Top Ipad"]
         case .musics:
-            return []
+            return ["Hot Track","New Release","Top Album","Top Song","Comming"]
         case .movies:
             return []
         case .books:

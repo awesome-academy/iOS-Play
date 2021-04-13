@@ -1,83 +1,73 @@
 //
-//  TableViewCell.swift
+//  HotTrackTableViewCell.swift
 //  iOS-Play
 //
-//  Created by Quang Nguyen on 4/9/21.
+//  Created by Quang Nguyen on 4/10/21.
 //
 
 import UIKit
 import Reusable
 
-protocol CollectionTableViewCellDelegate: class {
-    func didSelectCell(model: FeedResults)
-}
+final class HotTrackTableViewCell: UITableViewCell, NibReusable {
 
-final class CollectionTableViewCell: UITableViewCell, NibReusable {
-
-    @IBOutlet private weak var collectionView: UICollectionView!
-    
-    public weak var delegate: CollectionTableViewCellDelegate?
+    @IBOutlet weak private var collectionView: UICollectionView!
     
     private var models = [FeedResults]()
     
-    private var apiManager = APIManager.shared
+    public weak var delegate: CollectionTableViewCellDelegate?
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        configViews()
+        
+        configCollection()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
+        
     }
     
-    func configViews() {
+    func configCollection() {
         collectionView.do {
-            $0.backgroundColor = .white
             $0.delegate = self
             $0.dataSource = self
-            $0.register(cellType: CollectionViewCell.self)
             $0.showsVerticalScrollIndicator = false
             $0.showsHorizontalScrollIndicator = false
+            $0.register(cellType: MusicCollectionViewCell.self)
+            
             let layout = UICollectionViewFlowLayout().then {
                 $0.scrollDirection = .horizontal
-                $0.itemSize = CGSize(width: 120, height: 230)
-                $0.sectionInset = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
+                $0.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+                $0.itemSize = CGSize(width: 140, height: 280)
                 $0.minimumLineSpacing = 0
-                $0.minimumInteritemSpacing = 1
+                $0.minimumInteritemSpacing = 0
             }
+            
             $0.collectionViewLayout = layout
         }
     }
     
-    public func configureData(with models: [FeedResults]) {
+    func configure(with models: [FeedResults]) {
         self.models = models
         collectionView.reloadData()
     }
 }
 
-
-extension CollectionTableViewCell: UICollectionViewDataSource, UICollectionViewDelegate {
-    
-    func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 1
-    }
-    
+extension HotTrackTableViewCell: UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return models.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let model = models[indexPath.row]
-        
-        let cell = collectionView.dequeueReusableCell(for: indexPath) as CollectionViewCell
-        cell.configure(with: model)
+        let cell = collectionView.dequeueReusableCell(for: indexPath) as MusicCollectionViewCell
+        cell.configure(with: model, image: Asset.music0.image)
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         collectionView.deselectItem(at: indexPath, animated: true)
+        
         let model = models[indexPath.row]
         delegate?.didSelectCell(model: model)
     }
