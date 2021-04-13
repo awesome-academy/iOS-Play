@@ -8,11 +8,29 @@
 import Foundation
 import UIKit
 
+enum MovieDetailCellModel {
+    case imageBackground(model: ImageBackgourndCellModel)
+    case overView(model: OverViewTableCellModel)
+    case descriptionView(model: [DescriptionCollectionCellModel])
+    case infoView(model: InfoCellModel)
+    case commentView(model: [CommentCellModel])
+}
+
 enum DetailCellModel {
     case overView(model: OverViewTableCellModel)
     case descriptionView(model: [DescriptionCollectionCellModel])
     case downloadView(model: DownloadTableCellModel)
     case commentView(model: [CommentCellModel])
+}
+
+struct ImageBackgourndCellModel {
+    let image: UIImage
+}
+
+struct InfoCellModel {
+    let infomation: String
+    let firstKind: String
+    let secondKind: String
 }
 
 struct OverViewTableCellModel {

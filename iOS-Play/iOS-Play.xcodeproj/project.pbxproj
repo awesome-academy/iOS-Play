@@ -34,12 +34,16 @@
 		E3725B622624365200770119 /* MusicCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3725B5E2624365200770119 /* MusicCollectionViewCell.xib */; };
 		E3725B67262436BE00770119 /* HotTrackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3725B65262436BE00770119 /* HotTrackViewController.swift */; };
 		E3725B68262436BE00770119 /* HotTrackViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3725B66262436BE00770119 /* HotTrackViewController.xib */; };
-		E3725B6C26248CF000770119 /* MusicDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3725B6A26248CF000770119 /* MusicDetailViewController.swift */; };
-		E3725B6D26248CF000770119 /* MusicDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3725B6B26248CF000770119 /* MusicDetailViewController.xib */; };
 		E3725B732624A2EF00770119 /* UIImageView++.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3725B722624A2EF00770119 /* UIImageView++.swift */; };
 		E379630F2615AE2800CBF147 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E379630D2615AE2800CBF147 /* Strings.swift */; };
 		E37963102615AE2800CBF147 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = E379630E2615AE2800CBF147 /* Assets.swift */; };
 		E37963142615AE5F00CBF147 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E37963122615AE5F00CBF147 /* Localizable.strings */; };
+		E37B77D626254C6A00DBA851 /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37B77D426254C6A00DBA851 /* MovieDetailViewController.swift */; };
+		E37B77D726254C6A00DBA851 /* MovieDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E37B77D526254C6A00DBA851 /* MovieDetailViewController.xib */; };
+		E37B77DE26254F9600DBA851 /* ImageBackgroundTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37B77DC26254F9600DBA851 /* ImageBackgroundTableViewCell.swift */; };
+		E37B77DF26254F9600DBA851 /* ImageBackgroundTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E37B77DD26254F9600DBA851 /* ImageBackgroundTableViewCell.xib */; };
+		E37B77E42625515500DBA851 /* InfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37B77E22625515500DBA851 /* InfoTableViewCell.swift */; };
+		E37B77E52625515500DBA851 /* InfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E37B77E32625515500DBA851 /* InfoTableViewCell.xib */; };
 		E37D7CD1261AB66B00E433BB /* BannerViewTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37D7CD0261AB66B00E433BB /* BannerViewTableCell.swift */; };
 		E37D7CD9261AB68500E433BB /* GenreViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37D7CD8261AB68500E433BB /* GenreViewCell.swift */; };
 		E37D7CDD261AB68E00E433BB /* HighlightViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37D7CDB261AB68E00E433BB /* HighlightViewCell.swift */; };
@@ -117,14 +121,18 @@
 		E3725B5E2624365200770119 /* MusicCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MusicCollectionViewCell.xib; sourceTree = "<group>"; };
 		E3725B65262436BE00770119 /* HotTrackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotTrackViewController.swift; sourceTree = "<group>"; };
 		E3725B66262436BE00770119 /* HotTrackViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HotTrackViewController.xib; sourceTree = "<group>"; };
-		E3725B6A26248CF000770119 /* MusicDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicDetailViewController.swift; sourceTree = "<group>"; };
-		E3725B6B26248CF000770119 /* MusicDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MusicDetailViewController.xib; sourceTree = "<group>"; };
 		E3725B722624A2EF00770119 /* UIImageView++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView++.swift"; sourceTree = "<group>"; };
 		E37963062615AC7700CBF147 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		E379630B2615AD3400CBF147 /* swiftgen.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
 		E379630D2615AE2800CBF147 /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		E379630E2615AE2800CBF147 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		E37963132615AE5F00CBF147 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E37B77D426254C6A00DBA851 /* MovieDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
+		E37B77D526254C6A00DBA851 /* MovieDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieDetailViewController.xib; sourceTree = "<group>"; };
+		E37B77DC26254F9600DBA851 /* ImageBackgroundTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageBackgroundTableViewCell.swift; sourceTree = "<group>"; };
+		E37B77DD26254F9600DBA851 /* ImageBackgroundTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageBackgroundTableViewCell.xib; sourceTree = "<group>"; };
+		E37B77E22625515500DBA851 /* InfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTableViewCell.swift; sourceTree = "<group>"; };
+		E37B77E32625515500DBA851 /* InfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoTableViewCell.xib; sourceTree = "<group>"; };
 		E37D7CD0261AB66B00E433BB /* BannerViewTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BannerViewTableCell.swift; sourceTree = "<group>"; };
 		E37D7CD8261AB68500E433BB /* GenreViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenreViewCell.swift; sourceTree = "<group>"; };
 		E37D7CDB261AB68E00E433BB /* HighlightViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HighlightViewCell.swift; sourceTree = "<group>"; };
@@ -302,8 +310,6 @@
 		E3725B6F26248CF400770119 /* MusicDetailViewController */ = {
 			isa = PBXGroup;
 			children = (
-				E3725B6A26248CF000770119 /* MusicDetailViewController.swift */,
-				E3725B6B26248CF000770119 /* MusicDetailViewController.xib */,
 			);
 			path = MusicDetailViewController;
 			sourceTree = "<group>";
@@ -319,6 +325,33 @@
 			path = SwiftGen;
 			sourceTree = "<group>";
 		};
+		E37B77D326254C4900DBA851 /* MovieDetail VC */ = {
+			isa = PBXGroup;
+			children = (
+				E37B77D426254C6A00DBA851 /* MovieDetailViewController.swift */,
+				E37B77D526254C6A00DBA851 /* MovieDetailViewController.xib */,
+			);
+			path = "MovieDetail VC";
+			sourceTree = "<group>";
+		};
+		E37B77DA26254F6400DBA851 /* imageBackground */ = {
+			isa = PBXGroup;
+			children = (
+				E37B77DC26254F9600DBA851 /* ImageBackgroundTableViewCell.swift */,
+				E37B77DD26254F9600DBA851 /* ImageBackgroundTableViewCell.xib */,
+			);
+			path = imageBackground;
+			sourceTree = "<group>";
+		};
+		E37B77DB26254F7300DBA851 /* InfoCell  */ = {
+			isa = PBXGroup;
+			children = (
+				E37B77E22625515500DBA851 /* InfoTableViewCell.swift */,
+				E37B77E32625515500DBA851 /* InfoTableViewCell.xib */,
+			);
+			path = "InfoCell ";
+			sourceTree = "<group>";
+		};
 		E37D7CBD261AB5D400E433BB /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -329,6 +362,7 @@
 				E36791152623F1F10062EAC7 /* Ranking */,
 				E3725B502624362000770119 /* Feature */,
 				E3725B5A2624364000770119 /* MusicCollectionView */,
+				E3EEB8CC261EED580030413C /* DetailCellModel */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -482,6 +516,7 @@
 		E3E70F2826144E7A00271013 /* MovieViewController */ = {
 			isa = PBXGroup;
 			children = (
+				E37B77D326254C4900DBA851 /* MovieDetail VC */,
 				E3E70F3226144F5400271013 /* MovieViewController.swift */,
 			);
 			path = MovieViewController;
@@ -516,7 +551,6 @@
 			children = (
 				E37D7CF1261ABB7900E433BB /* AppDetailViewController.swift */,
 				E3FE8B30262047A700816EB7 /* AppDetailViewController.xib */,
-				E3EEB8CC261EED580030413C /* DetailCellModel */,
 			);
 			path = DetailViewController;
 			sourceTree = "<group>";
@@ -524,6 +558,8 @@
 		E3EEB8CC261EED580030413C /* DetailCellModel */ = {
 			isa = PBXGroup;
 			children = (
+				E37B77DB26254F7300DBA851 /* InfoCell  */,
+				E37B77DA26254F6400DBA851 /* imageBackground */,
 				E3EEB8CD261EEE760030413C /* OverView */,
 				E3EEB8CE261EEE820030413C /* DescriptionCollection */,
 				E3EEB8DB261F6E1E0030413C /* DownloadView */,
@@ -639,10 +675,10 @@
 			files = (
 				E3725B3B26242C8F00770119 /* SegmentCollectionViewCell.xib in Resources */,
 				E3FE8B1A262028E500816EB7 /* DescriptionCollectionViewCell.xib in Resources */,
+				E37B77D726254C6A00DBA851 /* MovieDetailViewController.xib in Resources */,
 				E3725B4226242CFD00770119 /* RankMusicViewController.xib in Resources */,
 				E36791182623F2170062EAC7 /* RankTableViewCell.xib in Resources */,
 				E3725B622624365200770119 /* MusicCollectionViewCell.xib in Resources */,
-				E3725B6D26248CF000770119 /* MusicDetailViewController.xib in Resources */,
 				E3E70F1726144C9400271013 /* LaunchScreen.storyboard in Resources */,
 				E37963142615AE5F00CBF147 /* Localizable.strings in Resources */,
 				E36791132623F1AD0062EAC7 /* TopAppViewController.xib in Resources */,
@@ -652,6 +688,7 @@
 				E3FE8B6526207D5500816EB7 /* CollectionTableViewCell.xib in Resources */,
 				E3725B552624362F00770119 /* FeatureCollectionViewCell.xib in Resources */,
 				E3E70F1226144C9200271013 /* Main.storyboard in Resources */,
+				E37B77DF26254F9600DBA851 /* ImageBackgroundTableViewCell.xib in Resources */,
 				E3725B68262436BE00770119 /* HotTrackViewController.xib in Resources */,
 				E3FE8B2B2620375900816EB7 /* DownloadTableViewCell.xib in Resources */,
 				E3E70F1426144C9400271013 /* Assets.xcassets in Resources */,
@@ -659,6 +696,7 @@
 				E3725B582624362F00770119 /* FeatureTableViewCell.xib in Resources */,
 				E3FE8B4A26204E9100816EB7 /* DescriptionTableViewCell.xib in Resources */,
 				E3FE8B2026202E7900816EB7 /* CommentTableCell.xib in Resources */,
+				E37B77E52625515500DBA851 /* InfoTableViewCell.xib in Resources */,
 				E37D7CEA261AB6E200E433BB /* Arvo-BoldItalic.ttf in Resources */,
 				E3FE8B5C2620791900816EB7 /* CollectionViewCell.xib in Resources */,
 				E37D7CE9261AB6E200E433BB /* Arvo-Italic.ttf in Resources */,
@@ -728,9 +766,11 @@
 				E3725B572624362F00770119 /* FeatureCollectionViewCell.swift in Sources */,
 				E3725B67262436BE00770119 /* HotTrackViewController.swift in Sources */,
 				E3E70F3326144F5400271013 /* MovieViewController.swift in Sources */,
+				E37B77E42625515500DBA851 /* InfoTableViewCell.swift in Sources */,
 				E3725B3626242C8000770119 /* MusicViewController.swift in Sources */,
 				E3E70F4E26146A2B00271013 /* TabBarItems.swift in Sources */,
 				E3E70F2C26144EE800271013 /* AppViewController.swift in Sources */,
+				E37B77DE26254F9600DBA851 /* ImageBackgroundTableViewCell.swift in Sources */,
 				E3E70F43261457BE00271013 /* BaseNavigationController.swift in Sources */,
 				E3725B732624A2EF00770119 /* UIImageView++.swift in Sources */,
 				E3530579261B0A450077AB04 /* Fonts.swift in Sources */,
@@ -754,7 +794,7 @@
 				E379630F2615AE2800CBF147 /* Strings.swift in Sources */,
 				E3FE8B1F26202E7900816EB7 /* CommentTableCell.swift in Sources */,
 				E37963102615AE2800CBF147 /* Assets.swift in Sources */,
-				E3725B6C26248CF000770119 /* MusicDetailViewController.swift in Sources */,
+				E37B77D626254C6A00DBA851 /* MovieDetailViewController.swift in Sources */,
 				E3E70F3726144F6000271013 /* BookViewController.swift in Sources */,
 				E37D7CD1261AB66B00E433BB /* BannerViewTableCell.swift in Sources */,
 				E3E70F0B26144C9200271013 /* AppDelegate.swift in Sources */,

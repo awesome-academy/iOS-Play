@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "bo-gia-ban-dien-anh-2021_1615060456-big.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

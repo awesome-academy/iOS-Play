@@ -26,8 +26,9 @@ final class OverViewTableViewCell: UITableViewCell, NibReusable {
         
     }
     
-    func configure(with model: OverViewTableCellModel, image : UIImage) {
-        appImage.image = image
+    func configure(with model: OverViewTableCellModel) {
+        
+        appImage.setImage(urlString: model.artworkUrl100)
         nameLabel.text = model.name
         rightCopyLabel.text = model.copyright
         releaseDateLabel.text = model.releaseDate
