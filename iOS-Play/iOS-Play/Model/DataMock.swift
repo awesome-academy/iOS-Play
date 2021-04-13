@@ -204,4 +204,57 @@ final class DataMock {
         models.append(.bannerView(model: HighlightTableCellModel(artistName: "GDucky", id: "", releaseDate: "01.01.2021", name: "Breakfast", copyright: "", artistUrl: "", artworkUrl100: "", image: Asset.music3.image, highlightImage: Asset.musicbanner.image)))
         return models
     }
+    
+    func getImageBackground() -> [MovieDetailCellModel] {
+        let models : [MovieDetailCellModel] = [.imageBackground(model: ImageBackgourndCellModel(image: Asset.ctcht.image))]
+        return models
+    }
+    
+    func getOverView() -> [MovieDetailCellModel] {
+        let models: [MovieDetailCellModel] = [.overView(model: OverViewTableCellModel(artistName: "SheepofG", id: "", releaseDate: "01.01.2021", name: "Godzilla", copyright: "© SheepofG LLC 2021 / ZZEDZZ7®", artistUrl: "", artworkUrl100: ""))]
+        return models
+    }
+    
+    func getCommmentView() -> [MovieDetailCellModel] {
+        var models = [MovieDetailCellModel]()
+        
+        models.append(.commentView(model: [
+            CommentCellModel(userImage: Asset.music0.image,
+                             commentString: "Skyyyyy ơiiiiiiii \nGì ạ Gì ạaaaaa ^n "),
+            CommentCellModel(userImage: Asset.music1.image,
+                             commentString: "Đưa tay đây nào \nMãi bên nhau bạn nhớ"),
+            CommentCellModel(userImage: Asset.music2.image,
+                             commentString: "Bố em hút rất nhiều thuốc \nBố anh hút rất nhiều thuốc"),
+            CommentCellModel(userImage: Asset.music0.image,
+                             commentString: "Skyyyyy ơiiiiiiii \nGì ạ Gì ạaaaaa ^n "),
+            CommentCellModel(userImage: Asset.music1.image,
+                             commentString: "Đưa tay đây nào \nMãi bên nhau bạn nhớ"),
+            CommentCellModel(userImage: Asset.music2.image,
+                             commentString: "Bố em hút rất nhiều thuốc \nBố anh hút rất nhiều thuốc")
+        ]))
+        return models
+    }
+    
+    func getDescriptionView() -> [MovieDetailCellModel] {
+        var models = [MovieDetailCellModel]()
+        
+        models.append(.descriptionView(model: [
+            DescriptionCollectionCellModel(aboveString: "#1",
+                                           belowString: "IMDb Top"),
+            DescriptionCollectionCellModel(aboveString: "4.7★",
+                                           belowString: "150K reviews"),
+            DescriptionCollectionCellModel(aboveString: "2hr 11min",
+                                           belowString: "Duration"),
+            DescriptionCollectionCellModel(aboveString: "12+",
+                                           belowString: "Rated for 12+"),
+            DescriptionCollectionCellModel(aboveString: "1M+",
+                                           belowString: "Buy")
+        ]))
+        return models
+    }
+    
+    func getInfoView() -> [MovieDetailCellModel] {
+        let models : [MovieDetailCellModel] = [.infoView(model: InfoCellModel(infomation: "", firstKind: "Bonero", secondKind: "Gold Music"))]
+        return models
+    }
 }

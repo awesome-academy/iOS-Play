@@ -86,21 +86,7 @@ extension AppDetailViewController: UITableViewDelegate, UITableViewDataSource {
         switch models[indexPath.section] {
         case .overView(let model):
             let cell = tableView.dequeueReusableCell(for: indexPath) as OverViewTableViewCell
-            
-            if model.artworkUrl100.isEmpty {
-                cell.configure(with: model, image : image)
-            } else {
-                apiManager.getArtwork(urlString: model.artworkUrl100) { (data, error) -> (Void) in
-                    var image = UIImage()
-                    if let data = data {
-                        image = UIImage(data: data) ?? Asset.backWhite.image
-                    }
-
-                    DispatchQueue.main.async {
-                        cell.configure(with: model, image: image)
-                    }
-                }
-            }
+            cell.configure(with: model)
             
             return cell
             

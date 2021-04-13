@@ -156,8 +156,8 @@ extension HotTrackViewController: UITableViewDelegate, UITableViewDataSource {
 extension HotTrackViewController: CollectionTableViewCellDelegate {
 
     func didSelectCell(model: FeedResults) {
-        let vc = MusicDetailViewController()
-        //vc.model = model
+        let vc = MovieDetailViewController()
+        vc.model = model
         navigationController?.pushViewController(vc, animated: true)
     }
 }
