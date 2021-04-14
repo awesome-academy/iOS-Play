@@ -12,8 +12,8 @@ private var imagesCache = NSCache<NSString, NSData>()
 
 extension UIImageView {
     
-    func setImage(urlString: String) {
-        guard let imageUrl = URL(string: urlString) else {
+    func setImage(urlString: String?) {
+        guard let imageUrl = URL(string: urlString ?? "") else {
             return
         }
         

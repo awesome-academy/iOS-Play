@@ -21,7 +21,7 @@ enum FeedType {
         case .musics:
             return ["Hot Track","New Release","Top Album","Top Song","Comming"]
         case .movies:
-            return []
+            return ["Action & Adventure", "Hot Now", "Documentary"]
         case .books:
             return []
         case .tvShows:

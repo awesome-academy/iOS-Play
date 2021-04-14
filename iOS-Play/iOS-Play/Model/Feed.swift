@@ -19,14 +19,14 @@ struct Feeds: Codable {
 }
 
 struct FeedResults: Codable {
-    let artistName: String
-    let id: String
-    let releaseDate: String
-    let name: String
-    let copyright: String
-    let artistUrl: String
-    let artworkUrl100: String
-    let genres: [Genre]
+    let artistName: String?
+    let id: String?
+    let releaseDate: String?
+    let name: String?
+    let copyright: String?
+    let artistUrl: String?
+    let artworkUrl100: String?
+    let genres: [Genre]?
 }
 
 struct Genre: Codable {

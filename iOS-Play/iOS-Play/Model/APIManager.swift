@@ -30,7 +30,7 @@ final class APIManager {
     }
     
     func getImage(results: FeedResults, completion: @escaping (Data?, Error?) -> (Void)) {
-        guard let url = URL(string: results.artworkUrl100) else { return }
+        guard let url = URL(string: results.artworkUrl100 ?? "") else { return }
         download(imageURL: url, completion: completion)
     }
     

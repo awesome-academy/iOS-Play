@@ -55,6 +55,14 @@
 		E37D7CF2261ABB7900E433BB /* AppDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37D7CF1261ABB7900E433BB /* AppDetailViewController.swift */; };
 		E37D7CF9261ACADB00E433BB /* Cell++.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37D7CF8261ACADB00E433BB /* Cell++.swift */; };
 		E37D7CFC261ACC8500E433BB /* CellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37D7CFB261ACC8400E433BB /* CellModel.swift */; };
+		E38797EB2626DBC100B78B6B /* ActionMovieViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E38797E92626DBC100B78B6B /* ActionMovieViewController.xib */; };
+		E38797EC2626DBC100B78B6B /* ActionMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38797EA2626DBC100B78B6B /* ActionMovieViewController.swift */; };
+		E38797F02626DD0700B78B6B /* AllMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38797EE2626DD0700B78B6B /* AllMovieViewController.swift */; };
+		E38797F12626DD0700B78B6B /* AllMovieViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E38797EF2626DD0700B78B6B /* AllMovieViewController.xib */; };
+		E38797F42626DD1600B78B6B /* MovieViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E38797F32626DD1500B78B6B /* MovieViewController.xib */; };
+		E38797F82626DD2900B78B6B /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38797F72626DD2900B78B6B /* MovieViewController.swift */; };
+		E38797FD2626DE4300B78B6B /* ListMovieTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E38797FB2626DE4300B78B6B /* ListMovieTableViewCell.xib */; };
+		E38797FE2626DE4300B78B6B /* ListMovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38797FC2626DE4300B78B6B /* ListMovieTableViewCell.swift */; };
 		E38ABAEE2618136800B118AD /* Reusable in Frameworks */ = {isa = PBXBuildFile; productRef = E38ABAED2618136800B118AD /* Reusable */; };
 		E3E70F0B26144C9200271013 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E70F0A26144C9200271013 /* AppDelegate.swift */; };
 		E3E70F0D26144C9200271013 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E70F0C26144C9200271013 /* SceneDelegate.swift */; };
@@ -63,7 +71,6 @@
 		E3E70F1726144C9400271013 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3E70F1526144C9400271013 /* LaunchScreen.storyboard */; };
 		E3E70F2326144DAB00271013 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E70F2226144DAB00271013 /* MainTabBarViewController.swift */; };
 		E3E70F2C26144EE800271013 /* AppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E70F2B26144EE800271013 /* AppViewController.swift */; };
-		E3E70F3326144F5400271013 /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E70F3226144F5400271013 /* MovieViewController.swift */; };
 		E3E70F3726144F6000271013 /* BookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E70F3626144F6000271013 /* BookViewController.swift */; };
 		E3E70F3A26144F6900271013 /* TVShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E70F3926144F6900271013 /* TVShowViewController.swift */; };
 		E3E70F43261457BE00271013 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E70F42261457BE00271013 /* BaseNavigationController.swift */; };
@@ -144,6 +151,14 @@
 		E37D7CF1261ABB7900E433BB /* AppDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDetailViewController.swift; sourceTree = "<group>"; };
 		E37D7CF8261ACADB00E433BB /* Cell++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cell++.swift"; sourceTree = "<group>"; };
 		E37D7CFB261ACC8400E433BB /* CellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellModel.swift; sourceTree = "<group>"; };
+		E38797E92626DBC100B78B6B /* ActionMovieViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActionMovieViewController.xib; sourceTree = "<group>"; };
+		E38797EA2626DBC100B78B6B /* ActionMovieViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionMovieViewController.swift; sourceTree = "<group>"; };
+		E38797EE2626DD0700B78B6B /* AllMovieViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllMovieViewController.swift; sourceTree = "<group>"; };
+		E38797EF2626DD0700B78B6B /* AllMovieViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AllMovieViewController.xib; sourceTree = "<group>"; };
+		E38797F32626DD1500B78B6B /* MovieViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MovieViewController.xib; sourceTree = "<group>"; };
+		E38797F72626DD2900B78B6B /* MovieViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
+		E38797FB2626DE4300B78B6B /* ListMovieTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListMovieTableViewCell.xib; sourceTree = "<group>"; };
+		E38797FC2626DE4300B78B6B /* ListMovieTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListMovieTableViewCell.swift; sourceTree = "<group>"; };
 		E3E70F0726144C9200271013 /* iOS-Play.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Play.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3E70F0A26144C9200271013 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E3E70F0C26144C9200271013 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -153,7 +168,6 @@
 		E3E70F1826144C9400271013 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E3E70F2226144DAB00271013 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		E3E70F2B26144EE800271013 /* AppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewController.swift; sourceTree = "<group>"; };
-		E3E70F3226144F5400271013 /* MovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
 		E3E70F3626144F6000271013 /* BookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViewController.swift; sourceTree = "<group>"; };
 		E3E70F3926144F6900271013 /* TVShowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVShowViewController.swift; sourceTree = "<group>"; };
 		E3E70F42261457BE00271013 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
@@ -362,6 +376,7 @@
 				E36791152623F1F10062EAC7 /* Ranking */,
 				E3725B502624362000770119 /* Feature */,
 				E3725B5A2624364000770119 /* MusicCollectionView */,
+				E38797FA2626DE3300B78B6B /* ListMovie */,
 				E3EEB8CC261EED580030413C /* DetailCellModel */,
 			);
 			path = ViewModel;
@@ -401,6 +416,33 @@
 				E37D7CDB261AB68E00E433BB /* HighlightViewCell.swift */,
 			);
 			path = HighlightCollection;
+			sourceTree = "<group>";
+		};
+		E38797E72626D94E00B78B6B /* Action & Adventure */ = {
+			isa = PBXGroup;
+			children = (
+				E38797EA2626DBC100B78B6B /* ActionMovieViewController.swift */,
+				E38797E92626DBC100B78B6B /* ActionMovieViewController.xib */,
+			);
+			path = "Action & Adventure";
+			sourceTree = "<group>";
+		};
+		E38797E82626DB4700B78B6B /* AllMovie VC */ = {
+			isa = PBXGroup;
+			children = (
+				E38797EE2626DD0700B78B6B /* AllMovieViewController.swift */,
+				E38797EF2626DD0700B78B6B /* AllMovieViewController.xib */,
+			);
+			path = "AllMovie VC";
+			sourceTree = "<group>";
+		};
+		E38797FA2626DE3300B78B6B /* ListMovie */ = {
+			isa = PBXGroup;
+			children = (
+				E38797FC2626DE4300B78B6B /* ListMovieTableViewCell.swift */,
+				E38797FB2626DE4300B78B6B /* ListMovieTableViewCell.xib */,
+			);
+			path = ListMovie;
 			sourceTree = "<group>";
 		};
 		E3E70EFE26144C9200271013 = {
@@ -471,7 +513,6 @@
 				E3E70F2526144E4200271013 /* Tabar Controller */,
 				E37D7CBD261AB5D400E433BB /* ViewModel */,
 				E3E70F2626144E5000271013 /* AppViewController */,
-				E3EEB8CB261EECE00030413C /* DetailViewController */,
 				E3E70F2726144E6C00271013 /* MusicViewController */,
 				E3E70F2826144E7A00271013 /* MovieViewController */,
 				E3E70F2926144E8900271013 /* BookViewController */,
@@ -496,6 +537,7 @@
 				E3E70F2B26144EE800271013 /* AppViewController.swift */,
 				E36E6836261704890040F922 /* NewGameViewController.swift */,
 				E36791082623F0940062EAC7 /* Top App */,
+				E3EEB8CB261EECE00030413C /* DetailViewController */,
 			);
 			path = AppViewController;
 			sourceTree = "<group>";
@@ -516,8 +558,11 @@
 		E3E70F2826144E7A00271013 /* MovieViewController */ = {
 			isa = PBXGroup;
 			children = (
+				E38797F72626DD2900B78B6B /* MovieViewController.swift */,
+				E38797F32626DD1500B78B6B /* MovieViewController.xib */,
+				E38797E72626D94E00B78B6B /* Action & Adventure */,
+				E38797E82626DB4700B78B6B /* AllMovie VC */,
 				E37B77D326254C4900DBA851 /* MovieDetail VC */,
-				E3E70F3226144F5400271013 /* MovieViewController.swift */,
 			);
 			path = MovieViewController;
 			sourceTree = "<group>";
@@ -676,15 +721,19 @@
 				E3725B3B26242C8F00770119 /* SegmentCollectionViewCell.xib in Resources */,
 				E3FE8B1A262028E500816EB7 /* DescriptionCollectionViewCell.xib in Resources */,
 				E37B77D726254C6A00DBA851 /* MovieDetailViewController.xib in Resources */,
+				E38797EB2626DBC100B78B6B /* ActionMovieViewController.xib in Resources */,
 				E3725B4226242CFD00770119 /* RankMusicViewController.xib in Resources */,
 				E36791182623F2170062EAC7 /* RankTableViewCell.xib in Resources */,
+				E38797FD2626DE4300B78B6B /* ListMovieTableViewCell.xib in Resources */,
 				E3725B622624365200770119 /* MusicCollectionViewCell.xib in Resources */,
+				E38797F42626DD1600B78B6B /* MovieViewController.xib in Resources */,
 				E3E70F1726144C9400271013 /* LaunchScreen.storyboard in Resources */,
 				E37963142615AE5F00CBF147 /* Localizable.strings in Resources */,
 				E36791132623F1AD0062EAC7 /* TopAppViewController.xib in Resources */,
 				E3FE8B26262031F300816EB7 /* OverViewTableViewCell.xib in Resources */,
 				E3FE8B32262047A700816EB7 /* AppDetailViewController.xib in Resources */,
 				E3725B3726242C8000770119 /* MusicViewController.xib in Resources */,
+				E38797F12626DD0700B78B6B /* AllMovieViewController.xib in Resources */,
 				E3FE8B6526207D5500816EB7 /* CollectionTableViewCell.xib in Resources */,
 				E3725B552624362F00770119 /* FeatureCollectionViewCell.xib in Resources */,
 				E3E70F1226144C9200271013 /* Main.storyboard in Resources */,
@@ -765,7 +814,6 @@
 				E33227502615824800DA11BE /* LoginViewController.swift in Sources */,
 				E3725B572624362F00770119 /* FeatureCollectionViewCell.swift in Sources */,
 				E3725B67262436BE00770119 /* HotTrackViewController.swift in Sources */,
-				E3E70F3326144F5400271013 /* MovieViewController.swift in Sources */,
 				E37B77E42625515500DBA851 /* InfoTableViewCell.swift in Sources */,
 				E3725B3626242C8000770119 /* MusicViewController.swift in Sources */,
 				E3E70F4E26146A2B00271013 /* TabBarItems.swift in Sources */,
@@ -774,6 +822,7 @@
 				E3E70F43261457BE00271013 /* BaseNavigationController.swift in Sources */,
 				E3725B732624A2EF00770119 /* UIImageView++.swift in Sources */,
 				E3530579261B0A450077AB04 /* Fonts.swift in Sources */,
+				E38797FE2626DE4300B78B6B /* ListMovieTableViewCell.swift in Sources */,
 				E3FE8B56262075E900816EB7 /* UIview++.swift in Sources */,
 				E3FE8B2A2620375900816EB7 /* DownloadTableViewCell.swift in Sources */,
 				E37D7CDE261AB68E00E433BB /* HighlighTableViewCell.swift in Sources */,
@@ -788,10 +837,13 @@
 				E3725B5F2624365200770119 /* HotTrackTableViewCell.swift in Sources */,
 				E37D7CF2261ABB7900E433BB /* AppDetailViewController.swift in Sources */,
 				E3E70F2326144DAB00271013 /* MainTabBarViewController.swift in Sources */,
+				E38797EC2626DBC100B78B6B /* ActionMovieViewController.swift in Sources */,
+				E38797F02626DD0700B78B6B /* AllMovieViewController.swift in Sources */,
 				E37D7CDD261AB68E00E433BB /* HighlightViewCell.swift in Sources */,
 				E3FE8B5B2620791900816EB7 /* CollectionViewCell.swift in Sources */,
 				E36791122623F1AD0062EAC7 /* TopAppViewController.swift in Sources */,
 				E379630F2615AE2800CBF147 /* Strings.swift in Sources */,
+				E38797F82626DD2900B78B6B /* MovieViewController.swift in Sources */,
 				E3FE8B1F26202E7900816EB7 /* CommentTableCell.swift in Sources */,
 				E37963102615AE2800CBF147 /* Assets.swift in Sources */,
 				E37B77D626254C6A00DBA851 /* MovieDetailViewController.swift in Sources */,
