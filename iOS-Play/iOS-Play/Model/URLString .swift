@@ -7,11 +7,13 @@
 
 import Foundation
 
-let baseURL = "https://rss.itunes.apple.com/api/v1/vn"
+let baseURL = "https://rss.itunes.apple.com/api/v1/us"
 
 let appURL = "\(baseURL)/ios-apps"
 let musicURL = "\(baseURL)/itunes-music"
 let movieURL = "\(baseURL)/movies"
+let bookURL = "\(baseURL)/books"
+let tvShowURL = "\(baseURL)/tv-shows"
 
 let resultLimit = "20/explicit.json"
 
@@ -79,6 +81,34 @@ enum MovieUrl {
         case .all:
             return ""
         case .documentary:
+            return ""
+        }
+    }
+}
+
+enum BookUrl {
+    case topFree
+    case topPaid
+    
+    var url: String {
+        switch self {
+        case . topFree:
+            return "\(bookURL)/top-free/all/30/explicit.json"
+        case .topPaid:
+            return ""
+        }
+    }
+}
+
+enum TVShowUrl {
+    case topEpisodes
+    case topSeason
+    
+    var url: String {
+        switch self {
+        case . topEpisodes:
+            return "\(tvShowURL)/top-tv-episodes/all/\(resultLimit)"
+        case .topSeason:
             return ""
         }
     }

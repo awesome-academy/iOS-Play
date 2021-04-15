@@ -33,22 +33,22 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fCp-NL-Dni">
-                                <rect key="frame" x="20" y="175" width="126" height="17"/>
+                                <rect key="frame" x="20" y="175" width="136" height="17"/>
                                 <fontDescription key="fontDescription" name="Arvo" family="Arvo" pointSize="14"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7tJ-bh-cuM">
-                                <rect key="frame" x="20" y="202" width="126" height="17"/>
+                                <rect key="frame" x="20" y="192" width="126" height="17"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="34" id="ucM-6p-wUe"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="34" id="vC1-O0-J8R"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Arvo" family="Arvo" pointSize="14"/>
-                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" systemColor="systemPinkColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UTv-FW-pDP">
-                                <rect key="frame" x="20" y="219" width="126" height="17"/>
+                                <rect key="frame" x="20" y="209" width="126" height="17"/>
                                 <fontDescription key="fontDescription" name="Arvo" family="Arvo" pointSize="14"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -57,13 +57,14 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="UTv-FW-pDP" firstAttribute="leading" secondItem="HWg-29-ZTG" secondAttribute="leading" constant="20" id="2DJ-dt-8NW"/>
-                            <constraint firstItem="7tJ-bh-cuM" firstAttribute="top" secondItem="fCp-NL-Dni" secondAttribute="bottom" constant="10" id="4bf-va-YcI"/>
+                            <constraint firstItem="7tJ-bh-cuM" firstAttribute="top" secondItem="fCp-NL-Dni" secondAttribute="bottom" id="4bf-va-YcI"/>
                             <constraint firstItem="hi1-sb-RCu" firstAttribute="top" secondItem="HWg-29-ZTG" secondAttribute="top" constant="10" id="8mS-d5-DcO"/>
                             <constraint firstItem="fCp-NL-Dni" firstAttribute="leading" secondItem="HWg-29-ZTG" secondAttribute="leading" constant="20" id="AeU-aC-cFI"/>
                             <constraint firstItem="UTv-FW-pDP" firstAttribute="top" secondItem="7tJ-bh-cuM" secondAttribute="bottom" id="E2I-dT-HKD"/>
                             <constraint firstItem="7tJ-bh-cuM" firstAttribute="leading" secondItem="HWg-29-ZTG" secondAttribute="leading" constant="20" id="Ejw-lg-ek1"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="UTv-FW-pDP" secondAttribute="bottom" id="R28-eQ-So1"/>
                             <constraint firstAttribute="trailing" secondItem="7tJ-bh-cuM" secondAttribute="trailing" constant="10" id="VBz-LF-oZ2"/>
-                            <constraint firstAttribute="trailing" secondItem="fCp-NL-Dni" secondAttribute="trailing" constant="10" id="ltN-Nf-qmG"/>
+                            <constraint firstAttribute="trailing" secondItem="fCp-NL-Dni" secondAttribute="trailing" id="ltN-Nf-qmG"/>
                             <constraint firstItem="fCp-NL-Dni" firstAttribute="top" secondItem="hi1-sb-RCu" secondAttribute="bottom" constant="5" id="qwj-S0-oHJ"/>
                             <constraint firstItem="hi1-sb-RCu" firstAttribute="leading" secondItem="HWg-29-ZTG" secondAttribute="leading" constant="20" id="uZf-gP-yPp"/>
                             <constraint firstAttribute="trailing" secondItem="UTv-FW-pDP" secondAttribute="trailing" constant="10" id="ud4-l0-8vy"/>
@@ -91,6 +92,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

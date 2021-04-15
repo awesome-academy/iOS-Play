@@ -16,6 +16,12 @@ final class HotTrackTableViewCell: UITableViewCell, NibReusable {
     
     public weak var delegate: CollectionTableViewCellDelegate?
     
+    private var imageCornerRadius: CGFloat = 10 {
+        didSet {
+            collectionView.reloadData()
+        }
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         
@@ -51,6 +57,10 @@ final class HotTrackTableViewCell: UITableViewCell, NibReusable {
         self.models = models
         collectionView.reloadData()
     }
+    
+    func setImageCornerRadius(with cornerRadius: CGFloat) {
+        self.imageCornerRadius = cornerRadius
+    }
 }
 
 extension HotTrackTableViewCell: UICollectionViewDataSource, UICollectionViewDelegate {
@@ -61,7 +71,7 @@ extension HotTrackTableViewCell: UICollectionViewDataSource, UICollectionViewDel
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let model = models[indexPath.row]
         let cell = collectionView.dequeueReusableCell(for: indexPath) as MusicCollectionViewCell
-        cell.configure(with: model, image: Asset.music0.image)
+        cell.configure(with: model, imageConerRadius: imageCornerRadius)
         return cell
     }
     
