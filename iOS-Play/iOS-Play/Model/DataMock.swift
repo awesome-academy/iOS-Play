@@ -205,8 +205,8 @@ final class DataMock {
         return models
     }
     
-    func getImageBackground() -> [MovieDetailCellModel] {
-        let models : [MovieDetailCellModel] = [.imageBackground(model: ImageBackgourndCellModel(image: Asset.ctcht.image))]
+    func getImageBackground(image: UIImage?) -> [MovieDetailCellModel] {
+        let models: [MovieDetailCellModel] = [.imageBackground(model: ImageBackgourndCellModel(image: image ?? Asset.marvel.image))]
         return models
     }
     

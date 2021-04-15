@@ -8,9 +8,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MusicViewController" customModule="iOS_Play" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ActionMovieViewController" customModule="iOS_Play" customModuleProvider="target">
             <connections>
-                <outlet property="segmentCollection" destination="fpe-vE-ngG" id="yye-M9-BjS"/>
+                <outlet property="tableView" destination="c83-xx-Jsn" id="zGd-FP-TD5"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -19,28 +19,20 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="fpe-vE-ngG">
-                    <rect key="frame" x="0.0" y="44" width="414" height="40"/>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="c83-xx-Jsn">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="40" id="B5q-AZ-YEv"/>
-                    </constraints>
-                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="QtH-6K-ZJ5">
-                        <size key="itemSize" width="128" height="128"/>
-                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                    </collectionViewFlowLayout>
-                </collectionView>
+                </tableView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="fpe-vE-ngG" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="k3c-z0-3NS"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="fpe-vE-ngG" secondAttribute="trailing" id="kSb-eM-IW7"/>
-                <constraint firstItem="fpe-vE-ngG" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="law-E7-XOm"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="c83-xx-Jsn" secondAttribute="trailing" id="Fnd-Jk-hq4"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="c83-xx-Jsn" secondAttribute="bottom" id="GGl-k3-rqp"/>
+                <constraint firstItem="c83-xx-Jsn" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="eol-px-S9T"/>
+                <constraint firstItem="c83-xx-Jsn" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="hZt-9J-x4D"/>
             </constraints>
-            <point key="canvasLocation" x="-183" y="80"/>
+            <point key="canvasLocation" x="-10" y="83"/>
         </view>
     </objects>
     <resources>

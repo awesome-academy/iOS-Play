@@ -63,7 +63,8 @@ final class AppDetailViewController: UIViewController {
             models.append(.overView(model: OverViewTableCellModel(artistName: model.artistName, id: "", releaseDate: model.releaseDate, name: model.name, copyright: model.copyright, artistUrl: model.artistUrl, artworkUrl100: model.artworkUrl100)))
             image = model.image
         } else if let model = feedModel {
-            models.append(.overView(model: OverViewTableCellModel(artistName: model.artistName, id: "", releaseDate: model.releaseDate, name: model.name, copyright: model.copyright, artistUrl: model.artistUrl, artworkUrl100: model.artworkUrl100)))
+            models.append(.overView(model: OverViewTableCellModel(artistName: model.artistName ?? "", id: "", releaseDate: model.releaseDate ?? "", name: model.name ?? "", copyright: model.copyright ?? "", artistUrl: model.artistUrl ?? "", artworkUrl100: model.artworkUrl100 ?? "")))
+
         }
     }
 }

@@ -7,10 +7,11 @@
 
 import Foundation
 
-let baseURL = "https://rss.itunes.apple.com/api/v1/us"
+let baseURL = "https://rss.itunes.apple.com/api/v1/vn"
 
 let appURL = "\(baseURL)/ios-apps"
 let musicURL = "\(baseURL)/itunes-music"
+let movieURL = "\(baseURL)/movies"
 
 let resultLimit = "20/explicit.json"
 
@@ -43,8 +44,6 @@ enum AppUrl {
     }
 }
 
-//"Hot Track","New Release","Top Album","Top Song","Comming"]
-
 enum MusicUrl {
     case hotTrack
     case newRelease
@@ -63,6 +62,23 @@ enum MusicUrl {
         case .topSong:
             return ""
         case .comming:
+            return ""
+        }
+    }
+}
+
+enum MovieUrl {
+    case action
+    case documentary
+    case all
+    
+    var url: String {
+        switch self {
+        case .action:
+            return "\(movieURL)/top-movies/all/\(resultLimit)"
+        case .all:
+            return ""
+        case .documentary:
             return ""
         }
     }

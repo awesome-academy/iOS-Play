@@ -59,6 +59,7 @@ internal enum Asset {
   internal static let ctcht = ImageAsset(name: "ctcht")
   internal static let fifa = ImageAsset(name: "fifa")
   internal static let ghenshin = ImageAsset(name: "ghenshin")
+  internal static let marvel = ImageAsset(name: "marvel")
   internal static let movie00 = ImageAsset(name: "movie00")
   internal static let movie1 = ImageAsset(name: "movie1")
   internal static let movie2 = ImageAsset(name: "movie2")

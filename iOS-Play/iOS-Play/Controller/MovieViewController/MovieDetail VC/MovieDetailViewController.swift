@@ -19,6 +19,8 @@ final class MovieDetailViewController: UIViewController {
     
     private let results = [FeedResults]()
     
+    var backgroundImage = Asset.ctcht.image
+    
     private let backgroundHeight: CGFloat = 200
     private let overViewHeight: CGFloat = 130
     private let desciptionHeight: CGFloat = 100
@@ -53,8 +55,8 @@ final class MovieDetailViewController: UIViewController {
             return
         }
         
-        models += dataMock.getImageBackground()
-        models.append(.overView(model: OverViewTableCellModel(artistName: model.artistName, id: model.id, releaseDate: model.releaseDate, name: model.name, copyright: model.copyright, artistUrl: model.artistUrl, artworkUrl100: model.artworkUrl100)))
+        models += dataMock.getImageBackground(image: backgroundImage)
+        models.append(.overView(model: OverViewTableCellModel(artistName: model.artistName ?? "", id: "", releaseDate: model.releaseDate ?? "", name: model.name ?? "", copyright: model.copyright ?? "", artistUrl: model.artistUrl ?? "", artworkUrl100: model.artworkUrl100 ?? "")))
         models += dataMock.getDescriptionView()
         models += dataMock.getInfoView()
         models += dataMock.getCommmentView()
