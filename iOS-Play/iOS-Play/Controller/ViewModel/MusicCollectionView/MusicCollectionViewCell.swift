@@ -24,7 +24,8 @@ final class MusicCollectionViewCell: UICollectionViewCell, NibReusable {
         imageView.layer.cornerRadius = 15
     }
     
-    func configure(with model: FeedResults, image: UIImage) {
+    func configure(with model: FeedResults, imageConerRadius: CGFloat) {
+        imageView.layer.cornerRadius = imageConerRadius
         imageView.setImage(urlString: model.artworkUrl100)
         nameLabel.text = model.name
         artistNameLabel.text = model.artistName

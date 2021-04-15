@@ -23,9 +23,9 @@ enum FeedType {
         case .movies:
             return ["Action & Adventure", "Hot Now", "Documentary"]
         case .books:
-            return []
+            return ["Top Free", "Top Paid"]
         case .tvShows:
-            return []
+            return ["Top TV Episodes", "Top TV Seasons"]
         }
     }
 }

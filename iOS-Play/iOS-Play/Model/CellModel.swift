@@ -8,6 +8,11 @@
 import Foundation
 import UIKit
 
+enum BookCellModel {
+    case genreTitle(model: GenreModel)
+    case collectionView(model: [FeedResults])
+}
+
 enum MusicCellMode {
     case genreTitle(model: GenreModel)
     case collectionView(model : [FeedResults])

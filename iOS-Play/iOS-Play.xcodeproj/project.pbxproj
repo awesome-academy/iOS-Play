@@ -11,6 +11,12 @@
 		E33227502615824800DA11BE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E332274F2615824800DA11BE /* LoginViewController.swift */; };
 		E3530575261AFDD10077AB04 /* DataMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3530574261AFDD10077AB04 /* DataMock.swift */; };
 		E3530579261B0A450077AB04 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3530578261B0A450077AB04 /* Fonts.swift */; };
+		E35CAE2226281188008DF5CA /* BookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35CAE2026281188008DF5CA /* BookViewController.swift */; };
+		E35CAE2326281188008DF5CA /* BookViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E35CAE2126281188008DF5CA /* BookViewController.xib */; };
+		E35CAE292628119F008DF5CA /* TopFreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35CAE272628119F008DF5CA /* TopFreeViewController.swift */; };
+		E35CAE2A2628119F008DF5CA /* TopFreeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E35CAE282628119F008DF5CA /* TopFreeViewController.xib */; };
+		E35CAE2E262811A7008DF5CA /* TopPaidViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35CAE2C262811A7008DF5CA /* TopPaidViewController.swift */; };
+		E35CAE2F262811A7008DF5CA /* TopPaidViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E35CAE2D262811A7008DF5CA /* TopPaidViewController.xib */; };
 		E36791122623F1AD0062EAC7 /* TopAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36791102623F1AD0062EAC7 /* TopAppViewController.swift */; };
 		E36791132623F1AD0062EAC7 /* TopAppViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E36791112623F1AD0062EAC7 /* TopAppViewController.xib */; };
 		E36791182623F2170062EAC7 /* RankTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E36791162623F2170062EAC7 /* RankTableViewCell.xib */; };
@@ -71,7 +77,6 @@
 		E3E70F1726144C9400271013 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3E70F1526144C9400271013 /* LaunchScreen.storyboard */; };
 		E3E70F2326144DAB00271013 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E70F2226144DAB00271013 /* MainTabBarViewController.swift */; };
 		E3E70F2C26144EE800271013 /* AppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E70F2B26144EE800271013 /* AppViewController.swift */; };
-		E3E70F3726144F6000271013 /* BookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E70F3626144F6000271013 /* BookViewController.swift */; };
 		E3E70F3A26144F6900271013 /* TVShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E70F3926144F6900271013 /* TVShowViewController.swift */; };
 		E3E70F43261457BE00271013 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E70F42261457BE00271013 /* BaseNavigationController.swift */; };
 		E3E70F4E26146A2B00271013 /* TabBarItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E70F4D26146A2B00271013 /* TabBarItems.swift */; };
@@ -105,6 +110,12 @@
 		E332274F2615824800DA11BE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E3530574261AFDD10077AB04 /* DataMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataMock.swift; sourceTree = "<group>"; };
 		E3530578261B0A450077AB04 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		E35CAE2026281188008DF5CA /* BookViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookViewController.swift; sourceTree = "<group>"; };
+		E35CAE2126281188008DF5CA /* BookViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookViewController.xib; sourceTree = "<group>"; };
+		E35CAE272628119F008DF5CA /* TopFreeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopFreeViewController.swift; sourceTree = "<group>"; };
+		E35CAE282628119F008DF5CA /* TopFreeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopFreeViewController.xib; sourceTree = "<group>"; };
+		E35CAE2C262811A7008DF5CA /* TopPaidViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopPaidViewController.swift; sourceTree = "<group>"; };
+		E35CAE2D262811A7008DF5CA /* TopPaidViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopPaidViewController.xib; sourceTree = "<group>"; };
 		E36791102623F1AD0062EAC7 /* TopAppViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopAppViewController.swift; sourceTree = "<group>"; };
 		E36791112623F1AD0062EAC7 /* TopAppViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopAppViewController.xib; sourceTree = "<group>"; };
 		E36791162623F2170062EAC7 /* RankTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RankTableViewCell.xib; sourceTree = "<group>"; };
@@ -168,7 +179,6 @@
 		E3E70F1826144C9400271013 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E3E70F2226144DAB00271013 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		E3E70F2B26144EE800271013 /* AppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewController.swift; sourceTree = "<group>"; };
-		E3E70F3626144F6000271013 /* BookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViewController.swift; sourceTree = "<group>"; };
 		E3E70F3926144F6900271013 /* TVShowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVShowViewController.swift; sourceTree = "<group>"; };
 		E3E70F42261457BE00271013 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		E3E70F4D26146A2B00271013 /* TabBarItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItems.swift; sourceTree = "<group>"; };
@@ -252,6 +262,24 @@
 				E37D7CE3261AB6E200E433BB /* Arvo-Regular.ttf */,
 			);
 			path = Font;
+			sourceTree = "<group>";
+		};
+		E35CAE252628118B008DF5CA /* TopPaid */ = {
+			isa = PBXGroup;
+			children = (
+				E35CAE2C262811A7008DF5CA /* TopPaidViewController.swift */,
+				E35CAE2D262811A7008DF5CA /* TopPaidViewController.xib */,
+			);
+			path = TopPaid;
+			sourceTree = "<group>";
+		};
+		E35CAE2626281192008DF5CA /* TopFree */ = {
+			isa = PBXGroup;
+			children = (
+				E35CAE272628119F008DF5CA /* TopFreeViewController.swift */,
+				E35CAE282628119F008DF5CA /* TopFreeViewController.xib */,
+			);
+			path = TopFree;
 			sourceTree = "<group>";
 		};
 		E36791082623F0940062EAC7 /* Top App */ = {
@@ -570,7 +598,10 @@
 		E3E70F2926144E8900271013 /* BookViewController */ = {
 			isa = PBXGroup;
 			children = (
-				E3E70F3626144F6000271013 /* BookViewController.swift */,
+				E35CAE2026281188008DF5CA /* BookViewController.swift */,
+				E35CAE2126281188008DF5CA /* BookViewController.xib */,
+				E35CAE2626281192008DF5CA /* TopFree */,
+				E35CAE252628118B008DF5CA /* TopPaid */,
 			);
 			path = BookViewController;
 			sourceTree = "<group>";
@@ -736,6 +767,7 @@
 				E38797F12626DD0700B78B6B /* AllMovieViewController.xib in Resources */,
 				E3FE8B6526207D5500816EB7 /* CollectionTableViewCell.xib in Resources */,
 				E3725B552624362F00770119 /* FeatureCollectionViewCell.xib in Resources */,
+				E35CAE2F262811A7008DF5CA /* TopPaidViewController.xib in Resources */,
 				E3E70F1226144C9200271013 /* Main.storyboard in Resources */,
 				E37B77DF26254F9600DBA851 /* ImageBackgroundTableViewCell.xib in Resources */,
 				E3725B68262436BE00770119 /* HotTrackViewController.xib in Resources */,
@@ -743,9 +775,11 @@
 				E3E70F1426144C9400271013 /* Assets.xcassets in Resources */,
 				E37D7CE8261AB6E200E433BB /* Arvo-Regular.ttf in Resources */,
 				E3725B582624362F00770119 /* FeatureTableViewCell.xib in Resources */,
+				E35CAE2326281188008DF5CA /* BookViewController.xib in Resources */,
 				E3FE8B4A26204E9100816EB7 /* DescriptionTableViewCell.xib in Resources */,
 				E3FE8B2026202E7900816EB7 /* CommentTableCell.xib in Resources */,
 				E37B77E52625515500DBA851 /* InfoTableViewCell.xib in Resources */,
+				E35CAE2A2628119F008DF5CA /* TopFreeViewController.xib in Resources */,
 				E37D7CEA261AB6E200E433BB /* Arvo-BoldItalic.ttf in Resources */,
 				E3FE8B5C2620791900816EB7 /* CollectionViewCell.xib in Resources */,
 				E37D7CE9261AB6E200E433BB /* Arvo-Italic.ttf in Resources */,
@@ -815,6 +849,7 @@
 				E3725B572624362F00770119 /* FeatureCollectionViewCell.swift in Sources */,
 				E3725B67262436BE00770119 /* HotTrackViewController.swift in Sources */,
 				E37B77E42625515500DBA851 /* InfoTableViewCell.swift in Sources */,
+				E35CAE292628119F008DF5CA /* TopFreeViewController.swift in Sources */,
 				E3725B3626242C8000770119 /* MusicViewController.swift in Sources */,
 				E3E70F4E26146A2B00271013 /* TabBarItems.swift in Sources */,
 				E3E70F2C26144EE800271013 /* AppViewController.swift in Sources */,
@@ -826,6 +861,7 @@
 				E3FE8B56262075E900816EB7 /* UIview++.swift in Sources */,
 				E3FE8B2A2620375900816EB7 /* DownloadTableViewCell.swift in Sources */,
 				E37D7CDE261AB68E00E433BB /* HighlighTableViewCell.swift in Sources */,
+				E35CAE2E262811A7008DF5CA /* TopPaidViewController.swift in Sources */,
 				E3EEB8D3261EF1950030413C /* DetailCellModel.swift in Sources */,
 				E3FE8B19262028E500816EB7 /* DescriptionCollectionViewCell.swift in Sources */,
 				E37D7CD9261AB68500E433BB /* GenreViewCell.swift in Sources */,
@@ -838,6 +874,7 @@
 				E37D7CF2261ABB7900E433BB /* AppDetailViewController.swift in Sources */,
 				E3E70F2326144DAB00271013 /* MainTabBarViewController.swift in Sources */,
 				E38797EC2626DBC100B78B6B /* ActionMovieViewController.swift in Sources */,
+				E35CAE2226281188008DF5CA /* BookViewController.swift in Sources */,
 				E38797F02626DD0700B78B6B /* AllMovieViewController.swift in Sources */,
 				E37D7CDD261AB68E00E433BB /* HighlightViewCell.swift in Sources */,
 				E3FE8B5B2620791900816EB7 /* CollectionViewCell.swift in Sources */,
@@ -847,7 +884,6 @@
 				E3FE8B1F26202E7900816EB7 /* CommentTableCell.swift in Sources */,
 				E37963102615AE2800CBF147 /* Assets.swift in Sources */,
 				E37B77D626254C6A00DBA851 /* MovieDetailViewController.swift in Sources */,
-				E3E70F3726144F6000271013 /* BookViewController.swift in Sources */,
 				E37D7CD1261AB66B00E433BB /* BannerViewTableCell.swift in Sources */,
 				E3E70F0B26144C9200271013 /* AppDelegate.swift in Sources */,
 				E3725B4126242CFD00770119 /* RankMusicViewController.swift in Sources */,

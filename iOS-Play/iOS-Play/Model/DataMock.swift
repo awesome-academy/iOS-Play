@@ -243,7 +243,7 @@ final class DataMock {
                                            belowString: "IMDb Top"),
             DescriptionCollectionCellModel(aboveString: "4.7★",
                                            belowString: "150K reviews"),
-            DescriptionCollectionCellModel(aboveString: "2hr 11min",
+            DescriptionCollectionCellModel(aboveString: "12GB",
                                            belowString: "Duration"),
             DescriptionCollectionCellModel(aboveString: "12+",
                                            belowString: "Rated for 12+"),
@@ -255,6 +255,17 @@ final class DataMock {
     
     func getInfoView() -> [MovieDetailCellModel] {
         let models : [MovieDetailCellModel] = [.infoView(model: InfoCellModel(infomation: "", firstKind: "Bonero", secondKind: "Gold Music"))]
+        return models
+    }
+    
+    func getBookCollection() -> [BookCellModel] {
+        let models : [BookCellModel] = [.collectionView(model: [FeedResults](repeating: FeedResults(artistName: "SheepofG", id: "", releaseDate: "01.01.2021", name: "Conan", copyright: "copyright", artistUrl: "", artworkUrl100: "", genres: []), count: 10))]
+        return models
+    }
+    
+    func getGenre(smallText: String, genre: String) -> [BookCellModel] {
+        var models = [BookCellModel]()
+        models.append(.genreTitle(model: GenreModel(smallLabel: smallText, GenreLabel: genre)))
         return models
     }
 }
