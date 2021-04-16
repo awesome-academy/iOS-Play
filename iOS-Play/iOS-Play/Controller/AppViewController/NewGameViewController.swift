@@ -11,7 +11,6 @@ import UIKit
 final class NewGameViewController: UIViewController {
     
     private let tableView = UITableView(frame: .zero, style: .plain).then {
-        //$0.register(cellType: UITableViewCell.self)
         $0.register(cellType: CollectionTableViewCell.self)
         $0.register(cellType: GenreViewCell.self)
         $0.register(cellType: HighlighTableViewCell.self)
@@ -86,17 +85,13 @@ final class NewGameViewController: UIViewController {
                 self?.models.append(.collectionView(model: firstData))
                 self?.models.append(.collectionView(model: secondData))
                 
-                self?.models.append(.genreTitle(model: GenreModel(smallLabel: "Adventisment", GenreLabel: "Recommended to you")))
-                let bannerView  = self?.dataMock.getBanner()
-                self?.models += bannerView ?? []
-                
                 self?.models.append(.genreTitle(model: GenreModel(smallLabel: "Let's try", GenreLabel: "IMDb Top")))
                 let highlightView = self?.dataMock.getHighlight()
                 self?.models += highlightView ?? []
                 
-                self?.models.append(.genreTitle(model: GenreModel(smallLabel: "", GenreLabel: "Thể Loại")))
-                let listView = self?.dataMock.getList()
-                self?.models += listView ?? []
+                self?.models.append(.genreTitle(model: GenreModel(smallLabel: "Adventisment", GenreLabel: "Recommended to you")))
+                let bannerView  = self?.dataMock.getBanner()
+                self?.models += bannerView ?? []
                 
                 self?.tableView.reloadData()
             }

@@ -130,5 +130,8 @@ extension TopTVEpisodesViewController: UITableViewDelegate, UITableViewDataSourc
 extension TopTVEpisodesViewController: CollectionTableViewCellDelegate {
     
     func didSelectCell(model: FeedResults) {
+        let vc = TVDetailViewController()
+        vc.model = model
+        navigationController?.pushViewController(vc, animated: true)
     }
 }

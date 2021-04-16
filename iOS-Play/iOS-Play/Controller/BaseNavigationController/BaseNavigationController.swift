@@ -11,7 +11,7 @@ import Then
 
 final class BaseNavigationController: UINavigationController {
     
-    private let userButton = UIButton(type: .custom).then {
+    let userButton = UIButton(type: .custom).then {
         $0.backgroundColor = UIColor.systemPink
         $0.setTitle("Q", for: .normal)
         $0.layer.cornerRadius = 34 / 2

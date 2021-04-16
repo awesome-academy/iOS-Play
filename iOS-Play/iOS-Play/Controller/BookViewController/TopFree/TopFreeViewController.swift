@@ -125,15 +125,14 @@ extension TopFreeViewController: CollectionTableViewCellDelegate {
     
     func didSelectCell(model: FeedResults) {
         let vc = MovieDetailViewController()
-        
-        vc.model = model
-        
         let image = UIImageView()
         image.setImage(urlString: model.artworkUrl100)
-        vc.backgroundImage = image.image ?? Asset.ctcht.image
-        
-        vc.info = InfoCellModel(infomation: "", firstKind: "detective", secondKind: "romantic")
-        
+        vc.do {
+            $0.model = model
+            $0.backgroundImage = image.image ?? Asset.ctcht.image
+            $0.info = InfoCellModel(infomation: "", firstKind: "detective", secondKind: "romantic")
+            $0.feedType = "About this book"
+        }
         navigationController?.pushViewController(vc, animated: true)
     }
 }

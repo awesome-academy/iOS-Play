@@ -40,6 +40,9 @@
                                                 <integer key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="rentButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="4Nw-Dx-4tI"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DMx-AW-AQp">
                                         <rect key="frame" x="295" y="0.0" width="285" height="50"/>
@@ -53,6 +56,9 @@
                                                 <integer key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="buyButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="p7T-Yu-uRP"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -182,6 +188,7 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="feedTypeLabel" destination="Xd0-MH-3Ka" id="Ss6-9B-Gwe"/>
                 <outlet property="firstKindLabel" destination="S2h-f9-aVw" id="mcg-RV-Gjh"/>
                 <outlet property="secondKindLabel" destination="kvV-Kh-Nec" id="urr-sb-f08"/>
                 <outletCollection property="views" destination="ndS-Fh-2Nn" collectionClass="NSMutableArray" id="fS5-6G-OGa"/>
