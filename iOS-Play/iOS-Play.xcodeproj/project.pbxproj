@@ -9,6 +9,16 @@
 /* Begin PBXBuildFile section */
 		D34DB91D7CA4B380288D7CF2 /* Pods_iOS_Play.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95FB2CAB69FF583436CAA23A /* Pods_iOS_Play.framework */; };
 		E33227502615824800DA11BE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E332274F2615824800DA11BE /* LoginViewController.swift */; };
+		E332B57B262828500029CE71 /* TopTVEpisodesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E332B579262828500029CE71 /* TopTVEpisodesViewController.xib */; };
+		E332B57C262828500029CE71 /* TopTVEpisodesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E332B57A262828500029CE71 /* TopTVEpisodesViewController.swift */; };
+		E332B5802628285A0029CE71 /* TVShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E332B57E2628285A0029CE71 /* TVShowViewController.swift */; };
+		E332B5812628285A0029CE71 /* TVShowViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E332B57F2628285A0029CE71 /* TVShowViewController.xib */; };
+		E332B586262828850029CE71 /* TopTVSeasonsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E332B584262828850029CE71 /* TopTVSeasonsViewController.xib */; };
+		E332B587262828850029CE71 /* TopTVSeasonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E332B585262828850029CE71 /* TopTVSeasonsViewController.swift */; };
+		E332B58D26282A170029CE71 /* AppleTVTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E332B58B26282A170029CE71 /* AppleTVTableViewCell.swift */; };
+		E332B58E26282A170029CE71 /* AppleTVTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E332B58C26282A170029CE71 /* AppleTVTableViewCell.xib */; };
+		E332B59326282A360029CE71 /* AppleTVCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E332B59126282A360029CE71 /* AppleTVCollectionViewCell.swift */; };
+		E332B59426282A360029CE71 /* AppleTVCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E332B59226282A360029CE71 /* AppleTVCollectionViewCell.xib */; };
 		E3530575261AFDD10077AB04 /* DataMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3530574261AFDD10077AB04 /* DataMock.swift */; };
 		E3530579261B0A450077AB04 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3530578261B0A450077AB04 /* Fonts.swift */; };
 		E35CAE2226281188008DF5CA /* BookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35CAE2026281188008DF5CA /* BookViewController.swift */; };
@@ -77,7 +87,6 @@
 		E3E70F1726144C9400271013 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3E70F1526144C9400271013 /* LaunchScreen.storyboard */; };
 		E3E70F2326144DAB00271013 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E70F2226144DAB00271013 /* MainTabBarViewController.swift */; };
 		E3E70F2C26144EE800271013 /* AppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E70F2B26144EE800271013 /* AppViewController.swift */; };
-		E3E70F3A26144F6900271013 /* TVShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E70F3926144F6900271013 /* TVShowViewController.swift */; };
 		E3E70F43261457BE00271013 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E70F42261457BE00271013 /* BaseNavigationController.swift */; };
 		E3E70F4E26146A2B00271013 /* TabBarItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E70F4D26146A2B00271013 /* TabBarItems.swift */; };
 		E3E70F55261473FE00271013 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = E3E70F54261473FE00271013 /* Then */; };
@@ -108,6 +117,16 @@
 		8B6E124329B5C756D42E4291 /* Pods-iOS-Play.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Play.release.xcconfig"; path = "Target Support Files/Pods-iOS-Play/Pods-iOS-Play.release.xcconfig"; sourceTree = "<group>"; };
 		95FB2CAB69FF583436CAA23A /* Pods_iOS_Play.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_Play.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E332274F2615824800DA11BE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E332B579262828500029CE71 /* TopTVEpisodesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopTVEpisodesViewController.xib; sourceTree = "<group>"; };
+		E332B57A262828500029CE71 /* TopTVEpisodesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopTVEpisodesViewController.swift; sourceTree = "<group>"; };
+		E332B57E2628285A0029CE71 /* TVShowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TVShowViewController.swift; sourceTree = "<group>"; };
+		E332B57F2628285A0029CE71 /* TVShowViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TVShowViewController.xib; path = "Top TV Seasons/TVShowViewController.xib"; sourceTree = "<group>"; };
+		E332B584262828850029CE71 /* TopTVSeasonsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopTVSeasonsViewController.xib; sourceTree = "<group>"; };
+		E332B585262828850029CE71 /* TopTVSeasonsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopTVSeasonsViewController.swift; sourceTree = "<group>"; };
+		E332B58B26282A170029CE71 /* AppleTVTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleTVTableViewCell.swift; sourceTree = "<group>"; };
+		E332B58C26282A170029CE71 /* AppleTVTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AppleTVTableViewCell.xib; sourceTree = "<group>"; };
+		E332B59126282A360029CE71 /* AppleTVCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleTVCollectionViewCell.swift; sourceTree = "<group>"; };
+		E332B59226282A360029CE71 /* AppleTVCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AppleTVCollectionViewCell.xib; sourceTree = "<group>"; };
 		E3530574261AFDD10077AB04 /* DataMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataMock.swift; sourceTree = "<group>"; };
 		E3530578261B0A450077AB04 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		E35CAE2026281188008DF5CA /* BookViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookViewController.swift; sourceTree = "<group>"; };
@@ -179,7 +198,6 @@
 		E3E70F1826144C9400271013 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E3E70F2226144DAB00271013 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		E3E70F2B26144EE800271013 /* AppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewController.swift; sourceTree = "<group>"; };
-		E3E70F3926144F6900271013 /* TVShowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVShowViewController.swift; sourceTree = "<group>"; };
 		E3E70F42261457BE00271013 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		E3E70F4D26146A2B00271013 /* TabBarItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItems.swift; sourceTree = "<group>"; };
 		E3EEB8D2261EF1950030413C /* DetailCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCellModel.swift; sourceTree = "<group>"; };
@@ -251,6 +269,35 @@
 				E332274F2615824800DA11BE /* LoginViewController.swift */,
 			);
 			path = LoginViewController;
+			sourceTree = "<group>";
+		};
+		E332B5772628282B0029CE71 /* Top TV Episodes */ = {
+			isa = PBXGroup;
+			children = (
+				E332B57A262828500029CE71 /* TopTVEpisodesViewController.swift */,
+				E332B579262828500029CE71 /* TopTVEpisodesViewController.xib */,
+			);
+			path = "Top TV Episodes";
+			sourceTree = "<group>";
+		};
+		E332B578262828380029CE71 /* Top TV Seasons */ = {
+			isa = PBXGroup;
+			children = (
+				E332B585262828850029CE71 /* TopTVSeasonsViewController.swift */,
+				E332B584262828850029CE71 /* TopTVSeasonsViewController.xib */,
+			);
+			path = "Top TV Seasons";
+			sourceTree = "<group>";
+		};
+		E332B58A262829F00029CE71 /* AppleTV View */ = {
+			isa = PBXGroup;
+			children = (
+				E332B58B26282A170029CE71 /* AppleTVTableViewCell.swift */,
+				E332B58C26282A170029CE71 /* AppleTVTableViewCell.xib */,
+				E332B59126282A360029CE71 /* AppleTVCollectionViewCell.swift */,
+				E332B59226282A360029CE71 /* AppleTVCollectionViewCell.xib */,
+			);
+			path = "AppleTV View";
 			sourceTree = "<group>";
 		};
 		E353057D261B13940077AB04 /* Font */ = {
@@ -397,6 +444,7 @@
 		E37D7CBD261AB5D400E433BB /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				E332B58A262829F00029CE71 /* AppleTV View */,
 				E37D7CCB261AB62A00E433BB /* Genre */,
 				E37D7CCD261AB63C00E433BB /* AppCollection */,
 				E37D7CCF261AB64D00E433BB /* HighlightCollection */,
@@ -536,10 +584,10 @@
 		E3E70F2126144D5300271013 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				E37D7CBD261AB5D400E433BB /* ViewModel */,
 				E33227422615805A00DA11BE /* LoginViewController */,
 				E3E70F41261457A900271013 /* BaseNavigationController */,
 				E3E70F2526144E4200271013 /* Tabar Controller */,
-				E37D7CBD261AB5D400E433BB /* ViewModel */,
 				E3E70F2626144E5000271013 /* AppViewController */,
 				E3E70F2726144E6C00271013 /* MusicViewController */,
 				E3E70F2826144E7A00271013 /* MovieViewController */,
@@ -609,7 +657,10 @@
 		E3E70F2A26144E9C00271013 /* TVShowViewController */ = {
 			isa = PBXGroup;
 			children = (
-				E3E70F3926144F6900271013 /* TVShowViewController.swift */,
+				E332B57E2628285A0029CE71 /* TVShowViewController.swift */,
+				E332B57F2628285A0029CE71 /* TVShowViewController.xib */,
+				E332B5772628282B0029CE71 /* Top TV Episodes */,
+				E332B578262828380029CE71 /* Top TV Seasons */,
 			);
 			path = TVShowViewController;
 			sourceTree = "<group>";
@@ -749,6 +800,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E332B58E26282A170029CE71 /* AppleTVTableViewCell.xib in Resources */,
 				E3725B3B26242C8F00770119 /* SegmentCollectionViewCell.xib in Resources */,
 				E3FE8B1A262028E500816EB7 /* DescriptionCollectionViewCell.xib in Resources */,
 				E37B77D726254C6A00DBA851 /* MovieDetailViewController.xib in Resources */,
@@ -768,6 +820,7 @@
 				E3FE8B6526207D5500816EB7 /* CollectionTableViewCell.xib in Resources */,
 				E3725B552624362F00770119 /* FeatureCollectionViewCell.xib in Resources */,
 				E35CAE2F262811A7008DF5CA /* TopPaidViewController.xib in Resources */,
+				E332B586262828850029CE71 /* TopTVSeasonsViewController.xib in Resources */,
 				E3E70F1226144C9200271013 /* Main.storyboard in Resources */,
 				E37B77DF26254F9600DBA851 /* ImageBackgroundTableViewCell.xib in Resources */,
 				E3725B68262436BE00770119 /* HotTrackViewController.xib in Resources */,
@@ -778,10 +831,13 @@
 				E35CAE2326281188008DF5CA /* BookViewController.xib in Resources */,
 				E3FE8B4A26204E9100816EB7 /* DescriptionTableViewCell.xib in Resources */,
 				E3FE8B2026202E7900816EB7 /* CommentTableCell.xib in Resources */,
+				E332B5812628285A0029CE71 /* TVShowViewController.xib in Resources */,
+				E332B59426282A360029CE71 /* AppleTVCollectionViewCell.xib in Resources */,
 				E37B77E52625515500DBA851 /* InfoTableViewCell.xib in Resources */,
 				E35CAE2A2628119F008DF5CA /* TopFreeViewController.xib in Resources */,
 				E37D7CEA261AB6E200E433BB /* Arvo-BoldItalic.ttf in Resources */,
 				E3FE8B5C2620791900816EB7 /* CollectionViewCell.xib in Resources */,
+				E332B57B262828500029CE71 /* TopTVEpisodesViewController.xib in Resources */,
 				E37D7CE9261AB6E200E433BB /* Arvo-Italic.ttf in Resources */,
 				E3725B612624365200770119 /* HotTrackTableViewCell.xib in Resources */,
 				E37D7CE7261AB6E200E433BB /* Arvo-Bold.ttf in Resources */,
@@ -851,6 +907,7 @@
 				E37B77E42625515500DBA851 /* InfoTableViewCell.swift in Sources */,
 				E35CAE292628119F008DF5CA /* TopFreeViewController.swift in Sources */,
 				E3725B3626242C8000770119 /* MusicViewController.swift in Sources */,
+				E332B5802628285A0029CE71 /* TVShowViewController.swift in Sources */,
 				E3E70F4E26146A2B00271013 /* TabBarItems.swift in Sources */,
 				E3E70F2C26144EE800271013 /* AppViewController.swift in Sources */,
 				E37B77DE26254F9600DBA851 /* ImageBackgroundTableViewCell.swift in Sources */,
@@ -876,12 +933,15 @@
 				E38797EC2626DBC100B78B6B /* ActionMovieViewController.swift in Sources */,
 				E35CAE2226281188008DF5CA /* BookViewController.swift in Sources */,
 				E38797F02626DD0700B78B6B /* AllMovieViewController.swift in Sources */,
+				E332B58D26282A170029CE71 /* AppleTVTableViewCell.swift in Sources */,
 				E37D7CDD261AB68E00E433BB /* HighlightViewCell.swift in Sources */,
+				E332B587262828850029CE71 /* TopTVSeasonsViewController.swift in Sources */,
 				E3FE8B5B2620791900816EB7 /* CollectionViewCell.swift in Sources */,
 				E36791122623F1AD0062EAC7 /* TopAppViewController.swift in Sources */,
 				E379630F2615AE2800CBF147 /* Strings.swift in Sources */,
 				E38797F82626DD2900B78B6B /* MovieViewController.swift in Sources */,
 				E3FE8B1F26202E7900816EB7 /* CommentTableCell.swift in Sources */,
+				E332B59326282A360029CE71 /* AppleTVCollectionViewCell.swift in Sources */,
 				E37963102615AE2800CBF147 /* Assets.swift in Sources */,
 				E37B77D626254C6A00DBA851 /* MovieDetailViewController.swift in Sources */,
 				E37D7CD1261AB66B00E433BB /* BannerViewTableCell.swift in Sources */,
@@ -889,9 +949,9 @@
 				E3725B4126242CFD00770119 /* RankMusicViewController.swift in Sources */,
 				E3E70F0D26144C9200271013 /* SceneDelegate.swift in Sources */,
 				E3EF5684261DB6A8008971C6 /* APIManager.swift in Sources */,
+				E332B57C262828500029CE71 /* TopTVEpisodesViewController.swift in Sources */,
 				E36791192623F2170062EAC7 /* RankTableViewCell.swift in Sources */,
 				E3725B602624365200770119 /* MusicCollectionViewCell.swift in Sources */,
-				E3E70F3A26144F6900271013 /* TVShowViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
