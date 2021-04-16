@@ -96,8 +96,14 @@ final class HighlightCollectionViewCell: UICollectionViewCell, Reusable {
     }
     
     func configure (with model: HighlightTableCellModel) {
-        highlightImage.image = model.highlightImage
-        appImage.image = model.image
+        
+        if !model.artworkUrl100.isEmpty {
+            highlightImage.image = Asset.movie.image
+            appImage.setImage(urlString: model.artworkUrl100)
+        } else {
+            highlightImage.image = model.highlightImage
+            appImage.image = model.image
+        }
         appNameLabel.text = model.name
         nameAuthorLabel.text = model.artistName
         releaseLabel.text = model.releaseDate

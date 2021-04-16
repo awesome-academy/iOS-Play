@@ -8,6 +8,12 @@
 import Foundation
 import UIKit
 
+enum TVShowCellModel {
+    case genreTitle(model: GenreModel)
+    case AppleTVView(model: [FeedResults])
+    case highlightView(model: [HighlightTableCellModel])
+}
+
 enum BookCellModel {
     case genreTitle(model: GenreModel)
     case collectionView(model: [FeedResults])
