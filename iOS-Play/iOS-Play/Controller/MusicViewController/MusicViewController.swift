@@ -207,3 +207,4 @@ extension MusicViewController: UIPageViewControllerDelegate, UIPageViewControlle
         return childView[afterIndex]
     }
 }
+

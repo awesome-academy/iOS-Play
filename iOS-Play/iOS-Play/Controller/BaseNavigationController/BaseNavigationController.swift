@@ -51,8 +51,14 @@ final class BaseNavigationController: UINavigationController {
 extension BaseNavigationController: UINavigationControllerDelegate {
     
     func navigationController(_ navigationController: UINavigationController, willShow viewController: UIViewController, animated: Bool) {
-        
+        viewController.navigationController?.navigationBar.isHidden = false
+        userButton.isHidden = false
+        if let vc = viewController as? TVDetailViewController {
+            vc.navigationController?.navigationBar.isHidden = true
+            userButton.isHidden = true
+        }
     }
+    
     @objc func userTapped() {
         
         let vc = LoginViewController()

@@ -49,6 +49,16 @@ final class AppViewController: UIViewController {
     
     private var currentPageIndex = 0
     
+    private let appUrl: [String] = [
+        AppUrl.newGame.url,
+        AppUrl.newApp.url,
+        AppUrl.topFree.url,
+        AppUrl.freeIpad.url,
+        AppUrl.topGrossing.url,
+        AppUrl.grossingIpad.url,
+        AppUrl.topPaid.url
+    ]
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -203,6 +213,11 @@ extension AppViewController : UICollectionViewDelegate, UICollectionViewDataSour
             ? UIPageViewController.NavigationDirection.reverse
             : UIPageViewController.NavigationDirection.forward
         pageController.setViewControllers([childView[nextIndex]], direction: direction, animated: true, completion: nil)
+        
+        if let vc = childView[nextIndex] as? TopAppViewController {
+            vc.urlString = appUrl[nextIndex]
+        }
+        
         currentPageIndex = nextIndex
         //*
     }

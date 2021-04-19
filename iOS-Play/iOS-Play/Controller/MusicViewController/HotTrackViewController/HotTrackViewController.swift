@@ -149,7 +149,15 @@ extension HotTrackViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        
+        switch models[indexPath.section] {
+        case .genreTitle:
+            let vc = GenreViewController()
+            vc.url = MusicUrl.hotTrack.url
+            navigationController?.pushViewController(vc, animated: true)
+            
+        default:
+            break
+        }
     }
 }
 

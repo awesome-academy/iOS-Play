@@ -28,13 +28,6 @@ final class TVShowViewController: UIViewController {
     
     private var currentPageIndex : Int = 0
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(true)
-        navigationController?.delegate = self
-        navigationController?.navigationBar.isHidden = false
-        navigationController?.navigationBar.isTranslucent = true
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         configView()
@@ -200,9 +193,3 @@ extension TVShowViewController: UIPageViewControllerDelegate, UIPageViewControll
     }
 }
 
-extension TVShowViewController: UINavigationControllerDelegate {
-    func navigationController(_ navigationController: UINavigationController, willShow viewController: UIViewController, animated: Bool) {
-        let baseNavigationCV = navigationController as? BaseNavigationController
-        baseNavigationCV?.userButton.alpha = 1
-    }
-}

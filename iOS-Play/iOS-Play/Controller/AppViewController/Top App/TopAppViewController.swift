@@ -23,13 +23,17 @@ final class TopAppViewController: UIViewController {
     
     private let apiManager = APIManager.shared
     
+    var urlString = ""
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        restApi()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         configViews()
-        //getDataMock()
-        
-        restApi()
     }
     
     func configViews() {
@@ -41,17 +45,20 @@ final class TopAppViewController: UIViewController {
         }
     }
     
-    func getDataMock() {
-        models += dataMock.getFeedResults()
-    }
-    
     func restApi() {
-        apiManager.getFeedResults(urlString: AppUrl.topFree.url) { [weak self] (results, error) -> (Void) in
+        
+        if urlString.isEmpty {
+            urlString = AppUrl.newApp.url
+        }
+        
+        apiManager.getFeedResults(urlString: urlString) { [weak self] (results, error) -> (Void) in
             guard let results = results else {
                 return
             }
             
-            self?.models = results
+            DispatchQueue.main.async {
+                self?.models = results
+            }
         }
     }
 }

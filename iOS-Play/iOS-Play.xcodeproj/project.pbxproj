@@ -77,6 +77,10 @@
 		E37D7CF2261ABB7900E433BB /* AppDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37D7CF1261ABB7900E433BB /* AppDetailViewController.swift */; };
 		E37D7CF9261ACADB00E433BB /* Cell++.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37D7CF8261ACADB00E433BB /* Cell++.swift */; };
 		E37D7CFC261ACC8500E433BB /* CellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37D7CFB261ACC8400E433BB /* CellModel.swift */; };
+		E385E47D262D382C006B0272 /* GenreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E385E479262D382C006B0272 /* GenreViewController.xib */; };
+		E385E47E262D382C006B0272 /* GenreTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E385E47A262D382C006B0272 /* GenreTableViewCell.xib */; };
+		E385E47F262D382C006B0272 /* GenreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E47B262D382C006B0272 /* GenreTableViewCell.swift */; };
+		E385E480262D382C006B0272 /* GenreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E47C262D382C006B0272 /* GenreViewController.swift */; };
 		E38797EB2626DBC100B78B6B /* ActionMovieViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E38797E92626DBC100B78B6B /* ActionMovieViewController.xib */; };
 		E38797EC2626DBC100B78B6B /* ActionMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38797EA2626DBC100B78B6B /* ActionMovieViewController.swift */; };
 		E38797F02626DD0700B78B6B /* AllMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38797EE2626DD0700B78B6B /* AllMovieViewController.swift */; };
@@ -86,6 +90,7 @@
 		E38797FD2626DE4300B78B6B /* ListMovieTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E38797FB2626DE4300B78B6B /* ListMovieTableViewCell.xib */; };
 		E38797FE2626DE4300B78B6B /* ListMovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38797FC2626DE4300B78B6B /* ListMovieTableViewCell.swift */; };
 		E38ABAEE2618136800B118AD /* Reusable in Frameworks */ = {isa = PBXBuildFile; productRef = E38ABAED2618136800B118AD /* Reusable */; };
+		E38B9FA5262D56CF00A43D1E /* ReuseUrlEum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38B9FA4262D56CF00A43D1E /* ReuseUrlEum.swift */; };
 		E3E70F0B26144C9200271013 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E70F0A26144C9200271013 /* AppDelegate.swift */; };
 		E3E70F0D26144C9200271013 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E70F0C26144C9200271013 /* SceneDelegate.swift */; };
 		E3E70F1226144C9200271013 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3E70F1026144C9200271013 /* Main.storyboard */; };
@@ -193,6 +198,10 @@
 		E37D7CF1261ABB7900E433BB /* AppDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDetailViewController.swift; sourceTree = "<group>"; };
 		E37D7CF8261ACADB00E433BB /* Cell++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cell++.swift"; sourceTree = "<group>"; };
 		E37D7CFB261ACC8400E433BB /* CellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellModel.swift; sourceTree = "<group>"; };
+		E385E479262D382C006B0272 /* GenreViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GenreViewController.xib; sourceTree = "<group>"; };
+		E385E47A262D382C006B0272 /* GenreTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GenreTableViewCell.xib; sourceTree = "<group>"; };
+		E385E47B262D382C006B0272 /* GenreTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenreTableViewCell.swift; sourceTree = "<group>"; };
+		E385E47C262D382C006B0272 /* GenreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenreViewController.swift; sourceTree = "<group>"; };
 		E38797E92626DBC100B78B6B /* ActionMovieViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActionMovieViewController.xib; sourceTree = "<group>"; };
 		E38797EA2626DBC100B78B6B /* ActionMovieViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionMovieViewController.swift; sourceTree = "<group>"; };
 		E38797EE2626DD0700B78B6B /* AllMovieViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllMovieViewController.swift; sourceTree = "<group>"; };
@@ -201,6 +210,7 @@
 		E38797F72626DD2900B78B6B /* MovieViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
 		E38797FB2626DE4300B78B6B /* ListMovieTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListMovieTableViewCell.xib; sourceTree = "<group>"; };
 		E38797FC2626DE4300B78B6B /* ListMovieTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListMovieTableViewCell.swift; sourceTree = "<group>"; };
+		E38B9FA4262D56CF00A43D1E /* ReuseUrlEum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReuseUrlEum.swift; sourceTree = "<group>"; };
 		E3E70F0726144C9200271013 /* iOS-Play.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Play.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3E70F0A26144C9200271013 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E3E70F0C26144C9200271013 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -534,6 +544,17 @@
 			path = HighlightCollection;
 			sourceTree = "<group>";
 		};
+		E385E478262D37B7006B0272 /* Genre VC */ = {
+			isa = PBXGroup;
+			children = (
+				E385E47B262D382C006B0272 /* GenreTableViewCell.swift */,
+				E385E47A262D382C006B0272 /* GenreTableViewCell.xib */,
+				E385E47C262D382C006B0272 /* GenreViewController.swift */,
+				E385E479262D382C006B0272 /* GenreViewController.xib */,
+			);
+			path = "Genre VC";
+			sourceTree = "<group>";
+		};
 		E38797E72626D94E00B78B6B /* Action & Adventure */ = {
 			isa = PBXGroup;
 			children = (
@@ -607,6 +628,7 @@
 				E36E6830261704710040F922 /* FeedTypeEnum.swift */,
 				E3EF567E261DB6A0008971C6 /* URLString .swift */,
 				E3530574261AFDD10077AB04 /* DataMock.swift */,
+				E38B9FA4262D56CF00A43D1E /* ReuseUrlEum.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -633,6 +655,7 @@
 				E3E70F2826144E7A00271013 /* MovieViewController */,
 				E3E70F2926144E8900271013 /* BookViewController */,
 				E3E70F2A26144E9C00271013 /* TVShowViewController */,
+				E385E478262D37B7006B0272 /* Genre VC */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -880,6 +903,8 @@
 				E332B59426282A360029CE71 /* AppleTVCollectionViewCell.xib in Resources */,
 				E37B77E52625515500DBA851 /* InfoTableViewCell.xib in Resources */,
 				E35CAE2A2628119F008DF5CA /* TopFreeViewController.xib in Resources */,
+				E385E47D262D382C006B0272 /* GenreViewController.xib in Resources */,
+				E385E47E262D382C006B0272 /* GenreTableViewCell.xib in Resources */,
 				E37D7CEA261AB6E200E433BB /* Arvo-BoldItalic.ttf in Resources */,
 				E3FE8B5C2620791900816EB7 /* CollectionViewCell.xib in Resources */,
 				E332B57B262828500029CE71 /* TopTVEpisodesViewController.xib in Resources */,
@@ -964,6 +989,7 @@
 				E3FE8B56262075E900816EB7 /* UIview++.swift in Sources */,
 				E3FE8B2A2620375900816EB7 /* DownloadTableViewCell.swift in Sources */,
 				E37D7CDE261AB68E00E433BB /* HighlighTableViewCell.swift in Sources */,
+				E385E47F262D382C006B0272 /* GenreTableViewCell.swift in Sources */,
 				E35CAE2E262811A7008DF5CA /* TopPaidViewController.swift in Sources */,
 				E3EEB8D3261EF1950030413C /* DetailCellModel.swift in Sources */,
 				E36B11B426296AC300A1705B /* TVShowTableViewCell.swift in Sources */,
@@ -972,7 +998,9 @@
 				E3725B3C26242C8F00770119 /* SegmentCollectionViewCell.swift in Sources */,
 				E36E6833261704710040F922 /* SegmentCollectionCell.swift in Sources */,
 				E3530575261AFDD10077AB04 /* DataMock.swift in Sources */,
+				E38B9FA5262D56CF00A43D1E /* ReuseUrlEum.swift in Sources */,
 				E37D7CFC261ACC8500E433BB /* CellModel.swift in Sources */,
+				E385E480262D382C006B0272 /* GenreViewController.swift in Sources */,
 				E36E6838261704890040F922 /* NewGameViewController.swift in Sources */,
 				E3746AFF262C285C006A8D04 /* DownloadViewController.swift in Sources */,
 				E3725B5F2624365200770119 /* HotTrackTableViewCell.swift in Sources */,
