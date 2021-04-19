@@ -157,7 +157,11 @@ extension HotTrackViewController: CollectionTableViewCellDelegate {
 
     func didSelectCell(model: FeedResults) {
         let vc = MovieDetailViewController()
-        vc.model = model
+        vc.do {
+            $0.model = model
+            $0.feedType = "About this music"
+        }
+        
         navigationController?.pushViewController(vc, animated: true)
     }
 }

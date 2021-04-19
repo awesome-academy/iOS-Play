@@ -23,6 +23,8 @@ final class MovieDetailViewController: UIViewController {
     
     var info: InfoCellModel?
     
+    var feedType = "About this movie"
+    
     private let backgroundHeight: CGFloat = 200
     private let overViewHeight: CGFloat = 130
     private let desciptionHeight: CGFloat = 100
@@ -103,7 +105,7 @@ extension MovieDetailViewController: UITableViewDelegate, UITableViewDataSource 
             return cell
         case .infoView(let model):
             let cell = tableView.dequeueReusableCell(for: indexPath) as InfoTableViewCell
-            cell.configure(model: model)
+            cell.configure(model: model, feedtype: feedType)
             return cell
         case .commentView(let models):
             let model = models[indexPath.row]

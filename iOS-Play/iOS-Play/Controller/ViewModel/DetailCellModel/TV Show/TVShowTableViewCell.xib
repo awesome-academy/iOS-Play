@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Arvo-Bold.ttf">
+            <string>Arvo-Bold</string>
+        </array>
+        <array key="Arvo-Regular.ttf">
+            <string>Arvo</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="780" id="KGk-i7-Jjw" customClass="TVShowTableViewCell" customModule="iOS_Play" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="386" height="780"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="386" height="780"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3QE-cC-Hfn">
+                        <rect key="frame" x="0.0" y="0.0" width="386" height="780"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="movie3" translatesAutoresizingMaskIntoConstraints="NO" id="ZI9-jw-699">
+                                <rect key="frame" x="0.0" y="0.0" width="386" height="780"/>
+                            </imageView>
+                            <view alpha="0.90000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l1X-6e-p8K">
+                                <rect key="frame" x="0.0" y="580" width="386" height="200"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5rb-hB-4av">
+                                        <rect key="frame" x="20" y="70" width="346" height="19"/>
+                                        <fontDescription key="fontDescription" name="Arvo" family="Arvo" pointSize="14"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="TV +" image="applelogo" catalog="system"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y0d-6S-JTg">
+                                        <rect key="frame" x="100" y="135" width="186" height="40"/>
+                                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="ZYH-u9-v02"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Arvo" family="Arvo" pointSize="17"/>
+                                        <state key="normal" title="Download">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="downloadTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="dDN-8R-kui"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="5rb-hB-4av" firstAttribute="leading" secondItem="l1X-6e-p8K" secondAttribute="leading" constant="20" id="2Jr-3K-VGA"/>
+                                    <constraint firstItem="Y0d-6S-JTg" firstAttribute="leading" secondItem="l1X-6e-p8K" secondAttribute="leading" constant="100" id="7ig-Ls-HJR"/>
+                                    <constraint firstAttribute="trailing" secondItem="Y0d-6S-JTg" secondAttribute="trailing" constant="100" id="FyL-nr-pMe"/>
+                                    <constraint firstAttribute="height" constant="200" id="K8u-8W-9Y1"/>
+                                    <constraint firstAttribute="bottom" secondItem="Y0d-6S-JTg" secondAttribute="bottom" constant="25" id="ccp-s8-pQm"/>
+                                    <constraint firstAttribute="trailing" secondItem="5rb-hB-4av" secondAttribute="trailing" constant="20" id="nq8-pS-jsn"/>
+                                    <constraint firstItem="5rb-hB-4av" firstAttribute="top" secondItem="l1X-6e-p8K" secondAttribute="top" constant="70" id="rKX-Oy-5Rx"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LOLL" translatesAutoresizingMaskIntoConstraints="NO" id="sjr-eU-NXh">
+                                <rect key="frame" x="133" y="520" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="1wV-pU-HWX"/>
+                                    <constraint firstAttribute="height" constant="120" id="t3A-jk-NuR"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wild Rift" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qfg-VH-NPT">
+                                <rect key="frame" x="10" y="675" width="366" height="30.5"/>
+                                <fontDescription key="fontDescription" name="Arvo-Bold" family="Arvo" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="sjr-eU-NXh" firstAttribute="centerX" secondItem="l1X-6e-p8K" secondAttribute="centerX" id="6vo-OZ-vCe"/>
+                            <constraint firstItem="ZI9-jw-699" firstAttribute="leading" secondItem="3QE-cC-Hfn" secondAttribute="leading" id="ILu-dV-n4B"/>
+                            <constraint firstAttribute="trailing" secondItem="ZI9-jw-699" secondAttribute="trailing" id="LV7-OI-Bsp"/>
+                            <constraint firstItem="qfg-VH-NPT" firstAttribute="top" secondItem="sjr-eU-NXh" secondAttribute="bottom" constant="35" id="NGp-tS-aGP"/>
+                            <constraint firstAttribute="bottom" secondItem="ZI9-jw-699" secondAttribute="bottom" id="dBO-oh-90D"/>
+                            <constraint firstAttribute="trailing" secondItem="qfg-VH-NPT" secondAttribute="trailing" constant="10" id="gk5-qz-6G7"/>
+                            <constraint firstAttribute="bottom" secondItem="sjr-eU-NXh" secondAttribute="bottom" constant="140" id="lEk-TG-AZ9"/>
+                            <constraint firstAttribute="bottom" secondItem="l1X-6e-p8K" secondAttribute="bottom" id="sA7-Vo-QGW"/>
+                            <constraint firstItem="qfg-VH-NPT" firstAttribute="leading" secondItem="3QE-cC-Hfn" secondAttribute="leading" constant="10" id="tuO-gG-dwC"/>
+                            <constraint firstItem="ZI9-jw-699" firstAttribute="top" secondItem="3QE-cC-Hfn" secondAttribute="top" id="w5L-4D-gZR"/>
+                            <constraint firstAttribute="trailing" secondItem="l1X-6e-p8K" secondAttribute="trailing" id="x9y-xr-KfE"/>
+                            <constraint firstItem="l1X-6e-p8K" firstAttribute="leading" secondItem="3QE-cC-Hfn" secondAttribute="leading" id="yH4-Zy-5Zf"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="3QE-cC-Hfn" secondAttribute="bottom" id="IJH-nM-Isv"/>
+                    <constraint firstItem="3QE-cC-Hfn" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="MEB-cw-udp"/>
+                    <constraint firstAttribute="trailing" secondItem="3QE-cC-Hfn" secondAttribute="trailing" id="MLO-7d-b1n"/>
+                    <constraint firstItem="3QE-cC-Hfn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="kV1-nQ-eet"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="backgroundImage" destination="ZI9-jw-699" id="AZ6-ew-Mme"/>
+                <outlet property="nameLabel" destination="qfg-VH-NPT" id="xX9-b9-NtQ"/>
+                <outlet property="showImage" destination="sjr-eU-NXh" id="g05-Kz-SX2"/>
+            </connections>
+            <point key="canvasLocation" x="173.91304347826087" y="276.5625"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="LOLL" width="230" height="230"/>
+        <image name="applelogo" catalog="system" width="103" height="128"/>
+        <image name="movie3" width="1500" height="1328"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -268,4 +268,43 @@ final class DataMock {
         models.append(.genreTitle(model: GenreModel(smallLabel: smallText, GenreLabel: genre)))
         return models
     }
+    
+    func getDescriptionView() -> [TVDetailCellModel] {
+        var models = [TVDetailCellModel]()
+        
+        models.append(.descriptionView(model: [
+            DescriptionCollectionCellModel(aboveString: "#1",
+                                           belowString: "IMDb Top"),
+            DescriptionCollectionCellModel(aboveString: "4.7★",
+                                           belowString: "150K reviews"),
+            DescriptionCollectionCellModel(aboveString: "710.15",
+                                           belowString: "MB"),
+            DescriptionCollectionCellModel(aboveString: "12+",
+                                           belowString: "Rated for 12+"),
+            DescriptionCollectionCellModel(aboveString: "1M+",
+                                           belowString: "Download")
+        ]))
+        return models
+    }
+    
+    func getCommmentView() -> [TVDetailCellModel] {
+        var models = [TVDetailCellModel]()
+        
+        models.append(.commentView(model: [
+            CommentCellModel(userImage: Asset.music0.image,
+                             commentString: "Skyyyyy ơiiiiiiii \nGì ạ Gì ạaaaaa ^n "),
+            CommentCellModel(userImage: Asset.music1.image,
+                             commentString: "Đưa tay đây nào \nMãi bên nhau bạn nhớ"),
+            CommentCellModel(userImage: Asset.music2.image,
+                             commentString: "Bố em hút rất nhiều thuốc \nBố anh hút rất nhiều thuốc"),
+            CommentCellModel(userImage: Asset.music0.image,
+                             commentString: "Skyyyyy ơiiiiiiii \nGì ạ Gì ạaaaaa ^n "),
+            CommentCellModel(userImage: Asset.music1.image,
+                             commentString: "Đưa tay đây nào \nMãi bên nhau bạn nhớ"),
+            CommentCellModel(userImage: Asset.music2.image,
+                             commentString: "Bố em hút rất nhiều thuốc \nBố anh hút rất nhiều thuốc")
+        ]))
+        return models
+    }
+
 }

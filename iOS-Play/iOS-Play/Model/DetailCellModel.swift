@@ -8,6 +8,13 @@
 import Foundation
 import UIKit
 
+enum TVDetailCellModel {
+    case imageBackground(model: FeedResults)
+    case descriptionView(model: [DescriptionCollectionCellModel])
+    case infoView(model: InfoCellModel)
+    case commentView(model: [CommentCellModel])
+}
+
 enum MovieDetailCellModel {
     case imageBackground(model: ImageBackgourndCellModel)
     case overView(model: OverViewTableCellModel)

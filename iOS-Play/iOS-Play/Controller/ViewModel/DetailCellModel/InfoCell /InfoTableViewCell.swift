@@ -12,8 +12,10 @@ class InfoTableViewCell: UITableViewCell, NibReusable {
 
     @IBOutlet weak private var firstKindLabel: UILabel!
     @IBOutlet weak private var secondKindLabel: UILabel!
-    
     @IBOutlet var views: [UIView]!
+    @IBOutlet weak var feedTypeLabel: UILabel!
+    
+    var buttonTapped: (() -> Void)?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -31,8 +33,18 @@ class InfoTableViewCell: UITableViewCell, NibReusable {
         }
     }
     
-    func configure(model: InfoCellModel) {
+    func configure(model: InfoCellModel, feedtype: String) {
         firstKindLabel.text = model.firstKind
         secondKindLabel.text = model.secondKind
+        feedTypeLabel.text = feedtype
     }
+    
+    
+    @IBAction func rentButtonTapped(_ sender: Any) {
+        buttonTapped?()
+    }
+    @IBAction func buyButtonTapped(_ sender: Any) {
+        buttonTapped?()
+    }
+    
 }

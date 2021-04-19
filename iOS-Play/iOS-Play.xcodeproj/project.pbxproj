@@ -31,6 +31,10 @@
 		E36791132623F1AD0062EAC7 /* TopAppViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E36791112623F1AD0062EAC7 /* TopAppViewController.xib */; };
 		E36791182623F2170062EAC7 /* RankTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E36791162623F2170062EAC7 /* RankTableViewCell.xib */; };
 		E36791192623F2170062EAC7 /* RankTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36791172623F2170062EAC7 /* RankTableViewCell.swift */; };
+		E36B11AE26296A1100A1705B /* TVDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E36B11AC26296A1100A1705B /* TVDetailViewController.xib */; };
+		E36B11AF26296A1100A1705B /* TVDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36B11AD26296A1100A1705B /* TVDetailViewController.swift */; };
+		E36B11B426296AC300A1705B /* TVShowTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36B11B226296AC300A1705B /* TVShowTableViewCell.swift */; };
+		E36B11B526296AC300A1705B /* TVShowTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E36B11B326296AC300A1705B /* TVShowTableViewCell.xib */; };
 		E36E6832261704710040F922 /* FeedTypeEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36E6830261704710040F922 /* FeedTypeEnum.swift */; };
 		E36E6833261704710040F922 /* SegmentCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36E6831261704710040F922 /* SegmentCollectionCell.swift */; };
 		E36E6838261704890040F922 /* NewGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36E6836261704890040F922 /* NewGameViewController.swift */; };
@@ -51,6 +55,8 @@
 		E3725B67262436BE00770119 /* HotTrackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3725B65262436BE00770119 /* HotTrackViewController.swift */; };
 		E3725B68262436BE00770119 /* HotTrackViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3725B66262436BE00770119 /* HotTrackViewController.xib */; };
 		E3725B732624A2EF00770119 /* UIImageView++.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3725B722624A2EF00770119 /* UIImageView++.swift */; };
+		E3746AFF262C285C006A8D04 /* DownloadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3746AFD262C285C006A8D04 /* DownloadViewController.swift */; };
+		E3746B00262C285C006A8D04 /* DownloadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3746AFE262C285C006A8D04 /* DownloadViewController.xib */; };
 		E379630F2615AE2800CBF147 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E379630D2615AE2800CBF147 /* Strings.swift */; };
 		E37963102615AE2800CBF147 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = E379630E2615AE2800CBF147 /* Assets.swift */; };
 		E37963142615AE5F00CBF147 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E37963122615AE5F00CBF147 /* Localizable.strings */; };
@@ -139,6 +145,10 @@
 		E36791112623F1AD0062EAC7 /* TopAppViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopAppViewController.xib; sourceTree = "<group>"; };
 		E36791162623F2170062EAC7 /* RankTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RankTableViewCell.xib; sourceTree = "<group>"; };
 		E36791172623F2170062EAC7 /* RankTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RankTableViewCell.swift; sourceTree = "<group>"; };
+		E36B11AC26296A1100A1705B /* TVDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TVDetailViewController.xib; sourceTree = "<group>"; };
+		E36B11AD26296A1100A1705B /* TVDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TVDetailViewController.swift; sourceTree = "<group>"; };
+		E36B11B226296AC300A1705B /* TVShowTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TVShowTableViewCell.swift; sourceTree = "<group>"; };
+		E36B11B326296AC300A1705B /* TVShowTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TVShowTableViewCell.xib; sourceTree = "<group>"; };
 		E36E6830261704710040F922 /* FeedTypeEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTypeEnum.swift; sourceTree = "<group>"; };
 		E36E6831261704710040F922 /* SegmentCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentCollectionCell.swift; sourceTree = "<group>"; };
 		E36E6836261704890040F922 /* NewGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewGameViewController.swift; sourceTree = "<group>"; };
@@ -159,6 +169,8 @@
 		E3725B65262436BE00770119 /* HotTrackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotTrackViewController.swift; sourceTree = "<group>"; };
 		E3725B66262436BE00770119 /* HotTrackViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HotTrackViewController.xib; sourceTree = "<group>"; };
 		E3725B722624A2EF00770119 /* UIImageView++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView++.swift"; sourceTree = "<group>"; };
+		E3746AFD262C285C006A8D04 /* DownloadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadViewController.swift; sourceTree = "<group>"; };
+		E3746AFE262C285C006A8D04 /* DownloadViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DownloadViewController.xib; sourceTree = "<group>"; };
 		E37963062615AC7700CBF147 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		E379630B2615AD3400CBF147 /* swiftgen.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
 		E379630D2615AE2800CBF147 /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
@@ -347,6 +359,25 @@
 			path = Ranking;
 			sourceTree = "<group>";
 		};
+		E36B11AB2629697B00A1705B /* TV Detail VC */ = {
+			isa = PBXGroup;
+			children = (
+				E36B11AD26296A1100A1705B /* TVDetailViewController.swift */,
+				E36B11AC26296A1100A1705B /* TVDetailViewController.xib */,
+			);
+			path = "TV Detail VC";
+			sourceTree = "<group>";
+		};
+		E36B11B126296A9E00A1705B /* TV Show */ = {
+			isa = PBXGroup;
+			children = (
+				E36B11B226296AC300A1705B /* TVShowTableViewCell.swift */,
+				E36B11B326296AC300A1705B /* TVShowTableViewCell.xib */,
+				E3746AFC262C283B006A8D04 /* DownLoadVC */,
+			);
+			path = "TV Show";
+			sourceTree = "<group>";
+		};
 		E3725B3126242C5000770119 /* SegmentCollection */ = {
 			isa = PBXGroup;
 			children = (
@@ -401,6 +432,15 @@
 			children = (
 			);
 			path = MusicDetailViewController;
+			sourceTree = "<group>";
+		};
+		E3746AFC262C283B006A8D04 /* DownLoadVC */ = {
+			isa = PBXGroup;
+			children = (
+				E3746AFD262C285C006A8D04 /* DownloadViewController.swift */,
+				E3746AFE262C285C006A8D04 /* DownloadViewController.xib */,
+			);
+			path = DownLoadVC;
 			sourceTree = "<group>";
 		};
 		E379630C2615ADDC00CBF147 /* SwiftGen */ = {
@@ -659,6 +699,7 @@
 			children = (
 				E332B57E2628285A0029CE71 /* TVShowViewController.swift */,
 				E332B57F2628285A0029CE71 /* TVShowViewController.xib */,
+				E36B11AB2629697B00A1705B /* TV Detail VC */,
 				E332B5772628282B0029CE71 /* Top TV Episodes */,
 				E332B578262828380029CE71 /* Top TV Seasons */,
 			);
@@ -685,6 +726,7 @@
 		E3EEB8CC261EED580030413C /* DetailCellModel */ = {
 			isa = PBXGroup;
 			children = (
+				E36B11B126296A9E00A1705B /* TV Show */,
 				E37B77DB26254F7300DBA851 /* InfoCell  */,
 				E37B77DA26254F6400DBA851 /* imageBackground */,
 				E3EEB8CD261EEE760030413C /* OverView */,
@@ -806,7 +848,9 @@
 				E37B77D726254C6A00DBA851 /* MovieDetailViewController.xib in Resources */,
 				E38797EB2626DBC100B78B6B /* ActionMovieViewController.xib in Resources */,
 				E3725B4226242CFD00770119 /* RankMusicViewController.xib in Resources */,
+				E3746B00262C285C006A8D04 /* DownloadViewController.xib in Resources */,
 				E36791182623F2170062EAC7 /* RankTableViewCell.xib in Resources */,
+				E36B11AE26296A1100A1705B /* TVDetailViewController.xib in Resources */,
 				E38797FD2626DE4300B78B6B /* ListMovieTableViewCell.xib in Resources */,
 				E3725B622624365200770119 /* MusicCollectionViewCell.xib in Resources */,
 				E38797F42626DD1600B78B6B /* MovieViewController.xib in Resources */,
@@ -824,6 +868,7 @@
 				E3E70F1226144C9200271013 /* Main.storyboard in Resources */,
 				E37B77DF26254F9600DBA851 /* ImageBackgroundTableViewCell.xib in Resources */,
 				E3725B68262436BE00770119 /* HotTrackViewController.xib in Resources */,
+				E36B11B526296AC300A1705B /* TVShowTableViewCell.xib in Resources */,
 				E3FE8B2B2620375900816EB7 /* DownloadTableViewCell.xib in Resources */,
 				E3E70F1426144C9400271013 /* Assets.xcassets in Resources */,
 				E37D7CE8261AB6E200E433BB /* Arvo-Regular.ttf in Resources */,
@@ -912,6 +957,7 @@
 				E3E70F2C26144EE800271013 /* AppViewController.swift in Sources */,
 				E37B77DE26254F9600DBA851 /* ImageBackgroundTableViewCell.swift in Sources */,
 				E3E70F43261457BE00271013 /* BaseNavigationController.swift in Sources */,
+				E36B11AF26296A1100A1705B /* TVDetailViewController.swift in Sources */,
 				E3725B732624A2EF00770119 /* UIImageView++.swift in Sources */,
 				E3530579261B0A450077AB04 /* Fonts.swift in Sources */,
 				E38797FE2626DE4300B78B6B /* ListMovieTableViewCell.swift in Sources */,
@@ -920,6 +966,7 @@
 				E37D7CDE261AB68E00E433BB /* HighlighTableViewCell.swift in Sources */,
 				E35CAE2E262811A7008DF5CA /* TopPaidViewController.swift in Sources */,
 				E3EEB8D3261EF1950030413C /* DetailCellModel.swift in Sources */,
+				E36B11B426296AC300A1705B /* TVShowTableViewCell.swift in Sources */,
 				E3FE8B19262028E500816EB7 /* DescriptionCollectionViewCell.swift in Sources */,
 				E37D7CD9261AB68500E433BB /* GenreViewCell.swift in Sources */,
 				E3725B3C26242C8F00770119 /* SegmentCollectionViewCell.swift in Sources */,
@@ -927,6 +974,7 @@
 				E3530575261AFDD10077AB04 /* DataMock.swift in Sources */,
 				E37D7CFC261ACC8500E433BB /* CellModel.swift in Sources */,
 				E36E6838261704890040F922 /* NewGameViewController.swift in Sources */,
+				E3746AFF262C285C006A8D04 /* DownloadViewController.swift in Sources */,
 				E3725B5F2624365200770119 /* HotTrackTableViewCell.swift in Sources */,
 				E37D7CF2261ABB7900E433BB /* AppDetailViewController.swift in Sources */,
 				E3E70F2326144DAB00271013 /* MainTabBarViewController.swift in Sources */,
