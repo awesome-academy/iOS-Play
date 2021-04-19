@@ -119,6 +119,18 @@ extension TopFreeViewController: UITableViewDelegate, UITableViewDataSource {
         case .collectionView: return heightofCollection * 2
         }
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        switch models[indexPath.section] {
+        case .genreTitle:
+            let vc = GenreViewController()
+            vc.url = BookUrl.topFree.url
+            navigationController?.pushViewController(vc, animated: true)
+        default:
+            break
+        }
+    }
 }
 
 extension TopFreeViewController: CollectionTableViewCellDelegate {

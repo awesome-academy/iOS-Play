@@ -57,12 +57,6 @@ final class TVDetailViewController: UIViewController {
     }
     
     func configNavigationBar() {
-        
-        navigationController?.do {
-            $0.delegate = self
-            $0.navigationBar.isTranslucent = true
-            $0.navigationBar.isHidden = true
-        }
             
         let titleBar = UIView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 44))
         let image = UIImageView().then {
@@ -211,12 +205,5 @@ extension TVDetailViewController: UIScrollViewDelegate{
         } else {
             navigationController?.navigationBar.isHidden = true
         }
-    }
-}
-
-extension TVDetailViewController: UINavigationControllerDelegate {
-    func navigationController(_ navigationController: UINavigationController, willShow viewController: UIViewController, animated: Bool) {
-        let baseNavigationCV = navigationController as? BaseNavigationController
-        baseNavigationCV?.userButton.alpha = 0
     }
 }

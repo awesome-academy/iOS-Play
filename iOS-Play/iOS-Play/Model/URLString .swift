@@ -15,7 +15,7 @@ let movieURL = "\(baseURL)/movies"
 let bookURL = "\(baseURL)/books"
 let tvShowURL = "\(baseURL)/tv-shows"
 
-let resultLimit = "20/explicit.json"
+let resultLimit = "all/20/explicit.json"
 
 enum AppUrl {
     case newGame
@@ -29,19 +29,19 @@ enum AppUrl {
     var url: String {
         switch self {
         case .newGame:
-            return "\(appURL)/new-games-we-love/all/\(resultLimit)"
+            return "\(appURL)/new-games-we-love/\(resultLimit)"
         case .newApp:
-            return ""
+            return "\(appURL)/new-apps-we-love/\(resultLimit)"
         case .topFree:
-            return "\(appURL)/top-free/all/\(resultLimit)"
+            return "\(appURL)/top-free/\(resultLimit)"
         case .freeIpad:
-            return ""
+            return "\(appURL)/top-free-ipad/\(resultLimit)"
         case .topGrossing:
-            return ""
+            return "\(appURL)/top-grossing/\(resultLimit)"
         case .grossingIpad:
-            return ""
+            return "\(appURL)/top-grossing-ipad/\(resultLimit)"
         case .topPaid:
-            return ""
+            return "\(appURL)/top-paid/\(resultLimit)"
         }
     }
 }
@@ -56,7 +56,7 @@ enum MusicUrl {
     var url: String {
         switch self {
         case .hotTrack:
-            return "\(musicURL)/hot-tracks/all/\(resultLimit)"
+            return "\(musicURL)/hot-tracks/\(resultLimit)"
         case .newRelease:
             return ""
         case .topAlbum:
@@ -77,7 +77,7 @@ enum MovieUrl {
     var url: String {
         switch self {
         case .action:
-            return "\(movieURL)/top-movies/all/\(resultLimit)"
+            return "\(movieURL)/top-movies/\(resultLimit)"
         case .all:
             return ""
         case .documentary:
@@ -107,7 +107,7 @@ enum TVShowUrl {
     var url: String {
         switch self {
         case . topEpisodes:
-            return "\(tvShowURL)/top-tv-episodes/all/\(resultLimit)"
+            return "\(tvShowURL)/top-tv-episodes/\(resultLimit)"
         case .topSeason:
             return ""
         }

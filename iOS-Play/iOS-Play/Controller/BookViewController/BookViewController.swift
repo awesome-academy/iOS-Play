@@ -28,7 +28,7 @@ final class BookViewController: UIViewController {
     }
     
     private var currentPageIndex : Int = 0
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -197,3 +197,4 @@ extension BookViewController: UIPageViewControllerDelegate, UIPageViewController
         return childView[afterIndex]
     }
 }
+
