@@ -98,7 +98,7 @@ final class HighlightCollectionViewCell: UICollectionViewCell, Reusable {
     func configure (with model: HighlightTableCellModel) {
         
         if !model.artworkUrl100.isEmpty {
-            highlightImage.image = Asset.movie.image
+            highlightImage.image = Asset.wwdc2.image
             appImage.setImage(urlString: model.artworkUrl100)
         } else {
             highlightImage.image = model.highlightImage

@@ -30,6 +30,14 @@ final class MusicViewController: UIViewController {
     
     private var currentPageIndex : Int = 0
     
+    private let musicUrl: [String] = [
+        MusicUrl.hotTrack.url,
+        MusicUrl.newRelease.url,
+        MusicUrl.topAlbum.url,
+        MusicUrl.topSong.url,
+        MusicUrl.comming.url,
+    ]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -78,7 +86,7 @@ final class MusicViewController: UIViewController {
     
     func configChildView() {
         let hotVC = HotTrackViewController()
-        let newVC = RankMusicViewController()
+        let newVC = HotTrackViewController()
         let topAlbumVC = RankMusicViewController()
         let topSongVC = RankMusicViewController()
         let commingVC = RankMusicViewController()
@@ -155,10 +163,15 @@ extension MusicViewController: UICollectionViewDelegate, UICollectionViewDataSou
         
         //push view controller
         let nextIndex = indexPath.row
-        let direction: UIPageViewController.NavigationDirection = nextIndex < nextIndex
+        let direction: UIPageViewController.NavigationDirection = nextIndex < currentPageIndex
             ? .reverse
             : .forward
         pageController.setViewControllers([childView[nextIndex]], direction: direction, animated: true, completion: nil)
+        
+        if let vc = childView[nextIndex] as? HotTrackViewController {
+            vc.urlString = musicUrl[nextIndex]
+        }
+        
         currentPageIndex = nextIndex
     }
 }

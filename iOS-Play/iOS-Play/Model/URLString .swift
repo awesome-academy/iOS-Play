@@ -58,13 +58,13 @@ enum MusicUrl {
         case .hotTrack:
             return "\(musicURL)/hot-tracks/\(resultLimit)"
         case .newRelease:
-            return ""
+            return "\(musicURL)/new-music/\(resultLimit)"
         case .topAlbum:
-            return ""
+            return "\(musicURL)/recent-releases/\(resultLimit)"
         case .topSong:
-            return ""
+            return "\(musicURL)/top-albums/\(resultLimit)"
         case .comming:
-            return ""
+            return "\(musicURL)/top-songs/\(resultLimit)"
         }
     }
 }
@@ -79,9 +79,9 @@ enum MovieUrl {
         case .action:
             return "\(movieURL)/top-movies/\(resultLimit)"
         case .all:
-            return ""
+            return "\(movieURL)/top-movies/documentary/\(resultLimit)"
         case .documentary:
-            return ""
+            return "\(movieURL)/top-movies/action-and-adventure/\(resultLimit)"
         }
     }
 }
@@ -95,7 +95,7 @@ enum BookUrl {
         case . topFree:
             return "\(bookURL)/top-free/all/30/explicit.json"
         case .topPaid:
-            return ""
+            return "\(bookURL)/top-paid/all/15/explicit.json"
         }
     }
 }
@@ -109,7 +109,7 @@ enum TVShowUrl {
         case . topEpisodes:
             return "\(tvShowURL)/top-tv-episodes/\(resultLimit)"
         case .topSeason:
-            return ""
+            return "\(tvShowURL)/top-tv-seasons/\(resultLimit)"
         }
     }
 }
