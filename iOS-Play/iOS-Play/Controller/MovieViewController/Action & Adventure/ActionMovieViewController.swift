@@ -75,6 +75,7 @@ extension ActionMovieViewController: UITableViewDelegate, UITableViewDataSource 
         let vc = MovieDetailViewController()
         vc.backgroundImage = Asset.marvel.image
         vc.model = models[indexPath.row]
+        vc.info = InfoCellModel(infomation: "", firstKind: "Action", secondKind: "Horror")
         navigationController?.pushViewController(vc, animated: true)
     }
     

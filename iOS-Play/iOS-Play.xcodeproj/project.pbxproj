@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D34DB91D7CA4B380288D7CF2 /* Pods_iOS_Play.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95FB2CAB69FF583436CAA23A /* Pods_iOS_Play.framework */; };
+		E31F1337268B17EB00BA5933 /* NewGameViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31F1336268B17EB00BA5933 /* NewGameViewControllerTest.swift */; };
 		E33227502615824800DA11BE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E332274F2615824800DA11BE /* LoginViewController.swift */; };
 		E332B57B262828500029CE71 /* TopTVEpisodesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E332B579262828500029CE71 /* TopTVEpisodesViewController.xib */; };
 		E332B57C262828500029CE71 /* TopTVEpisodesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E332B57A262828500029CE71 /* TopTVEpisodesViewController.swift */; };
@@ -123,10 +124,39 @@
 		E3FE8B6526207D5500816EB7 /* CollectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3FE8B6326207D5500816EB7 /* CollectionTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		E31F12E5268AF70E00BA5933 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E3E70EFF26144C9200271013 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E3E70F0626144C9200271013;
+			remoteInfo = "iOS-Play";
+		};
+		E31F1328268B0F2000BA5933 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E3E70EFF26144C9200271013 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E3E70F0626144C9200271013;
+			remoteInfo = "iOS-Play";
+		};
+		E31F1339268B17EB00BA5933 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E3E70EFF26144C9200271013 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E3E70F0626144C9200271013;
+			remoteInfo = "iOS-Play";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		60EEE4E73FE46C278F760426 /* Pods-iOS-Play.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Play.debug.xcconfig"; path = "Target Support Files/Pods-iOS-Play/Pods-iOS-Play.debug.xcconfig"; sourceTree = "<group>"; };
 		8B6E124329B5C756D42E4291 /* Pods-iOS-Play.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Play.release.xcconfig"; path = "Target Support Files/Pods-iOS-Play/Pods-iOS-Play.release.xcconfig"; sourceTree = "<group>"; };
 		95FB2CAB69FF583436CAA23A /* Pods_iOS_Play.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_Play.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E31F12E0268AF70E00BA5933 /* TopAppTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TopAppTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E31F1323268B0F2000BA5933 /* TopAppViewControllerTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TopAppViewControllerTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E31F1334268B17EB00BA5933 /* NewGameViewControllerTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewGameViewControllerTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E31F1336268B17EB00BA5933 /* NewGameViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGameViewControllerTest.swift; sourceTree = "<group>"; };
+		E31F1338268B17EB00BA5933 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E332274F2615824800DA11BE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E332B579262828500029CE71 /* TopTVEpisodesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopTVEpisodesViewController.xib; sourceTree = "<group>"; };
 		E332B57A262828500029CE71 /* TopTVEpisodesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopTVEpisodesViewController.swift; sourceTree = "<group>"; };
@@ -245,6 +275,27 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		E31F12DD268AF70E00BA5933 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E31F1320268B0F2000BA5933 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E31F1331268B17EB00BA5933 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E3E70F0426144C9200271013 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -273,6 +324,15 @@
 				95FB2CAB69FF583436CAA23A /* Pods_iOS_Play.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E31F1335268B17EB00BA5933 /* NewGameViewControllerTest */ = {
+			isa = PBXGroup;
+			children = (
+				E31F1336268B17EB00BA5933 /* NewGameViewControllerTest.swift */,
+				E31F1338268B17EB00BA5933 /* Info.plist */,
+			);
+			path = NewGameViewControllerTest;
 			sourceTree = "<group>";
 		};
 		E332273D2615663200DA11BE /* Help */ = {
@@ -437,13 +497,6 @@
 			path = MusicCollectionView;
 			sourceTree = "<group>";
 		};
-		E3725B6F26248CF400770119 /* MusicDetailViewController */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = MusicDetailViewController;
-			sourceTree = "<group>";
-		};
 		E3746AFC262C283B006A8D04 /* DownLoadVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -588,6 +641,7 @@
 				E37963062615AC7700CBF147 /* Podfile */,
 				E379630B2615AD3400CBF147 /* swiftgen.yml */,
 				E3E70F0926144C9200271013 /* iOS-Play */,
+				E31F1335268B17EB00BA5933 /* NewGameViewControllerTest */,
 				E3E70F0826144C9200271013 /* Products */,
 				445C5381B7AA2A799ACA52F0 /* Pods */,
 				989677EDC5324EA305A608BA /* Frameworks */,
@@ -598,6 +652,9 @@
 			isa = PBXGroup;
 			children = (
 				E3E70F0726144C9200271013 /* iOS-Play.app */,
+				E31F12E0268AF70E00BA5933 /* TopAppTest.xctest */,
+				E31F1323268B0F2000BA5933 /* TopAppViewControllerTest.xctest */,
+				E31F1334268B17EB00BA5933 /* NewGameViewControllerTest.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -689,7 +746,6 @@
 				E3725B3126242C5000770119 /* SegmentCollection */,
 				E3725B3226242C5C00770119 /* HotTrackViewController */,
 				E3725B3E26242CBC00770119 /* RankMusicViewController */,
-				E3725B6F26248CF400770119 /* MusicDetailViewController */,
 			);
 			path = MusicViewController;
 			sourceTree = "<group>";
@@ -801,6 +857,60 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		E31F12DF268AF70E00BA5933 /* TopAppTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E31F12E9268AF70E00BA5933 /* Build configuration list for PBXNativeTarget "TopAppTest" */;
+			buildPhases = (
+				E31F12DC268AF70E00BA5933 /* Sources */,
+				E31F12DD268AF70E00BA5933 /* Frameworks */,
+				E31F12DE268AF70E00BA5933 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E31F12E6268AF70E00BA5933 /* PBXTargetDependency */,
+			);
+			name = TopAppTest;
+			productName = TopAppTest;
+			productReference = E31F12E0268AF70E00BA5933 /* TopAppTest.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E31F1322268B0F2000BA5933 /* TopAppViewControllerTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E31F132A268B0F2000BA5933 /* Build configuration list for PBXNativeTarget "TopAppViewControllerTest" */;
+			buildPhases = (
+				E31F131F268B0F2000BA5933 /* Sources */,
+				E31F1320268B0F2000BA5933 /* Frameworks */,
+				E31F1321268B0F2000BA5933 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E31F1329268B0F2000BA5933 /* PBXTargetDependency */,
+			);
+			name = TopAppViewControllerTest;
+			productName = TopAppViewControllerTest;
+			productReference = E31F1323268B0F2000BA5933 /* TopAppViewControllerTest.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E31F1333268B17EB00BA5933 /* NewGameViewControllerTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E31F133B268B17EB00BA5933 /* Build configuration list for PBXNativeTarget "NewGameViewControllerTest" */;
+			buildPhases = (
+				E31F1330268B17EB00BA5933 /* Sources */,
+				E31F1331268B17EB00BA5933 /* Frameworks */,
+				E31F1332268B17EB00BA5933 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E31F133A268B17EB00BA5933 /* PBXTargetDependency */,
+			);
+			name = NewGameViewControllerTest;
+			productName = NewGameViewControllerTest;
+			productReference = E31F1334268B17EB00BA5933 /* NewGameViewControllerTest.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		E3E70F0626144C9200271013 /* iOS-Play */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E3E70F1B26144C9400271013 /* Build configuration list for PBXNativeTarget "iOS-Play" */;
@@ -833,6 +943,18 @@
 				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
+					E31F12DF268AF70E00BA5933 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = E3E70F0626144C9200271013;
+					};
+					E31F1322268B0F2000BA5933 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = E3E70F0626144C9200271013;
+					};
+					E31F1333268B17EB00BA5933 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = E3E70F0626144C9200271013;
+					};
 					E3E70F0626144C9200271013 = {
 						CreatedOnToolsVersion = 12.4;
 					};
@@ -856,11 +978,35 @@
 			projectRoot = "";
 			targets = (
 				E3E70F0626144C9200271013 /* iOS-Play */,
+				E31F12DF268AF70E00BA5933 /* TopAppTest */,
+				E31F1322268B0F2000BA5933 /* TopAppViewControllerTest */,
+				E31F1333268B17EB00BA5933 /* NewGameViewControllerTest */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		E31F12DE268AF70E00BA5933 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E31F1321268B0F2000BA5933 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E31F1332268B17EB00BA5933 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E3E70F0526144C9200271013 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -959,6 +1105,28 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		E31F12DC268AF70E00BA5933 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E31F131F268B0F2000BA5933 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E31F1330268B17EB00BA5933 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E31F1337268B17EB00BA5933 /* NewGameViewControllerTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E3E70F0326144C9200271013 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1033,6 +1201,24 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		E31F12E6268AF70E00BA5933 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E3E70F0626144C9200271013 /* iOS-Play */;
+			targetProxy = E31F12E5268AF70E00BA5933 /* PBXContainerItemProxy */;
+		};
+		E31F1329268B0F2000BA5933 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E3E70F0626144C9200271013 /* iOS-Play */;
+			targetProxy = E31F1328268B0F2000BA5933 /* PBXContainerItemProxy */;
+		};
+		E31F133A268B17EB00BA5933 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E3E70F0626144C9200271013 /* iOS-Play */;
+			targetProxy = E31F1339268B17EB00BA5933 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		E37963122615AE5F00CBF147 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
@@ -1061,6 +1247,126 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		E31F12E7268AF70E00BA5933 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8L3V3NJFVJ;
+				INFOPLIST_FILE = TopAppTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.topAppTest.TopAppTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS-Play.app/iOS-Play";
+			};
+			name = Debug;
+		};
+		E31F12E8268AF70E00BA5933 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8L3V3NJFVJ;
+				INFOPLIST_FILE = TopAppTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.topAppTest.TopAppTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS-Play.app/iOS-Play";
+			};
+			name = Release;
+		};
+		E31F132B268B0F2000BA5933 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8L3V3NJFVJ;
+				INFOPLIST_FILE = TopAppViewControllerTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.topAppTest.TopAppViewControllerTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS-Play.app/iOS-Play";
+			};
+			name = Debug;
+		};
+		E31F132C268B0F2000BA5933 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8L3V3NJFVJ;
+				INFOPLIST_FILE = TopAppViewControllerTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.topAppTest.TopAppViewControllerTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS-Play.app/iOS-Play";
+			};
+			name = Release;
+		};
+		E31F133C268B17EB00BA5933 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8L3V3NJFVJ;
+				INFOPLIST_FILE = NewGameViewControllerTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.topAppTest.NewGameViewControllerTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS-Play.app/iOS-Play";
+			};
+			name = Debug;
+		};
+		E31F133D268B17EB00BA5933 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8L3V3NJFVJ;
+				INFOPLIST_FILE = NewGameViewControllerTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.topAppTest.NewGameViewControllerTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS-Play.app/iOS-Play";
+			};
+			name = Release;
+		};
 		E3E70F1926144C9400271013 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1184,6 +1490,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8L3V3NJFVJ;
 				INFOPLIST_FILE = "iOS-Play/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1203,6 +1510,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8L3V3NJFVJ;
 				INFOPLIST_FILE = "iOS-Play/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1218,6 +1526,33 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		E31F12E9268AF70E00BA5933 /* Build configuration list for PBXNativeTarget "TopAppTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E31F12E7268AF70E00BA5933 /* Debug */,
+				E31F12E8268AF70E00BA5933 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E31F132A268B0F2000BA5933 /* Build configuration list for PBXNativeTarget "TopAppViewControllerTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E31F132B268B0F2000BA5933 /* Debug */,
+				E31F132C268B0F2000BA5933 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E31F133B268B17EB00BA5933 /* Build configuration list for PBXNativeTarget "NewGameViewControllerTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E31F133C268B17EB00BA5933 /* Debug */,
+				E31F133D268B17EB00BA5933 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		E3E70F0226144C9200271013 /* Build configuration list for PBXProject "iOS-Play" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
