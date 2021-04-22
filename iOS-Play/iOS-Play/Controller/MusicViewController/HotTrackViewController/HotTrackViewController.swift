@@ -19,15 +19,19 @@ final class HotTrackViewController: UIViewController {
     
     private var results = [FeedResults]()
     
+    var urlString: String = ""
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        restApi()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         configViews()
         configTableView()
-        
-        //getDataMock()
-        
-        restApi()
+        //restApi()
     }
     
     func configViews() {
@@ -60,7 +64,11 @@ final class HotTrackViewController: UIViewController {
     }
     
     func restApi() {
-        apiManger.getFeedResults(urlString: MusicUrl.hotTrack.url) { [weak self] (results, error) -> (Void) in
+        
+        if urlString.isEmpty {
+            urlString = MusicUrl.hotTrack.url
+        }
+        apiManger.getFeedResults(urlString: urlString) { [weak self] (results, error) -> (Void) in
             guard let results = results else {
                 print("fail")
                 return

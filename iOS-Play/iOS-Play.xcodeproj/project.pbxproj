@@ -437,13 +437,6 @@
 			path = MusicCollectionView;
 			sourceTree = "<group>";
 		};
-		E3725B6F26248CF400770119 /* MusicDetailViewController */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = MusicDetailViewController;
-			sourceTree = "<group>";
-		};
 		E3746AFC262C283B006A8D04 /* DownLoadVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -689,7 +682,6 @@
 				E3725B3126242C5000770119 /* SegmentCollection */,
 				E3725B3226242C5C00770119 /* HotTrackViewController */,
 				E3725B3E26242CBC00770119 /* RankMusicViewController */,
-				E3725B6F26248CF400770119 /* MusicDetailViewController */,
 			);
 			path = MusicViewController;
 			sourceTree = "<group>";
@@ -1184,6 +1176,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8L3V3NJFVJ;
 				INFOPLIST_FILE = "iOS-Play/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1203,6 +1196,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8L3V3NJFVJ;
 				INFOPLIST_FILE = "iOS-Play/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
